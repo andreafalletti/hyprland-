@@ -1,5 +1,14 @@
 # Build in debug
 
+## Required packages
+`xcb` stuff, check with your local package provider.
+`wlroots-git` - always have the latest wlroots.
+`wayland` - of course.
+
+*Arch*:
+`yay -S gdb ninja gcc cmake libxcb xcb-proto xcb-util xcb-util-keysyms xcb-xfixes x11-xcb xcb-composite xcb-xinput xcb-render pixman wayland-protocols wlroots-git`
+(If any are missing hmu)
+
 ## Recommended, CMake
 install the VSCode C/C++ and CMake Tools extensions and use that.
 
