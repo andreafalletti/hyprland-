@@ -4,7 +4,9 @@ Installing Hyprland is very easy.
 
 ## Required packages
 `xcb` stuff, check with your local package provider.
+
 `wlroots-git` - always have the latest wlroots.
+
 `wayland` - of course.
 
 *Arch*:
