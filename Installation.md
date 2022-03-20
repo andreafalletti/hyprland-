@@ -8,7 +8,9 @@ Installing Hyprland is very easy.
 `wayland` - of course.
 
 *Arch*:
+
 `yay -S gdb ninja gcc cmake libxcb xcb-proto xcb-util xcb-util-keysyms xcb-xfixes x11-xcb xcb-composite xcb-xinput xcb-render pixman wayland-protocols wlroots-git`
+
 (If any are missing hmu)
 
 then...
