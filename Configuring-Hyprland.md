@@ -1,5 +1,7 @@
 # Configuring
 
+*Make sure* you copy the example config from `examples/hyprland.conf` to `~/.config/hypr/hyprland.conf` because Hyprland, just like Hypr, without a config is a bad idea.
+
 The Hyprland config is very similiar in syntax to the Hypr config. The only difference is that all the variables that didn't have a section are now in the section `general`.
 
 Refer to the example config in `/examples/hyprland.conf` to see, well... and example.
