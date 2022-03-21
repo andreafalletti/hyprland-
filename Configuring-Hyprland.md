@@ -79,6 +79,7 @@ exec - executes a shell command - params: command
 killactive - kills the focused window - params: none
 workspace - changes the workspace - params: workspace ID of the one to change to
 togglefloating - toggles the focused window floating - params: none
+fullscreen - toggles the focused window's fullscreen state - params: none
 ```
 
 ## Executing
