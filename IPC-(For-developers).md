@@ -38,3 +38,7 @@ Explanations:
 `clients` - Self-explanatory: retrieves all clients' info
 
 `workspaces` - Self-explanatory: retrieves all workspaces' info
+
+`activewindow` - Self-explanatory: retrieves info of the active window
+
+`layers` - Gets the info of all layers on all monitors
