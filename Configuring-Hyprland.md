@@ -43,6 +43,16 @@ SHIFT CAPS CTRL/CONTROL ALT MOD2 MOD3 SUPER/WIN/LOGO/MOD4 MOD5
 
 `col.inactive_border=col` - self-explanatory
 
+## Animations
+
+`enabled=int` - (0/1) enable animations
+
+`windows=int` - (0/1) enable window animations
+
+## Input
+
+`kb_layout=str` `kb_variant=str` `kb_model=str` `kb_options=str` `kb_rules=str` - adequate keyboard settings
+
 # Special keywords
 
 Some keywords arent variables but define special behaviour.
