@@ -49,6 +49,12 @@ SHIFT CAPS CTRL/CONTROL ALT MOD2 MOD3 SUPER/WIN/LOGO/MOD4 MOD5
 
 `windows=int` - (0/1) enable window animations
 
+`borders=int` - (0/1) enable border animations
+
+`speed=float` - Speed of the animations, more = slower.
+
+`xxx_speed=float` - replace xxx with a component name (windows/borders) and it will apply a speed to that component. 0 means use the global value. If not set, will use the global value. (global is `speed=float`)
+
 ## Input
 
 `kb_layout=str` `kb_variant=str` `kb_model=str` `kb_options=str` `kb_rules=str` - adequate keyboard settings
