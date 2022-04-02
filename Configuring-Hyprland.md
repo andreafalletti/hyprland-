@@ -98,6 +98,8 @@ killactive - kills the focused window - params: none
 workspace - changes the workspace - params: workspace ID of the one to change to
 togglefloating - toggles the focused window floating - params: none
 fullscreen - toggles the focused window's fullscreen state - params: none
+movetoworkspace - moves the focused window to workspace X - params: workspace ID
+pseudo - toggles the focused window to be pseudotiled - params: none
 ```
 
 ## Executing
