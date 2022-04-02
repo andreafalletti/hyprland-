@@ -24,3 +24,9 @@ With that, you can build in debug, go to the debugging tab and hit `(gdb) Launch
 `make debug`
 
 attach and profile in your preferred way.
+
+# Logs, dumps, etc.
+
+You can use the logs and the GDB debugger, but running Hyprland in debug compile as a driver and using it for a while might give more insight to the more random bugs.
+
+When Hyprland crashes, use `coredumpctl` and then `coredumpctl PID` to see the dump.
