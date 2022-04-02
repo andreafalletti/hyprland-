@@ -33,3 +33,7 @@ when running Hyprland in Debug mode, the config is `~/.config/hypr/hyprlandd.con
 You can use the logs and the GDB debugger, but running Hyprland in debug compile as a driver and using it for a while might give more insight to the more random bugs.
 
 When Hyprland crashes, use `coredumpctl` and then `coredumpctl PID` to see the dump.
+
+I also recommend the amazing command
+`watch -n 0.1 "cat /tmp/hypr/hyprland.log | grep -v \"arranged\" | tail -n 40"`
+for live logs.
