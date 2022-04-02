@@ -25,6 +25,9 @@ With that, you can build in debug, go to the debugging tab and hit `(gdb) Launch
 
 attach and profile in your preferred way.
 
+# Running
+when running Hyprland in Debug mode, the config is `~/.config/hypr/hyprlandd.conf` and the logs can be found at `/tmp/hypr/hyprlandd.conf`.
+
 # Logs, dumps, etc.
 
 You can use the logs and the GDB debugger, but running Hyprland in debug compile as a driver and using it for a while might give more insight to the more random bugs.
