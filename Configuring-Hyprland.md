@@ -43,6 +43,10 @@ SHIFT CAPS CTRL/CONTROL ALT MOD2 MOD3 SUPER/WIN/LOGO/MOD4 MOD5
 
 `col.inactive_border=col` - self-explanatory
 
+## Decoration
+
+`rounding=int` - rounded corners radius (in pixels)
+
 ## Animations
 
 `enabled=int` - (0/1) enable animations
