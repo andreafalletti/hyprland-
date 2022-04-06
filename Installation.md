@@ -19,6 +19,7 @@ then...
 
 ```
 git clone https://github.com/vaxerski/Hyprland
+cd Hyprland
 sudo make install
 ```
 
