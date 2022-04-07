@@ -95,6 +95,31 @@ bind=SUPERSHIFT,Q,exec,firefox
 ```
 will bind opening firefox to SUPER+SHIFT+Q
 
+Please note that `SHIFT` modifies the key names, so for example
+```
+bind=SHIFT,1,anything,
+```
+will not work, as 1 is overwritten by !
+
+Common overwrites:
+```
+1 -> exclam
+2 -> at
+3 -> numbersign
+4 -> dollar
+5 -> percent
+6 -> asciicircum
+7 -> ampersand
+8 -> asterisk
+9 -> parenleft
+0 -> parenright
+- -> underscore
+= -> plus
+```
+
+See the [xkbcommon-keysyms.h header](https://github.com/xkbcommon/libxkbcommon/blob/master/include/xkbcommon/xkbcommon-keysyms.h) for all the keysyms.
+
+
 Dispatcher list:
 ```
 exec - executes a shell command - params: command
