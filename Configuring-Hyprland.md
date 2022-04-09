@@ -121,7 +121,7 @@ Common overwrites:
 = -> plus
 ```
 
-See the [xkbcommon-keysyms.h header](https://github.com/xkbcommon/libxkbcommon/blob/master/include/xkbcommon/xkbcommon-keysyms.h) for all the keysyms.
+See the [xkbcommon-keysyms.h header](https://github.com/xkbcommon/libxkbcommon/blob/master/include/xkbcommon/xkbcommon-keysyms.h) for all the keysyms. The name you should use is the one after XKB_KEY_, written in all lowercase.
 
 
 Dispatcher list:
