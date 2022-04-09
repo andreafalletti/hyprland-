@@ -55,6 +55,12 @@ SHIFT CAPS CTRL/CONTROL ALT MOD2 MOD3 SUPER/WIN/LOGO/MOD4 MOD5
 
 `blur_size=int` - Minimum 2, blur size (intensity)
 
+`blur_passes=int` - Minimim 1, more passes = more resource intensive.
+    
+Your blur "amount" is blur_size * blur_passes, but high blur_size (over around 30-ish) will produce artifacts.
+    
+If you want heavy blur, you need to up the blur_passes.
+
 ## Animations
 
 `enabled=int` - (0/1) enable animations
