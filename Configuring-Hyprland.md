@@ -51,6 +51,10 @@ SHIFT CAPS CTRL/CONTROL ALT MOD2 MOD3 SUPER/WIN/LOGO/MOD4 MOD5
 
 `rounding=int` - rounded corners radius (in pixels)
 
+`blur=int` - (0/1) enable window background blur
+
+`blur_size=int` - Minimum 2, blur size (intensity)
+
 ## Animations
 
 `enabled=int` - (0/1) enable animations
