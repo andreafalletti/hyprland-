@@ -133,6 +133,7 @@ togglefloating - toggles the focused window floating - params: none
 fullscreen - toggles the focused window's fullscreen state - params: none
 movetoworkspace - moves the focused window to workspace X - params: workspace ID
 pseudo - toggles the focused window to be pseudotiled - params: none
+movefocus - moves the focus in a specified direction - params: l/r/u/d (left right up down)
 ```
 
 ## Executing
