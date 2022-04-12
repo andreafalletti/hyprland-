@@ -9,9 +9,11 @@ Dwindle splits are NOT PERMANENT. The split is determined dynamically with the W
 Dwindle allows for mouse moving and resizing using the `main_mod` and the mouse (left for move, right for resize)
 
 _Moving (main_mod + LMB)_
+
 ![moveExampleHyprland](https://user-images.githubusercontent.com/43317083/162996595-c2b41ab1-0f3b-4680-99df-34d6dbad87f4.gif)
 
 _Resizing (main_mod + RMB)_
+
 ![resizeExampleHyprland](https://user-images.githubusercontent.com/43317083/162996612-6341199a-eeee-4de0-85ee-f6a42c426c3f.gif)
 
 ## Grouped (tabbed) windows
@@ -21,6 +23,11 @@ Dwindle allows you to make a group with the `togglegroup` bind dispatcher, and c
 A group is like i3wm's "tabbed" container. It takes the space of one window, and you can change the window to the next one in the tabbed "group".
 
 When creating the group, a group will be made from the current active window, and all children (recursively!) of the parent node. The new group's border colors are configurable with the appropriate `col.` settings in the config section below.
+
+_Grouping example (make, add, toggle, remove)_
+
+![groupExampleSmaller](https://user-images.githubusercontent.com/43317083/163003581-69d7a5d0-5757-4183-83f1-256cdc99c96a.gif)
+
 
 # Config
 
