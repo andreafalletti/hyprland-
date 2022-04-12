@@ -29,7 +29,7 @@ _Grouping example (make, add, toggle, remove)_
 ![groupExampleSmaller](https://user-images.githubusercontent.com/43317083/163003581-69d7a5d0-5757-4183-83f1-256cdc99c96a.gif)
 
 
-Closing windows within the groups is allowed, however, since the groups in the backend are still a tree, if you remove a node that makes the original node container get removed, the group will be broken.
+Closing windows within the groups is allowed, however, since the groups in the backend are still a tree, if you remove a node that makes the original node container get removed, the group will be broken back to its dwindle form.
 
 
 # Config
