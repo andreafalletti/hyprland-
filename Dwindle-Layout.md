@@ -38,3 +38,8 @@ category name: `dwindle`
 `col.group_border=col` - inactive (out of focus) group border color
 
 `col.group_border_active=col` - active group border color
+
+## Bind Dispatchers
+`togglegroup` - toggles the current window and its siblings (recursively) into a group - params: none
+
+`changegroupactive` - switches to the next window in a group. - params: none
