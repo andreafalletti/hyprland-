@@ -73,6 +73,15 @@ If you want heavy blur, you need to up the blur_passes.
 
 `xxx_speed=float` - replace xxx with a component name (windows/borders) and it will apply a speed to that component. 0 means use the global value. If not set, will use the global value. (global is `speed=float`)
 
+## Dwindle
+these apply to the `dwindle` layout.
+
+`pseudotile=int` - (0/1) enable pseudotiling
+
+`col.group_border=col` - inactive (out of focus) group border color
+
+`col.group_border_active=col` - active group border color
+
 ## Input
 
 `kb_layout=str` `kb_variant=str` `kb_model=str` `kb_options=str` `kb_rules=str` - adequate keyboard settings
@@ -144,6 +153,8 @@ fullscreen - toggles the focused window's fullscreen state - params: none
 movetoworkspace - moves the focused window to workspace X - params: workspace ID
 pseudo - toggles the focused window to be pseudotiled - params: none
 movefocus - moves the focus in a specified direction - params: l/r/u/d (left right up down)
+togglegroup - (only dwindle) toggles the current window and its siblings (recursively) into a group - params: none
+changegroupactive - (only dwindle) switches to the next window in a group. - params: none
 ```
 
 ## Executing
