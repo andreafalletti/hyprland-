@@ -21,7 +21,7 @@ Variable types are:
 
 `col` - color (e.g. 0x22334455 - alpha 0x22, red 0x33, green 0x44, blue 0x55)
 
-`MOD` - a string modmask (e.g. SUPER or SUPERSHIFT or SUPERSHIFTALTCTLRCAPSMOD2MOD3MOD5)
+`MOD` - a string modmask (e.g. SUPER or SUPERSHIFT or SUPERSHIFTALTCTLRCAPSMOD2MOD3MOD5 or empty for none)
 
 Mod list:
 ```
@@ -76,6 +76,9 @@ If you want heavy blur, you need to up the blur_passes.
 ## Input
 
 `kb_layout=str` `kb_variant=str` `kb_model=str` `kb_options=str` `kb_rules=str` - adequate keyboard settings
+
+## More 
+There are more config options described in other pages, which are layout- or circumstance-specific
 
 # Special keywords
 
@@ -134,7 +137,7 @@ Common overwrites:
 See the [xkbcommon-keysyms.h header](https://github.com/xkbcommon/libxkbcommon/blob/master/include/xkbcommon/xkbcommon-keysyms.h) for all the keysyms. The name you should use is the one after XKB_KEY_, written in all lowercase.
 
 
-Dispatcher list:
+General dispatcher list:
 ```
 exec - executes a shell command - params: command
 killactive - kills the focused window - params: none
@@ -144,8 +147,6 @@ fullscreen - toggles the focused window's fullscreen state - params: none
 movetoworkspace - moves the focused window to workspace X - params: workspace ID
 pseudo - toggles the focused window to be pseudotiled - params: none
 movefocus - moves the focus in a specified direction - params: l/r/u/d (left right up down)
-togglegroup - (only dwindle) toggles the current window and its siblings (recursively) into a group - params: none
-changegroupactive - (only dwindle) switches to the next window in a group. - params: none
 ```
 
 ## Executing
