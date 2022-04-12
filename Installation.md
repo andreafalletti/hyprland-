@@ -1,3 +1,12 @@
+# Foreword
+NVIDIA GPUs in ANY capacity are NOT supported. (even if you're using `nouveau`)
+
+Any and all NVIDIA issues will be marked as NVIDIA issues and I will NOT solve them, as I don't own an NVIDIA card.
+
+If, in the future, anyone will want to contribute to get NVIDIA to work well, I'll update this message.
+
+If you want to try nevertheless, try to use the workarounds that work for Sway to run on proprietary NVIDIA. It might work.
+
 # Installation
 
 Installing Hyprland is very easy.
