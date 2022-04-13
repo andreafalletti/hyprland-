@@ -56,8 +56,8 @@ sudo make clear && make config && make legacyrenderer && sudo cp ./build/Hyprlan
 ```
 
 _please note the legacy renderer may not support some graphical features._
-
-Any other config: (replace [PRESET] with your preset)
+<br/><br/>
+Any other config: (replace [PRESET] with your preset, `release` `debug` `legacyrenderer` `legacyrendererdebug`)
 ```
 sudo make clear && make config && make [PRESET] && sudo cp ./build/Hyprland /usr/bin && sudo cp ./example/hyprland.desktop /usr/share/wayland-sessions
 ```
