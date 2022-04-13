@@ -51,4 +51,6 @@ Diagnose the issue by what is in the log:
 cd into the hyprland repo.
 
 for legacy renderer:
-`sudo make clear && make config && make legacyrenderer && sudo cp ./build/Hyprland /usr/bin && sudo cp ./examples/hypr.desktop /usr/share/wayland-sessions`
+```
+sudo make clear && make config && make legacyrenderer && sudo cp ./build/Hyprland /usr/bin && sudo cp ./examples/hypr.desktop /usr/share/wayland-sessions
+```
