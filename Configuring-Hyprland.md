@@ -77,7 +77,7 @@ If you want heavy blur, you need to up the blur_passes.
 
 `kb_layout=str` `kb_variant=str` `kb_model=str` `kb_options=str` `kb_rules=str` - adequate keyboard settings
 
-`follow_mouse=int` - (0/1) enable mouse following (focus on enter new window)
+`follow_mouse=int` - (0/1) enable mouse following (focus on enter new window) - Quirk: will always focus on mouse enter if you're entering a floating window from a tiled one, or vice versa.
 
 ## More 
 There are more config options described in other pages, which are layout- or circumstance-specific
