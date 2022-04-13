@@ -61,6 +61,8 @@ Your blur "amount" is blur_size * blur_passes, but high blur_size (over around 3
     
 If you want heavy blur, you need to up the blur_passes.
 
+Don't set blur_passes over 3, unless you want to cook some food on your GPU. (lol)
+
 ## Animations
 
 `enabled=int` - (0/1) enable animations
