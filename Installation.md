@@ -54,3 +54,5 @@ for legacy renderer:
 ```
 sudo make clear && make config && make legacyrenderer && sudo cp ./build/Hyprland /usr/bin && sudo cp ./example/hyprland.desktop /usr/share/wayland-sessions
 ```
+
+_please note the legacy renderer may not support some graphical features._
