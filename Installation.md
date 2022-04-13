@@ -45,3 +45,10 @@ Diagnose the issue by what is in the log:
 * failing on a driver (e.g. `radeon`) -> try compiling with `make legacyrenderer`, if that doesn't help, report an issue.
 * failing on `wlr-xxx` -> try compiling with `make legacyrenderer`, if that doesn't help, report an issue, and also refer to the TTY wlr logs in RED like in the first point.
 * failing on `Hyprland` -> report an issue.
+
+## Custom installation (legacy renderer, etc)
+
+cd into the hyprland repo.
+
+for legacy renderer:
+`sudo make clear && make config && make legacyrenderer && sudo cp ./build/Hyprland /usr/bin && sudo cp ./examples/hypr.desktop /usr/share/wayland-sessions`
