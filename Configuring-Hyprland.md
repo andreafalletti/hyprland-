@@ -149,7 +149,7 @@ General dispatcher list:
 ```
 exec - executes a shell command - params: command
 killactive - kills the focused window - params: none
-workspace - changes the workspace - params: workspace ID of the one to change to
+workspace - changes the workspace - params: workspace ID of the one to change to (or relative, +n/-n, e.g. `+1` or `-2`)
 togglefloating - toggles the focused window floating - params: none
 fullscreen - toggles the focused window's fullscreen state - params: none
 movetoworkspace - moves the focused window to workspace X - params: workspace ID
