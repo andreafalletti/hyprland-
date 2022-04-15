@@ -61,3 +61,12 @@ Any other config: (replace [PRESET] with your preset, `release` `debug` `legacyr
 ```
 sudo make clear && make config && make [PRESET] && sudo cp ./build/Hyprland /usr/bin && sudo cp ./example/hyprland.desktop /usr/share/wayland-sessions
 ```
+
+# Launching
+You can launch Hyprland by either going into a TTY and executing `Hyprland`, or with a login manager.
+
+**!IMPORTANT**: Do **not** launch Hyprland with `root` permissions (don't `sudo`)
+
+Login managers are not officially supported, but here's a short compatibility list:
+- SDDM > Works flawlessly
+- GDM > Works with the caveat of crashing Hyprland on the first launch
