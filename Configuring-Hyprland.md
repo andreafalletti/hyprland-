@@ -49,6 +49,8 @@ SHIFT CAPS CTRL/CONTROL ALT MOD2 MOD3 SUPER/WIN/LOGO/MOD4 MOD5
 
 `damage_tracking=str` - Makes the compositor redraw only the needed bits of the display. Saves on resources by not redrawing when not needed. Available modes: `none, monitor, full`. WARNING: Damage tracking is still experimental, expect bugs, especially with `full`!
 
+Recommended: `monitor`.
+
 ## Decoration
 
 `rounding=int` - rounded corners radius (in pixels)
