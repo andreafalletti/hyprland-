@@ -99,6 +99,11 @@ monitor=DP-1,1920x1080@144,0x0,0.5,1
 ```
 will tell Hyprland to make the monitor on DP-1 a 1920x1080 display, at 144Hz, 0x0 off from the beginning, with 0.5 mfactor and a scale of 1.
 
+To disable a monitor, use
+```
+monitor=name,disabled
+```
+
 _Warning:_ Monitors are NOT applied live, yet. Restart Hyprland to apply changes.
 
 ```
