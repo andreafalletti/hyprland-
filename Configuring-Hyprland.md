@@ -101,7 +101,7 @@ will tell Hyprland to make the monitor on DP-1 a 1920x1080 display, at 144Hz, 0x
 
 To disable a monitor, use
 ```
-monitor=name,disabled
+monitor=name,disable
 ```
 
 _Warning:_ Monitors are NOT applied live, yet. Restart Hyprland to apply changes.
