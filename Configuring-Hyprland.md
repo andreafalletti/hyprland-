@@ -55,6 +55,10 @@ Recommended: `monitor`.
 
 `rounding=int` - rounded corners radius (in pixels)
 
+`active_opacity=float` - self-explanatory, 0 - 1
+
+`inactive_opacity=float` - self-explanatory, 0 - 1
+
 `blur=int` - (0/1) enable window background blur
 
 `blur_size=int` - Minimum 2, blur size (intensity)
