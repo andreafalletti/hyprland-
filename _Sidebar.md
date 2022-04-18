@@ -12,7 +12,7 @@
       <a>　</a><a href="https://github.com/vaxerski/Hyprland/wiki/Dwindle-Layout">Dwindle Layout</a>
       <br/><br/>
       <li><a href="https://github.com/vaxerski/Hyprland/wiki/FAQ">FAQ</a></li>
-      <br/><br/>
+      <br/>
       <li><a href="https://github.com/vaxerski/Hyprland/wiki/Contributing-&-Debugging">Contributing & Debugging</a></li>
       <a>　</a><a href="https://github.com/vaxerski/Hyprland/wiki/IPC-(For-developers)">IPC</a>
       <br/>
