@@ -51,6 +51,7 @@ Should be working now.
 If it doesn't, disable the services provided by both xdg portals (`systemctl --user disable name`), make a .sh file somewhere with:
 ```
 #!/bin/bash
+sleep 4
 /usr/lib/xdg-desktop-portal-wlr &
 sleep 4
 /usr/lib/xdg-desktop-portal &
