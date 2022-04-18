@@ -1,0 +1,64 @@
+### How do I screenshot?
+Install `grim-git` and `slurp`
+
+Use a keybind (or execute) `grim -g $(slurp)`, select a region. A screenshot will pop into your `~/Pictures/`
+(You can configure grim and slurp, see their github pages)
+
+### How do I change my wallpaper?
+Install `swaybg`. See its usage with `swaybg --help`
+
+### My monitor no worky!
+Try changing the mode in your config. If your preferred one doesn't work, try a lower one.
+A good way to list all modes is to get `wlr-randr` and do a `wlr-randr --dryrun`
+
+### I crash on start!
+Launch from a TTY.
+If you still crash, then:
+  -> if you get red logs, google them, they are wlr errors. If that doesn't help, make an issue or post on the discord server.
+  -> if you don't, make an issue (/post on the discord server) and ***attach*** (don't use pastebin/paste it) the log, `/tmp/hypr/hyprland.log` AND a coredump.
+
+### I crash not on start!
+ make an issue / post on the discord server, explain what you were doing, and ***attach*** (don't use pastebin/paste it) the log, `/tmp/hypr/hyprland.log` AND a coredump.
+
+### How do I get a coredump?
+*These instructions are ONLY for systemd. If you use anything else, you should know what you're doing.*
+
+Launch `coredumpctl` in a terminal.
+Press "END" on the keyboard to go to the end.
+Note the **last** (the one furthest to the bottom) crash that has `/usr/bin/Hyprland` as an executable.
+Remember the PID of it (the first number after the date in a given line)
+exit (Ctrl+C)
+type `coredumpctl info PID` where PID is the remembered PID.
+Send the entire thing.
+
+### How do I update?
+open a terminal where you cloned the repo.
+`git pull && sudo make clear && sudo make install`
+
+### Screenshare / OBS no worky!
+Yes, hello, this is Wayland.
+
+Switch to Pipewire if you haven't done so yet.
+
+Install `wireplumber`
+
+Install `xdg-desktop-portal` and `xdg-desktop-portal-wlr`
+
+reboot
+
+Should be working now.
+
+If it doesn't, disable the services provided by both xdg portals (`systemctl --user disable name`), make a .sh file somewhere with:
+```
+#!/bin/bash
+/usr/lib/xdg-desktop-portal-wlr &
+sleep 4
+/usr/lib/xdg-desktop-portal &
+```
+do a `chmod +x thefile`, and then, in your Hyprland config use `exec-once` to exec it on start.
+
+Please remember in OBS you need to select "Pipewire screen capture" as the source.
+
+### Howdy I screen lock???
+Use a wayland-compatible locking utility using WLR protocols, e.g. `swaylock`.
+
