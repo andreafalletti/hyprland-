@@ -65,3 +65,5 @@ Please remember in OBS you need to select "Pipewire screen capture" as the sourc
 ### Howdy I screen lock???
 Use a wayland-compatible locking utility using WLR protocols, e.g. `swaylock`.
 
+### GTK apps' borders are weird? and mouse is off!
+Go to your GTK theme's folder, then to `gtk-4.0`. In it, you'll find at least one CSS file. For all the CSS files, search for `window {` and in the window class, replace all `border` and `box-shadow` properties to `none`.
