@@ -12,6 +12,22 @@ Refer to the example config in `/examples/hyprland.conf` to see, well... and exa
 
 Start a section with `name {` and end in `}` ***in separate lines!***
 
+# Line style
+every config line is a command followed by a value.
+```
+COMMAND=VALUE
+```
+
+The command can be a variable, or a special keyword (described further in this page)
+
+You are **allowed to** input trailing spaces at the beginning and end.
+
+e.g.:
+```
+COMMAND = VALUE
+```
+is valid.
+
 # Variable types
 Variable types are:
 
