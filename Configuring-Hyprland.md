@@ -130,7 +130,7 @@ To disable a monitor, use
 monitor=name,disable
 ```
 
-_Warning:_ Monitors are NOT applied live, yet. Restart Hyprland to apply changes.
+_Warning:_ Monitor rules applied live can occasionally crash the compositor! (live = when the compositor is running, you change the monitor rule and save to reload)
 
 ```
 workspace=name,number
