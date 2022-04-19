@@ -107,6 +107,15 @@ Don't set blur_passes over 3, unless you want to cook some food on your GPU. (lo
 
 `follow_mouse=int` - (0/1) enable mouse following (focus on enter new window) - Quirk: will always focus on mouse enter if you're entering a floating window from a tiled one, or vice versa.
 
+`repeat_rate=int` - in ms, the repeat rate for held keys
+
+`repeat_delay=int` - in ms, the repeat delay (grace period) before the spam
+
+### Touchpad
+_Subcategory input:touchpad:_
+
+`disable_while_typing=int` - (0/1) disable touchpad while typing
+
 ## More 
 There are more config options described in other pages, which are layout- or circumstance-specific
 
