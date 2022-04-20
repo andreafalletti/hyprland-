@@ -62,6 +62,37 @@ Any other config: (replace [PRESET] with your preset, `release` `debug` `legacyr
 sudo make clear && make config && make [PRESET] && sudo cp ./build/Hyprland /usr/bin && sudo cp ./example/hyprland.desktop /usr/share/wayland-sessions
 ```
 
+## Custom Build flags
+To apply custom build flags, you'll have to ditch make.
+
+Supported custom build flags:
+```
+NO_XWAYLAND - Removes XWayland support
+```
+
+How to?
+
+Go to the root repo.
+
+First, configure:
+```
+mkdir -p build && cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -D<YOUR_FLAG>:STRING=true -H./ -B./build -G Ninja
+```
+Change `<YOUR_FLAG>` to one of the custom build flags. You **are allowed to** use multiple at once, then add another `-D<YOUR_FLAG_2>:STRING=true`
+
+You can of course also change the `BUILD_TYPE` to `Debug`.
+
+Now, build:
+```
+cmake --build ./build --config Release --target all -j 10
+```
+If you configured in `Debug`, change the `--config` to `Debug` as well.
+
+Now, of course, install manually.
+```
+sudo cp ./build/Hyprland /usr/bin && sudo cp ./example/hyprland.desktop /usr/share/wayland-sessions
+```
+
 # Launching
 You can launch Hyprland by either going into a TTY and executing `Hyprland`, or with a login manager.
 
