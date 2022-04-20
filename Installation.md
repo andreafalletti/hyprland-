@@ -74,7 +74,12 @@ How to?
 
 Go to the root repo.
 
-First, configure:
+Clean before everything and config the root:
+```
+make clear && make config
+```
+
+Then, configure CMake:
 ```
 mkdir -p build && cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -D<YOUR_FLAG>:STRING=true -H./ -B./build -G Ninja
 ```
