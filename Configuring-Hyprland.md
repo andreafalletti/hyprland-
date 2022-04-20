@@ -195,6 +195,8 @@ fullscreen - toggles the focused window's fullscreen state - params: none
 movetoworkspace - moves the focused window to workspace X - params: workspace ID
 pseudo - toggles the focused window to be pseudotiled - params: none
 movefocus - moves the focus in a specified direction - params: l/r/u/d (left right up down)
+movewindow - moves the active window in a specified direction - params: l/r/u/d (left right up down)
+splitratio - changes the split ratio - params: relative split change, +n/-n, e.g. +0.1 or -0.02, clamps to 0.1 - 1.9
 ```
 
 ## Executing
