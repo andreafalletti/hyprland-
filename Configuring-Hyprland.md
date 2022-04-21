@@ -240,3 +240,10 @@ pseudo - pseudotiles a window
 monitor <id> - sets the monitor on which a window should open
 workspace <workspace> - sets the workspace on which a window should open (for workspace syntax, see binds->workspaces)
 ```
+
+examples:
+```
+windowrule=float,kitty
+
+windowrule=monitor 0,Firefox
+```
