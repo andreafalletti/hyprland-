@@ -220,3 +220,23 @@ you can execute a shell script on startup of the WM or on each time it's reloade
 `exec-once=command` will execute only on launch
 
 `exec=command` will execute on each reload
+
+## Window Rules
+You can set window rules for various actions. These are applied on window open!
+
+```
+windowrule=RULE,WINDOW
+```
+
+`RULE` is a rule (and a param if applicable) and `WINDOW` is a RegEx to match against
+
+Rules:
+```
+float - floats a window
+tile - tiles a window
+move <x> <y> - moves a floating window (x,y -> int)
+size <x> <y> - resizes a floating window (x,y -> int)
+pseudo - pseudotiles a window
+monitor <id> - sets the monitor on which a window should open
+workspace <workspace> - sets the workspace on which a window should open (for workspace syntax, see binds->workspaces)
+```
