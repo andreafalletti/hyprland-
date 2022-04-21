@@ -18,7 +18,7 @@ Use `hyprctl monitors` to list available outputs.
 
 Then, you can configure your outputs with 
 ```
-hyprctl keyword monitor NAME,RES@HZ,OFFSET,MFACT,SCALE
+hyprctl keyword monitor NAME,RES@HZ,OFFSET,SCALE
 ```
 
 `NAME` is the name of the display, e.g. `DP-1`
@@ -27,13 +27,11 @@ hyprctl keyword monitor NAME,RES@HZ,OFFSET,MFACT,SCALE
 
 `OFFSET` is the position of the monitor, e.g. `0x0`
 
-`MFACT` is the mfactor, recommended to `0.5`
-
 `SCALE` is the display scale, e.g. `1` _Warning: scale is broken right now in hyprland, leave at 1_
 
 example command:
 ```
-hyprctl keyword monitor DP-3,1920x1080@240,1920x0,0.5,1
+hyprctl keyword monitor DP-3,1920x1080@240,1920x0,1
 ```
 
 **Warning!** These changes are **not** permanent! If you want to make those changes persist, configure your outputs in the config!
