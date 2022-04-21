@@ -22,6 +22,8 @@ hyprctl dispatch exec kitty
 hyprctl dispatch pseudo x
 ```
 
+Returns: `ok` on success, an error message on fail.
+
 ### Keyword
 
 issue a `keyword` to call a config keyword dynamically.
@@ -32,6 +34,8 @@ hyprctl keyword bind SUPER,O,pseudo
 
 hyprctl keyword general:border_size 10
 ```
+
+Returns: `ok` on success, an error message on fail.
 
 ## Info
 
