@@ -184,6 +184,12 @@ Common overwrites:
 
 See the [xkbcommon-keysyms.h header](https://github.com/xkbcommon/libxkbcommon/blob/master/include/xkbcommon/xkbcommon-keysyms.h) for all the keysyms. The name you should use is the one after XKB_KEY_, written in all lowercase.
 
+You can also unbind with `unbind`, e.g.:
+```
+unbind=SUPER,O
+```
+
+May be useful for dynamic keybindings with `hyprctl`.
 
 General dispatcher list:
 ```
