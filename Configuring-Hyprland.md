@@ -203,8 +203,10 @@ splitratio - changes the split ratio - params: relative split change, +n/-n, e.g
 workspace args are unified. You have three choices:
 
 ID: e.g. `1`, `2`, or `3`
+
 Relative ID: e.g. `+1`, `-3` or `+100`
-Name: e.g. `name:Web`, `name:Adult content` or `name:Anime`
+
+Name: e.g. `name:Web`, `name:Anime` or `name:Better anime`
 
 ## Executing
 you can execute a shell script on startup of the WM or on each time it's reloaded
