@@ -22,6 +22,17 @@ hyprctl dispatch exec kitty
 hyprctl dispatch pseudo x
 ```
 
+### Keyword
+
+issue a `keyword` to call a config keyword dynamically.
+
+Examples:
+```
+hyprctl keyword bind SUPER,O,pseudo
+
+hyprctl keyword general:border_size 10
+```
+
 ## Info
 
 ```
