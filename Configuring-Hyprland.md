@@ -234,12 +234,15 @@ Rules:
 ```
 float - floats a window
 tile - tiles a window
-move <x> <y> - moves a floating window (x,y -> int or %, e.g. `20%` or `100`)
-size <x> <y> - resizes a floating window (x,y -> int or %, e.g. `20%` or `100`)
+move <x> <y> - moves a floating window (x,y -> int or %, e.g. 20% or 100)
+size <x> <y> - resizes a floating window (x,y -> int or %, e.g. 20% or 100)
 pseudo - pseudotiles a window
 monitor <id> - sets the monitor on which a window should open
 workspace <workspace> - sets the workspace on which a window should open (for workspace syntax, see binds->workspaces)
+opacity <a> - additional opacity multiplier (a -> float, e.g. 0.25)
 ```
+
+_Notice_: Opacity is always a PRODUCT of all opacities. E.g. active_opacity to 0.5 and windowrule opacity to 0.5 will result in a total opacity 0.25. You are allowed to set opacities over 1, but any opacity product over 1 will cause graphical glitches. E.g. 0.5 * 2 = 1, and it will be fine, 0.5 * 4 will cause graphical glitches.
 
 examples:
 ```
