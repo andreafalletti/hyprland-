@@ -1,0 +1,14 @@
+# Uncommon tips & tricks
+
+## Switchable keyboard layouts
+
+An example of a switchable keyboard layout between US and RU, where you switch between them with SUPER+A (SUPER+Ф)
+
+```
+bind=SUPER,A,exec,hyprctl keyword input:kb_layout ru
+bind=SUPER,Cyrillic_ef,exec,hyprctl keyword input:kb_layout us
+```
+
+You can apply this to any number of languages, mix'n'match, etc.
+
+Please note that if a keyboard layout has a different alphabet, mappings for "a" "b" "c" will be replaced with mappings from that language. (meaning, e.g. `SUPER+D` will not work on a `ru` layout, because the russian layout does not have a `D`.)
