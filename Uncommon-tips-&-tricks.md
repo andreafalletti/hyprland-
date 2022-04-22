@@ -12,3 +12,5 @@ bind=SUPER,Cyrillic_ef,exec,hyprctl keyword input:kb_layout us
 You can apply this to any number of languages, mix'n'match, etc.
 
 Please note that if a keyboard layout has a different alphabet, mappings for "a" "b" "c" will be replaced with mappings from that language. (meaning, e.g. `SUPER+D` will not work on a `ru` layout, because the russian layout does not have a `D`.)
+
+If you are unsure about the key names of your chosen alphabet, refer to the [xkbcommon keysym header](https://github.com/xkbcommon/libxkbcommon/blob/master/include/xkbcommon/xkbcommon-keysyms.h).
