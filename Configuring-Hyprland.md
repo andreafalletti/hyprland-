@@ -234,8 +234,8 @@ Rules:
 ```
 float - floats a window
 tile - tiles a window
-move <x> <y> - moves a floating window (x,y -> int)
-size <x> <y> - resizes a floating window (x,y -> int)
+move <x> <y> - moves a floating window (x,y -> int or %, e.g. `20%` or `100`)
+size <x> <y> - resizes a floating window (x,y -> int or %, e.g. `20%` or `100`)
 pseudo - pseudotiles a window
 monitor <id> - sets the monitor on which a window should open
 workspace <workspace> - sets the workspace on which a window should open (for workspace syntax, see binds->workspaces)
