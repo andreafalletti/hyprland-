@@ -7,6 +7,13 @@ Use a keybind (or execute) `grim -g $(slurp)`, select a region. A screenshot wil
 ### How do I change my wallpaper?
 Install `swaybg`. See its usage with `swaybg --help`
 
+### How heavy is this?
+There are two things that impact Hyprland's amount of GPU taxing right now:
+minor - animations
+major - full damage tracking being wonky
+
+Once full damage tracking is fixed, yes, it will be heavier than e.g. Sway, because we have animations, blur, fancy effects, et cetera, but it shouldn't be that much worse than say, guhnome.
+
 ### My monitor no worky!
 Try changing the mode in your config. If your preferred one doesn't work, try a lower one.
 A good way to list all modes is to get `wlr-randr` and do a `wlr-randr --dryrun`
