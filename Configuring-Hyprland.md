@@ -97,9 +97,15 @@ Don't set blur_passes over 3, unless you want to cook some food on your GPU. (lo
 
 `borders=int` - (0/1) enable border animations
 
-`speed=float` - Speed of the animations, more = slower.
+`fadein=int` - (0/1) enable fadein/out
 
-`xxx_speed=float` - replace xxx with a component name (windows/borders) and it will apply a speed to that component. 0 means use the global value. If not set, will use the global value. (global is `speed=float`)
+`speed=float` - Speed of the animations, in 100s of ms (e.g. `7` -> 700ms)
+
+`curve=str` - name of the curve to use, `default` is the fallback and always provided. (see the curves section for how to define a custom curve)
+
+`xxx_speed=float` - replace xxx with a component name (windows/borders/fadein/etc) and it will apply a speed to that component. 0 means use the global value. If not set, will use the global value. (global is `speed=float`)
+
+`xxx_curve=str` - replace xxx with a component name (windows/borders/fadein/etc) to choose a curve for that animation.
 
 ## Input
 
@@ -220,6 +226,14 @@ you can execute a shell script on startup of the WM or on each time it's reloade
 `exec-once=command` will execute only on launch
 
 `exec=command` will execute on each reload
+
+## Curves
+Defining your own Bezier curve can be done with the `bezier` keyword:
+
+```
+bezier=NAME,X0,Y0,X1,Y1
+```
+where `NAME` is the name, and the rest are two points for the Cubic Bezier. A good website to design your bezier can be found [here, on cssportal.com](https://www.cssportal.com/css-cubic-bezier-generator/).
 
 ## Window Rules
 You can set window rules for various actions. These are applied on window open!
