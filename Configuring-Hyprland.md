@@ -79,7 +79,7 @@ Recommended: `monitor`.
 
 `blur=int` - (0/1) enable dual kawase window background blur
 
-`blur_size=int` - Minimum 3, blur size (intensity)
+`blur_size=int` - Minimum 1, blur size (intensity)
 
 `blur_passes=int` - Minimim 2, more passes = more resource intensive.
     
