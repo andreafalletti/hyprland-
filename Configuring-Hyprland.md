@@ -77,17 +77,17 @@ Recommended: `monitor`.
 
 `inactive_opacity=float` - self-explanatory, 0 - 1
 
-`blur=int` - (0/1) enable window background blur
+`blur=int` - (0/1) enable dual kawase window background blur
 
-`blur_size=int` - Minimum 2, blur size (intensity)
+`blur_size=int` - Minimum 3, blur size (intensity)
 
-`blur_passes=int` - Minimim 1, more passes = more resource intensive.
+`blur_passes=int` - Minimim 2, more passes = more resource intensive.
     
-Your blur "amount" is blur_size * blur_passes, but high blur_size (over around 30-ish) will produce artifacts.
+Your blur "amount" is blur_size * blur_passes, but high blur_size (over around 5-ish) will produce artifacts.
     
 If you want heavy blur, you need to up the blur_passes.
 
-Don't set blur_passes over 3, unless you want to cook some food on your GPU. (lol)
+The more passes, the more you can up the blur_size without noticing artifacts.
 
 ## Animations
 
