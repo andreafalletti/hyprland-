@@ -101,7 +101,7 @@ Don't set blur_passes over 3, unless you want to cook some food on your GPU. (lo
 
 `speed=float` - Speed of the animations, in 100s of ms (e.g. `7` -> 700ms)
 
-`curve=str` - name of the curve to use, `default` is the fallback and always provided. (see the curves section for how to define a custom curve)
+`curve=str` - name of the curve to use, `default` is the fallback and always provided. (see the [curves section](https://github.com/vaxerski/Hyprland/wiki/Configuring-Hyprland#curves) for how to define a custom curve)
 
 `xxx_speed=float` - replace xxx with a component name (windows/borders/fadein/etc) and it will apply a speed to that component. 0 means use the global value. If not set, will use the global value. (global is `speed=float`)
 
