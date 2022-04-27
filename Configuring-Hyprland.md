@@ -145,7 +145,11 @@ To disable a monitor, use
 monitor=name,disable
 ```
 
-_Warning:_ Monitor rules applied live can occasionally crash the compositor! (live = when the compositor is running, you change the monitor rule and save to reload)
+If your workflow requires custom reserved area, you can add it with
+```
+monitor=name,addreserved,TOP,BOTTOM,LEFT,RIGHT
+```
+Where `TOP` `BOTTOM` `LEFT` `RIGHT` are integers in pixels of the reserved area to add. This does stack on top of the calculated one, (e.g. bars) but you may only use one of these rules per monitor in the config.
 
 ```
 workspace=name,number
