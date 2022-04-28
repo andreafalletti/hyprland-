@@ -140,6 +140,8 @@ monitor=DP-1,1920x1080@144,0x0,1
 ```
 will tell Hyprland to make the monitor on DP-1 a 1920x1080 display, at 144Hz, 0x0 off from the beginning and a scale of 1.
 
+Please use the offset for its intended purpose before asking stupid questions about "fixing" monitors being mirrored.
+
 To disable a monitor, use
 ```
 monitor=name,disable
