@@ -47,3 +47,12 @@ clients - lists all windows with their properties
 activewindow - gets the active window name
 layers - WARNING: Crashes Hyprland often! lists all the layers
 ```
+
+# Batch
+You can also use `--batch` to specify a batch of commands to execute
+
+e.g.
+```
+hyprctl --batch "keyword general:border_size 2 ; keyword general:gaps_out 20"
+```
+`;` separates the commands
