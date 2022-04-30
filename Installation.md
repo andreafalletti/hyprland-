@@ -7,6 +7,8 @@ If, in the future, anyone will want to contribute to get NVIDIA to work well, I'
 
 If you want to try nevertheless, try to use the workarounds that work for Sway to run on proprietary NVIDIA. It might work.
 
+Yes, an invisible cursor is an NVIDIA issue that can be fixed with the mentioned above workarounds.
+
 # Installation
 
 Installing Hyprland is very easy.
