@@ -22,13 +22,8 @@ yay -S hyprland-git
 ```
 
 ## Manual
-`xcb` stuff, check with your local package provider.
 
-`wlroots-git` - always have the latest wlroots.
-
-`wayland` - of course.
-
-*Arch*:
+*Arch dependencies*:
 
 `yay -S gdb ninja gcc cmake libxcb xcb-proto xcb-util xcb-util-keysyms libxfixes libx11 libxcomposite xorg-xinput libxrender pixman wayland-protocols wlroots-git cairo pango`
 
