@@ -29,6 +29,8 @@ yay -S hyprland-git
 
 (If any are missing hmu)
 
+Please note Hyprland requires `wlroots-git`. Not `wlroots-0.15.1`, not `wlroots-0.16`, `wlroots-git`.
+
 then...
 
 ```
