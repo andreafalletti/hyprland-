@@ -11,7 +11,15 @@ Yes, an invisible cursor is an NVIDIA issue that can be fixed with the mentioned
 
 # Installation
 
-Installing Hyprland is very easy.
+Installing Hyprland is very easy. Either you install it from your local package provider (if they provide pkgs for Hyprland) or you build it yourself.
+
+## Packages
+**WARNING:** I do not maintain any packages. If they are broken, try building from source first.
+
+_Arch (AUR)_
+```
+yay -S hyprland-git
+```
 
 ## Required packages
 `xcb` stuff, check with your local package provider.
