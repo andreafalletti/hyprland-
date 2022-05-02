@@ -81,7 +81,7 @@ Recommended: `monitor`.
 
 `blur_size=int` - Minimum 1, blur size (intensity)
 
-`blur_passes=int` - Minimim 2, more passes = more resource intensive.
+`blur_passes=int` - Minimim 1, more passes = more resource intensive.
     
 Your blur "amount" is blur_size * blur_passes, but high blur_size (over around 5-ish) will produce artifacts.
     
