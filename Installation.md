@@ -21,7 +21,7 @@ _Arch (AUR)_
 yay -S hyprland-git
 ```
 
-## Required packages
+## Manual
 `xcb` stuff, check with your local package provider.
 
 `wlroots-git` - always have the latest wlroots.
