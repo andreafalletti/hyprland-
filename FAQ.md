@@ -83,3 +83,6 @@ Use a tool like for example `lxappearance`. Change your cursor and _restart_ Hyp
 Make sure to also edit `~/.config/gtk-4.0/settings.ini` and `~/.gtkrc-2.0` if _not_ using a tool (like `lxappearance`).
 
 Then, do a `gsettings set $gnome-schema cursor-theme 'theme-name'` and you're all good!
+
+### My <program name> is freezing!
+Make sure you have a notification daemon running, for example `dunst`. Autostart it with the `exec-once` keyword.
