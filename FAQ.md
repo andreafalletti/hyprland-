@@ -79,3 +79,7 @@ Go to your GTK theme's folder, then to `gtk-4.0`. In it, you'll find at least on
 
 ### How do I change me mouse cursor?
 Use a tool like for example `lxappearance`. Change your cursor and _restart_ Hyprland. If that doesn't work, change the config files manually according to the [XDG specification (Arch wiki link)](https://wiki.archlinux.org/title/Cursor_themes#Configuration).
+
+Make sure to also edit `~/.config/gtk-4.0/settings.ini`, `~/.gtkrc-2.0` if _not_ using a tool (like `lxappearance`).
+
+Then, do a `gsettings set $gnome-schema cursor-theme 'theme-name'` and you're all good!
