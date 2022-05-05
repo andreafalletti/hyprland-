@@ -1,0 +1,208 @@
+# Advanced config
+
+this page documents all of the more advanced config options. Binds, curves, execs, etc.
+
+# Monitors
+```
+monitor=name,res,offset,scale
+```
+
+for example:
+```
+monitor=DP-1,1920x1080@144,0x0,1
+```
+will tell Hyprland to make the monitor on DP-1 a 1920x1080 display, at 144Hz, 0x0 off from the beginning and a scale of 1.
+
+Please use the offset for its intended purpose before asking stupid questions about "fixing" monitors being mirrored.
+
+To disable a monitor, use
+```
+monitor=name,disable
+```
+
+If your workflow requires custom reserved area, you can add it with
+```
+monitor=name,addreserved,TOP,BOTTOM,LEFT,RIGHT
+```
+Where `TOP` `BOTTOM` `LEFT` `RIGHT` are integers in pixels of the reserved area to add. This does stack on top of the calculated one, (e.g. bars) but you may only use one of these rules per monitor in the config.
+
+```
+workspace=name,number
+```
+for example:
+```
+workspace=DP-1,1
+```
+will tell Hyprland to make the default workspace on DP-1 a number 1.
+
+# Binds
+```
+bind=MOD,key,dispatcher,params
+```
+for example,
+```
+bind=SUPERSHIFT,Q,exec,firefox
+```
+will bind opening firefox to SUPER+SHIFT+Q
+
+Please note that `SHIFT` modifies the key names, so for example
+```
+bind=SHIFT,1,anything,
+```
+will not work, as 1 is overwritten by !
+
+Common overwrites:
+```
+1 -> exclam
+2 -> at
+3 -> numbersign
+4 -> dollar
+5 -> percent
+6 -> asciicircum
+7 -> ampersand
+8 -> asterisk
+9 -> parenleft
+0 -> parenright
+- -> underscore
+= -> plus
+```
+
+See the [xkbcommon-keysyms.h header](https://github.com/xkbcommon/libxkbcommon/blob/master/include/xkbcommon/xkbcommon-keysyms.h) for all the keysyms. The name you should use is the one after XKB_KEY_, written in all lowercase.
+
+You can also unbind with `unbind`, e.g.:
+```
+unbind=SUPER,O
+```
+
+May be useful for dynamic keybindings with `hyprctl`.
+
+## General dispatcher list:
+
+### exec
+executes a shell command
+
+**params**: command
+
+### killactive
+kills the focused window
+
+**params**: none
+
+### workspace 
+changes the workspace 
+
+params: workspace (see below)
+
+### movetoworkspace
+moves the focused window to workspace X
+
+**params**: workspace (see below)
+
+### togglefloating
+toggles the focused window floating
+
+**params**: none
+
+### fullscreen
+toggles the focused window's fullscreen state
+
+**params**: none
+
+### pseudo
+toggles the focused window to be pseudotiled
+
+**params**: none
+
+### movefocus
+moves the focus in a specified direction
+
+**params**: l/r/u/d (left right up down)
+
+### movewindow
+moves the active window in a specified direction OR monitor
+
+**params**: l/r/u/d (left right up down) OR mon: and ONE OF: l/r/u/d OR name OR id (e.g.: mon:DP-1 or mon:l)
+
+### focusmonitor
+focuses a monitor
+
+**params**: ONE OF: l/r/u/d OR name OR id
+
+### splitratio
+changes the split ratio
+
+**params**: relative split change, +n/-n, e.g. +0.1 or -0.02, clamps to 0.1 - 1.9
+
+
+## Workspaces
+workspace args are unified. You have three choices:
+
+ID: e.g. `1`, `2`, or `3`
+
+Relative ID: e.g. `+1`, `-3` or `+100`
+
+Name: e.g. `name:Web`, `name:Anime` or `name:Better anime`
+
+# Executing
+you can execute a shell script on startup of the WM or on each time it's reloaded
+
+`exec-once=command` will execute only on launch
+
+`exec=command` will execute on each reload
+
+# Curves
+Defining your own Bezier curve can be done with the `bezier` keyword:
+
+```
+bezier=NAME,X0,Y0,X1,Y1
+```
+where `NAME` is the name, and the rest are two points for the Cubic Bezier. A good website to design your bezier can be found [here, on cssportal.com](https://www.cssportal.com/css-cubic-bezier-generator/).
+
+Example curve:
+```
+bezier=overshot,0.05,0.9,0.1,1.1
+```
+
+# Window Rules
+You can set window rules for various actions. These are applied on window open!
+
+```
+windowrule=RULE,WINDOW
+```
+
+`RULE` is a rule (and a param if applicable) and `WINDOW` is a RegEx to match against
+
+## Rules
+
+### float
+floats a window
+
+### tile
+tiles a window
+
+### move [x] [y]
+moves a floating window (x,y -> int or %, e.g. 20% or 100)
+
+### size [x] [y]
+resizes a floating window (x,y -> int or %, e.g. 20% or 100)
+
+### pseudo
+pseudotiles a window
+
+### monitor [id]
+sets the monitor on which a window should open
+
+### workspace [w]
+sets the workspace on which a window should open (for workspace syntax, see binds->workspaces)
+
+### opacity [a]
+additional opacity multiplier (a -> float, e.g. 0.25)
+
+_Notice_: Opacity is always a PRODUCT of all opacities. E.g. active_opacity to 0.5 and windowrule opacity to 0.5 will result in a total opacity 0.25. You are allowed to set opacities over 1, but any opacity product over 1 will cause graphical glitches. E.g. 0.5 * 2 = 1, and it will be fine, 0.5 * 4 will cause graphical glitches.
+
+examples:
+```
+windowrule=float,kitty
+
+windowrule=monitor 0,Firefox
+```
