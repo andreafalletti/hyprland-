@@ -28,104 +28,11 @@ COMMAND = VALUE
 ```
 is valid.
 
-# Variable types
-Variable types are:
+# Basic configuring
 
-`int` - integer
+To configure the "options" of Hyprland, animations, styling, etc. see [Basic Configuring](https://github.com/vaxerski/Hyprland/wiki/Basic-Config).
 
-`float` - floating point number
-
-`col` - color (e.g. 0x22334455 - alpha 0x22, red 0x33, green 0x44, blue 0x55)
-
-`MOD` - a string modmask (e.g. SUPER or SUPERSHIFT or SUPERSHIFTALTCTLRCAPSMOD2MOD3MOD5 or empty for none)
-
-Mod list:
-```
-SHIFT CAPS CTRL/CONTROL ALT MOD2 MOD3 SUPER/WIN/LOGO/MOD4 MOD5
-```
-
-# Sections
-
-## General
-`max_fps=int` - Maximum refreshes per second. (of config, animations, hyprctl)
-
-`sensitivity=float` - mouse sensitivity
-
-`apply_sens_to_raw=int` - (0/1) if on, will also apply the sensitivity to raw mouse output (e.g. sensitivity in games)
-
-`main_mod=MOD` - the mod used to move/resize floating windows (hold main_mod and mouse1/mouse2)
-
-`border_size=int` - border thickness
-
-`gaps_in=int` - gaps between windows
-
-`gaps_out=int` - gaps between window-monitor edge
-
-`col.active_border=col` - self-explanatory
-
-`col.inactive_border=col` - self-explanatory
-
-`damage_tracking=str` - Makes the compositor redraw only the needed bits of the display. Saves on resources by not redrawing when not needed. Available modes: `none, monitor, full`. WARNING: Damage tracking is still experimental, expect bugs, especially with `full`!
-
-Recommended: `monitor`.
-
-## Decoration
-
-`rounding=int` - rounded corners radius (in pixels)
-
-`active_opacity=float` - self-explanatory, 0 - 1
-
-`inactive_opacity=float` - self-explanatory, 0 - 1
-
-`blur=int` - (0/1) enable dual kawase window background blur
-
-`blur_size=int` - Minimum 1, blur size (intensity)
-
-`blur_passes=int` - Minimim 1, more passes = more resource intensive.
-    
-Your blur "amount" is blur_size * blur_passes, but high blur_size (over around 5-ish) will produce artifacts.
-    
-If you want heavy blur, you need to up the blur_passes.
-
-The more passes, the more you can up the blur_size without noticing artifacts.
-
-## Animations
-
-`enabled=int` - (0/1) enable animations
-
-`windows=int` - (0/1) enable window animations
-
-`borders=int` - (0/1) enable border animations
-
-`fadein=int` - (0/1) enable fadein/out
-
-`speed=float` - Speed of the animations, in 100s of ms (e.g. `7` -> 700ms)
-
-`curve=str` - name of the curve to use, `default` is the fallback and always provided. (see the [curves section](https://github.com/vaxerski/Hyprland/wiki/Configuring-Hyprland#curves) for how to define a custom curve)
-
-`xxx_speed=float` - replace xxx with a component name (windows/borders/fadein/etc) and it will apply a speed to that component. 0 means use the global value. If not set, will use the global value. (global is `speed=float`)
-
-`xxx_curve=str` - replace xxx with a component name (windows/borders/fadein/etc) to choose a curve for that animation.
-
-## Input
-
-`kb_layout=str` `kb_variant=str` `kb_model=str` `kb_options=str` `kb_rules=str` - adequate keyboard settings
-
-`follow_mouse=int` - (0/1) enable mouse following (focus on enter new window) - Quirk: will always focus on mouse enter if you're entering a floating window from a tiled one, or vice versa.
-
-`repeat_rate=int` - in ms, the repeat rate for held keys
-
-`repeat_delay=int` - in ms, the repeat delay (grace period) before the spam
-
-### Touchpad
-_Subcategory input:touchpad:_
-
-`disable_while_typing=int` - (0/1) disable touchpad while typing
-
-## More 
-There are more config options described in other pages, which are layout- or circumstance-specific
-
-# Special keywords
+# Advanced configuring
 
 Some keywords (binds, curves, execs, monitors, etc.) arent variables but define special behaviour.
 
