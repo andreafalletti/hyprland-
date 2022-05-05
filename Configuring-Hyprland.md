@@ -213,7 +213,7 @@ togglefloating - toggles the focused window floating - params: none
 fullscreen - toggles the focused window's fullscreen state - params: none
 pseudo - toggles the focused window to be pseudotiled - params: none
 movefocus - moves the focus in a specified direction - params: l/r/u/d (left right up down)
-movewindow - moves the active window in a specified direction - params: l/r/u/d (left right up down)
+movewindow - moves the active window in a specified direction OR monitor - params: l/r/u/d (left right up down) OR mon: and ONE OF: l/r/u/d OR name OR id (e.g.: mon:DP-1 or mon:l)
 focusmonitor - focuses a monitor - params: ONE OF: l/r/u/d OR name OR id
 splitratio - changes the split ratio - params: relative split change, +n/-n, e.g. +0.1 or -0.02, clamps to 0.1 - 1.9
 ```
