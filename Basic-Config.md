@@ -93,6 +93,8 @@ The more passes, the more you can up the blur_size without noticing artifacts.
 
 `repeat_delay=int` - in ms, the repeat delay (grace period) before the spam
 
+`natural_scroll=int` - (0/1) enable natural scroll
+
 ### Touchpad
 _Subcategory input:touchpad:_
 
