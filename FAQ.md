@@ -95,7 +95,7 @@ Copy the source, edit `include/factory.hpp` and add
 ```
 on top. If you want to also have sway modules (or any other defined in the file) add the appropriate defines.
 
-All `#ifdef HAVE_` can be enabled by adding `#define HAVE_<thing>` on top.
+All `#ifdef HAVE_<thing>` can be enabled by adding `#define HAVE_<thing>` on top.
 
 Then compile according to the instructions on the Waybar github repo.
 
