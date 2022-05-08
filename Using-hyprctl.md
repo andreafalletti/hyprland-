@@ -37,6 +37,10 @@ hyprctl keyword general:border_size 10
 
 Returns: `ok` on success, an error message on fail.
 
+### reload
+
+issue a `reload` to force reload the config.
+
 ## Info
 
 ```
