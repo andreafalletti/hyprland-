@@ -42,6 +42,8 @@ category name: `dwindle`
 
 `col.group_border_active=col` - active group border color
 
+`force_split=int` - 0 -> split follows mouse, 1 -> always split to the left (new = left or top) 2 -> always split to the right (new = right or bottom)
+
 ## Bind Dispatchers
 `togglegroup` - toggles the current window and its siblings (recursively) into a group - params: none
 
