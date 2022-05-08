@@ -86,3 +86,17 @@ Then, do a `gsettings set $gnome-schema cursor-theme 'theme-name'` and you're al
 
 ### My <program name> is freezing!
 Make sure you have a notification daemon running, for example `dunst`. Autostart it with the `exec-once` keyword.
+
+### I want to use Waybar, but the workspaces don't work!
+Copy the source, edit `include/factory.hpp` and add
+```
+#define HAVE_WLR
+#define USE_EXPERIMENTAL
+```
+on top. If you want to also have sway modules (or any other defined in the file) add the appropriate defines.
+
+All `#ifdef HAVE_` can be enabled by adding `#define HAVE_<thing>` on top.
+
+Then compile according to the instructions on the Waybar github repo.
+
+Please do not blame me for this, it's the Waybar dev that doesn't include experimental in the base binary for whatever reason.
