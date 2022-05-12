@@ -73,6 +73,8 @@ The more passes, the more you can up the blur_size without noticing artifacts.
 
 `borders=int` - (0/1) enable border animations
 
+`workspaces=int` - (0/1) enable workspace animations
+
 `fadein=int` - (0/1) enable fadein/out
 
 `speed=float` - Speed of the animations, in 100s of ms (e.g. `7` -> 700ms)
