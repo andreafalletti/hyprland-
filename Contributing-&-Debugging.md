@@ -25,6 +25,9 @@ With that, you can build in debug, go to the debugging tab and hit `(gdb) Launch
 
 attach and profile in your preferred way.
 
+## Notice
+For all ways, make sure to `sudo make clear` to clear any root-owned files. Also, before the first build (or after some updates, possibly) `make config`. (If you get any `missing header file "...-protocol.h"`, you need to `make config`.)
+
 # Running
 when running Hyprland in Debug mode, the config is `~/.config/hypr/hyprlandd.conf` and the logs can be found at `/tmp/hypr/hyprlandd.conf`.
 
