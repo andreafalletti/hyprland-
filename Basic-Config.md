@@ -69,21 +69,7 @@ The more passes, the more you can up the blur_size without noticing artifacts.
 
 `enabled=int` - (0/1) enable animations
 
-`windows=int` - (0/1) enable window animations
-
-`borders=int` - (0/1) enable border animations
-
-`workspaces=int` - (0/1) enable workspace animations
-
-`fadein=int` - (0/1) enable fadein/out
-
-`speed=float` - Speed of the animations, in 100s of ms (e.g. `7` -> 700ms)
-
-`curve=str` - name of the curve to use, `default` is the fallback and always provided. (see the [curves section](https://github.com/vaxerski/Hyprland/wiki/Configuring-Hyprland#curves) for how to define a custom curve)
-
-`xxx_speed=float` - replace xxx with a component name (windows/borders/fadein/etc) and it will apply a speed to that component. 0 means use the global value. If not set, will use the global value. (global is `speed=float`)
-
-`xxx_curve=str` - replace xxx with a component name (windows/borders/fadein/etc) to choose a curve for that animation.
+_More about animations is in the Advanced Configuring page._
 
 ## Input
 
