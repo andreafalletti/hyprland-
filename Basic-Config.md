@@ -69,7 +69,7 @@ The more passes, the more you can up the blur_size without noticing artifacts.
 
 `enabled=int` - (0/1) enable animations
 
-_More about animations is in the Advanced Configuring page._
+_More about animations is on the Advanced Configuring page._
 
 ## Input
 
