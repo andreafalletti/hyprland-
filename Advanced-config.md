@@ -211,11 +211,12 @@ windowrule=monitor 0,Firefox
 animations are declared with the `animation` keyword. They can also be declared using a legacy way, but we will not cover that here.
 
 ```
-animation=NAME,ONOFF,SPEED,CURVE
+animation=NAME,ONOFF,SPEED,CURVE,STYLE
 ```
 for example:
 ```
 animation=workspaces,1,8,default
+animation=windows,1,10,slide
 ```
 
 `ONOFF` can be either 0 or 1, 0 to disable, 1 to enable.
@@ -224,9 +225,11 @@ animation=workspaces,1,8,default
 
 `CURVE` is the bezier curve name, see curves above.
 
+`STYLE` (optional) is the animation style
+
 _Animation names:_
 ```
-windows - window movement/resizing
+windows - window movement/resizing - Styles: slide,popin (fallback is popin)
 borders - border color
 fadein - fadein/fadeout on window open/close
 workspaces - workspace change
