@@ -206,3 +206,28 @@ windowrule=float,kitty
 
 windowrule=monitor 0,Firefox
 ```
+
+# Animations
+animations are declared with the `animation` keyword. They can also be declared using a legacy way, but we will not cover that here.
+
+```
+animation=NAME,ONOFF,SPEED,CURVE
+```
+for example:
+```
+animation=workspaces,1,8,default
+```
+
+`ONOFF` can be either 0 or 1, 0 to disable, 1 to enable.
+
+`SPEED` is the amount of ds (1ds = 100ms) the animation will take
+
+`CURVE` is the bezier curve name, see curves above.
+
+_Animation names:_
+```
+windows - window movement/resizing
+borders - border color
+fadein - fadein/fadeout on window open/close
+workspaces - workspace change
+```
