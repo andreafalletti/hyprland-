@@ -216,7 +216,7 @@ animation=NAME,ONOFF,SPEED,CURVE,STYLE
 for example:
 ```
 animation=workspaces,1,8,default
-animation=windows,1,10,slide
+animation=windows,1,10,myepiccurve,slide
 ```
 
 `ONOFF` can be either 0 or 1, 0 to disable, 1 to enable.
