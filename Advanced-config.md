@@ -200,11 +200,20 @@ additional opacity multiplier (a -> float, e.g. 0.25)
 
 _Notice_: Opacity is always a PRODUCT of all opacities. E.g. active_opacity to 0.5 and windowrule opacity to 0.5 will result in a total opacity 0.25. You are allowed to set opacities over 1, but any opacity product over 1 will cause graphical glitches. E.g. 0.5 * 2 = 1, and it will be fine, 0.5 * 4 will cause graphical glitches.
 
-examples:
+### animation [style] [opt]
+forces an animation onto a window, with a selected opt.
+
+e.g.:
+```
+windowrule=animation slide left,kitty
+windowrule=animation popin,dolphin
+```
+
+## More examples
 ```
 windowrule=float,kitty
-
 windowrule=monitor 0,Firefox
+windowrule=move 200 200,Discord
 ```
 
 # Animations
