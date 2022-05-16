@@ -263,6 +263,7 @@ col.active_border=$MyColor
 You ARE allowed to do this:
 ```
 col.active_border=ff$MyRedValue1111
+```
 
 # Sourcing (multi-file)
 Use the `source` keyword to source another file.
