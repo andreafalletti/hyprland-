@@ -4,7 +4,7 @@ Dwindle is a BSPWM-like layout, where every window on a workspace is a member of
 
 # Quirks
 
-Dwindle splits are NOT PERMANENT. The split is determined dynamically with the W/H ratio of the parent node. If W > H, it's side-by-side. If H > W, it's top-and-bottom.
+Dwindle splits are NOT PERMANENT. The split is determined dynamically with the W/H ratio of the parent node. If W > H, it's side-by-side. If H > W, it's top-and-bottom. You can make them permanent by enabling `preserve_split`.
 
 Dwindle allows for mouse moving and resizing using the `main_mod` and the mouse (left for move, right for resize)
 
@@ -43,6 +43,8 @@ category name: `dwindle`
 `col.group_border_active=col` - active group border color
 
 `force_split=int` - 0 -> split follows mouse, 1 -> always split to the left (new = left or top) 2 -> always split to the right (new = right or bottom)
+
+`preserve_split=int` - (0/1) if enabled, the split (side/top) will not change regardless of what happens to the container.
 
 ## Bind Dispatchers
 `togglegroup` - toggles the current window and its siblings (recursively) into a group - params: none
