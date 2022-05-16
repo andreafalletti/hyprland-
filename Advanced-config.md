@@ -263,3 +263,14 @@ col.active_border=$MyColor
 You ARE allowed to do this:
 ```
 col.active_border=ff$MyRedValue1111
+
+# Sourcing (multi-file)
+Use the `source` keyword to source another file.
+
+For example, in your `hyprland.conf` you can:
+```
+source=~/.config/hypr/myColors.conf
+```
+And Hyprland will enter that file and parse it like a Hyprland config.
+
+Please note it's LINEAR. Meaning lines above the `source=` will be parsed first, then lines inside `~/.config/hypr/myColors.conf`, then lines below.
