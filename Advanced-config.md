@@ -259,3 +259,7 @@ then, to use them, simply use them. For example:
 ```
 col.active_border=$MyColor
 ```
+
+You ARE allowed to do this:
+```
+col.active_border=ff$MyRedValue1111
