@@ -241,7 +241,7 @@ _Animation names:_
 windows - window movement/resizing - Styles: slide,popin (fallback is popin)
 borders - border color
 fadein - fadein/fadeout on window open/close
-workspaces - workspace change
+workspaces - workspace change - Styles: slide,fadein (fadein has currently an issue with borders)
 ```
 
 # Defining variables
