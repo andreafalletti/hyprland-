@@ -243,3 +243,19 @@ borders - border color
 fadein - fadein/fadeout on window open/close
 workspaces - workspace change
 ```
+
+# Defining variables
+You can define your own custom variables like this:
+```
+$VAR = value
+```
+
+for example:
+```
+$MyFavoriteGame = Among Us
+```
+
+then, to use them, simply use them. For example:
+```
+col.active_border=$MyColor
+```
