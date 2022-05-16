@@ -50,3 +50,5 @@ category name: `dwindle`
 `togglegroup` - toggles the current window and its siblings (recursively) into a group - params: none
 
 `changegroupactive` - switches to the next window in a group. - params: none
+
+`togglesplit` - toggles the split (top/side) of the current window - params: none
