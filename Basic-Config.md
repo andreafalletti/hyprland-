@@ -53,6 +53,8 @@ Recommended: `monitor`.
 
 `inactive_opacity=float` - self-explanatory, 0 - 1
 
+`fullscreen_opacity=float` - self-explanatory, 0 - 1
+
 `blur=int` - (0/1) enable dual kawase window background blur
 
 `blur_size=int` - Minimum 1, blur size (intensity)
