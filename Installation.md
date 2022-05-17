@@ -26,7 +26,55 @@ yay -S hyprland-git
 ## Nix
 
 ### With Flakes
+**Using the overlay**
+
+Here is a template NixOS configuration with Hyprland:
+```nix
+{
+  description = "My flake using hyprland";
+
+  inputs = {
+    nixpkgs-flake.url = "nixpkgs/nixos-unstable";
+    hyprland-flake.url = "github:vaxerski/Hyprland";
+  };
+
+  outputs = inputs @ { self, nixpkgs-flake, hyprland-flake, ... }:
+  let
+    system = "x86_64-linux"; # "aarch64-linux" should also work
+    pkgs = import nixpkgs-flake {
+      inherit system;
+      overlays = [ hyprland-flake.overlay ];
+    };
+  in {
+    nixosConfigurations.the-hostname-that-you-want = nixpkgs-flake.lib.nixosSystem {
+      inherit system;
+      modules = [
+        { nixpkgs = { inherit pkgs; }; }
+        ({ config, pkgs, lib, ... }: { # the following config can be instead in a seperate nix file
+          environment = {
+            systemPackages = [ pkgs.hyprland ];
+          };
+
+          # additional useful configuration
+          security.pam.services.swaylock = {};
+          hardware.opengl.enable = lib.mkDefault true;
+          fonts.enableDefaultFonts = lib.mkDefault true;
+          programs.dconf.enable = lib.mkDefault true;
+          # To make an Hyprland session available if a display manager like SDDM is enabled:
+          services.xserver.displayManager.sessionPackages = [ pkgs.hyprland ];
+          programs.xwayland.enable = lib.mkDefault true;
+          # For screen sharing (this option only has an effect with xdg.portal.enable):
+          xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-wlr ];
+          xdg.portal.enable = lib.mkDefault true;
+        })
+        #./configuration.nix # here is how to import a nix file
+      ];
+    };
+  };
+}
 ```
+**Using the package**
+```nix
 { inputs, ... }:
 let
   hyprland = inputs.hyprland.defaultPackage.x86_64-linux;
@@ -38,7 +86,31 @@ in {
 }
 ```
 ### Without Flakes
+
+**Using the overlay**
+```nix
+{ config, pkgs, lib, ... }: {
+  nixpkgs.overlays = [ (builtins.getFlake "github:vaxerski/Hyprland").overlay ];
+  environment = {
+    systemPackages = [ pkgs.hyprland ];
+  };
+  
+  # additional useful configuration
+  security.pam.services.swaylock = {};
+  hardware.opengl.enable = lib.mkDefault true;
+  fonts.enableDefaultFonts = lib.mkDefault true;
+  programs.dconf.enable = lib.mkDefault true;
+  # To make an Hyprland session available if a display manager like SDDM is enabled:
+  services.xserver.displayManager.sessionPackages = [ pkgs.hyprland ];
+  programs.xwayland.enable = lib.mkDefault true;
+  # For screen sharing (this option only has an effect with xdg.portal.enable):
+  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-wlr ];
+  xdg.portal.enable = lib.mkDefault true;
+}
 ```
+
+Using the package
+```nix
 { ... }:
 let
   hyprland = (builtins.getFlake "github:vaxerski/Hyprland").defaultPackage.x86_64-linux;
