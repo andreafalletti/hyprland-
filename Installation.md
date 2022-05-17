@@ -23,6 +23,32 @@ _Arch (AUR)_
 yay -S hyprland-git
 ```
 
+## Nix
+
+### With Flakes
+```
+{ inputs, ... }:
+let
+  hyprland = inputs.hyprland.defaultPackage.x86_64-linux;
+in {
+  home.packages = [
+    hyprland
+    # hyprland.override { enableXWayland = false; }) Use this if you don't want xwayland
+  ];
+}
+```
+### Without Flakes
+```
+{ ... }:
+let
+  hyprland = (builtins.getFlake "github:vaxerski/Hyprland").defaultPackage.x86_64-linux;
+in {
+  home.packages = [
+    hyprland
+    # hyprland.override { enableXWayland = false; }) Use this if you don't want xwayland
+  ];
+}
+```
 ## Manual
 
 *Arch dependencies*:
