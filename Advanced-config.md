@@ -15,6 +15,8 @@ will tell Hyprland to make the monitor on DP-1 a 1920x1080 display, at 144Hz, 0x
 
 Please use the offset for its intended purpose before asking stupid questions about "fixing" monitors being mirrored.
 
+Please remember the offset is calculated with the scaled resolution, meaning if you want your 4K monitor with scale 2 to the left of your 1080p one, you'd use the offset `1920x0` for the second screen.
+
 To disable a monitor, use
 ```
 monitor=name,disable
