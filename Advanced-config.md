@@ -98,6 +98,11 @@ moves the focused window to workspace X
 
 **params**: workspace (see below)
 
+### movetoworkspacesilent
+moves the focused window to workspace X, without changing to that workspace (silent)
+
+**params**: workspace (see below)
+
 ### togglefloating
 toggles the focused window floating
 
