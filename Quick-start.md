@@ -27,7 +27,7 @@ hyprctl keyword monitor NAME,RES@HZ,OFFSET,SCALE
 
 `OFFSET` is the position of the monitor, e.g. `0x0`
 
-`SCALE` is the display scale, e.g. `1` _Warning: scale is broken right now in hyprland, leave at 1_
+`SCALE` is the display scale, e.g. `1`
 
 example command:
 ```
