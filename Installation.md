@@ -211,5 +211,6 @@ You can launch Hyprland by either going into a TTY and executing `Hyprland`, or 
 **!IMPORTANT**: Do **not** launch Hyprland with `root` permissions (don't `sudo`)
 
 Login managers are not officially supported, but here's a short compatibility list:
-- SDDM > Works flawlessly
-- GDM > Works with the caveat of crashing Hyprland on the first launch
+- SDDM → Works flawlessly
+- GDM → Works with the caveat of crashing Hyprland on the first launch
+- ly → Afaik, it works without issues.
