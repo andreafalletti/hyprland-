@@ -140,6 +140,11 @@ changes the split ratio
 
 **params**: relative split change, +n/-n, e.g. +0.1 or -0.02, clamps to 0.1 - 1.9
 
+### movecursortocorner
+moves the cursor to the corner of the active window
+
+**params**: direction, 0 - 3, bottom left - 0, bottom right - 1, top right - 2, top left - 3.
+
 
 ## Workspaces
 workspace args are unified. You have three choices:
