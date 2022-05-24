@@ -20,3 +20,9 @@ e.g.: `workspace>>2`
 
 ### workspace
 emitted on workspace change, data is workspace name.
+
+### activemon
+emitted on the active monitor being changed. Data: MONNAME,WORKSPACENAME
+
+### activewindow
+emitted on the active window being changed. Data: WINDOWTITLE
