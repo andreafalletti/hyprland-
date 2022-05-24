@@ -1,44 +1,22 @@
-# IPC
+#IPC
 
-You can easily talk to the Hyprland compositor and request information from it.
+Hyprland exposes 2 UNIX Sockets:
 
-The current implementation uses sockets to open and close a connection.
+# /tmp/hypr/.socket.sock
 
-For reference, see the `hyprctl` utility located in this repo in the `hyprctl/` directory.
+Used for hyprctl-like requests. See the [Hyprctl page](https://github.com/vaxerski/Hyprland/wiki/Using-hyprctl) for commands.
 
+basically, write `command args`.
 
-## Socket info
+# /tmp/hypr/.socket2.sock
 
-The socket is created in `localhost` and the port of the socket will be located in `/tmp/hypr/.socket`
+Used for events. Hyprland will write to each connected client live events like this:
 
-*Example contents of the* `/tmp/hypr/.socket` *file:*
-```
-1337
-```
+`EVENT>>DATA\n` (\n is a linebreak)
 
-To connect, simply connect as you would with a socket to the port.
+e.g.: `workspace>>2`
 
-If you don't know how to open/read/whatever, I recommend this brilliant C/C++ tutorial for sockets: [linuxhowtos.org/C_C++/socket.htm](https://www.linuxhowtos.org/C_C++/socket.htm)
+## Events list:
 
-## Rules of communication
-
-Once Hyprland accepts your connection, it is your job to `write()` a request. After that, `read()` the reply.
-
-### Accepted requests:
-```
-monitors
-clients
-workspaces
-```
-
-Explanations:
-
-`monitors` - Self-explanatory: retrieves all monitors' info
-
-`clients` - Self-explanatory: retrieves all clients' info
-
-`workspaces` - Self-explanatory: retrieves all workspaces' info
-
-`activewindow` - Self-explanatory: retrieves info of the active window
-
-`layers` - Gets the info of all layers on all monitors
+### workspace
+emitted on workspace change, data is workspace name.
