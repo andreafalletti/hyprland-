@@ -19,10 +19,16 @@ e.g.: `workspace>>2`
 ## Events list:
 
 ### workspace
-emitted on workspace change, data is workspace name.
+emitted on workspace change. Is emitted ONLY when a user requests a workspace change, and is not emitted on mouse movements (see `activemon`)
+
+Data: WORKSPACENAME
 
 ### activemon
-emitted on the active monitor being changed. Data: MONNAME,WORKSPACENAME
+emitted on the active monitor being changed.
+
+Data: MONNAME,WORKSPACENAME
 
 ### activewindow
-emitted on the active window being changed. Data: WINDOWTITLE
+emitted on the active window being changed.
+
+Data: WINDOWTITLE
