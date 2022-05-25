@@ -32,3 +32,10 @@ Data: MONNAME,WORKSPACENAME
 emitted on the active window being changed.
 
 Data: WINDOWTITLE
+
+### fullscreen
+emitted when a fullscreen status of a window changes.
+
+Warning: a fullscreen event is not guaranteed to fire on/off once in succession. A window might do for example 3 requests to be fullscreen'd, which would result in 3 fullscreen events.
+
+Data: 0/1 (exit fullscreen / enter fullscreen)
