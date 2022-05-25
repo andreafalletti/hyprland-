@@ -67,6 +67,18 @@ in {
 ```
 ## Manual
 
+### wlroots
+Because we had recently some shenaningans with the AUR package, and so on, here are the instructions for installing wlroots-git manually:
+```sh
+git clone https://gitlab.freedesktop.org/wlroots/wlroots
+cd wlroots
+meson build/ --prefix=/usr
+ninja -C build/
+sudo ninja -C build/ install
+```
+
+### Hyprland
+
 *Arch dependencies*:
 
 `yay -S gdb ninja gcc cmake libxcb xcb-proto xcb-util xcb-util-keysyms libxfixes libx11 libxcomposite xorg-xinput libxrender pixman wayland-protocols wlroots-git cairo pango`
