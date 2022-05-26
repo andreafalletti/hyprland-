@@ -148,6 +148,8 @@ moves the cursor to the corner of the active window
 ### workspaceopt
 toggles a workspace option.
 
+**params**: a workspace option
+
 Workspace options:
 ```
 allfloat -> makes all new windows floating (also floats/unfloats windows on toggle)
