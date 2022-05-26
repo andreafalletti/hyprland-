@@ -8,13 +8,7 @@ Use a keybind (or execute) `grim -g $(slurp)`, select a region. A screenshot wil
 Install `swaybg`. See its usage with `swaybg --help`
 
 ### How heavy is this?
-There are two things that impact Hyprland's amount of GPU taxing right now:
-
-minor - animations
-
-major - full damage tracking being wonky
-
-Once full damage tracking is fixed, yes, it will be heavier than e.g. Sway, because we have animations, blur, fancy effects, et cetera, but it shouldn't be that much worse than say, guhnome.
+Not that much heavier than Xorg. If you want maximum performance, consider turning off the blur and animations.
 
 ### My monitor no worky!
 Try changing the mode in your config. If your preferred one doesn't work, try a lower one.
