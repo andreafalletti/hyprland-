@@ -31,7 +31,7 @@ Data: MONNAME,WORKSPACENAME
 ### activewindow
 emitted on the active window being changed.
 
-Data: WINDOWTITLE
+Data: WINDOWCLASS,WINDOWTITLE
 
 ### fullscreen
 emitted when a fullscreen status of a window changes.
