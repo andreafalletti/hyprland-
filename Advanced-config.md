@@ -145,6 +145,14 @@ moves the cursor to the corner of the active window
 
 **params**: direction, 0 - 3, bottom left - 0, bottom right - 1, top right - 2, top left - 3.
 
+### workspaceopt
+toggles a workspace option.
+
+Workspace options:
+```
+allfloat -> makes all new windows floating (also floats/unfloats windows on toggle)
+allpseudo -> makes all new windows pseudo (also pseudos/unpseudos on toggle)
+```
 
 ## Workspaces
 workspace args are unified. You have three choices:
