@@ -146,7 +146,7 @@ moves the cursor to the corner of the active window
 **params**: direction, 0 - 3, bottom left - 0, bottom right - 1, top right - 2, top left - 3.
 
 ### workspaceopt
-toggles a workspace option.
+toggles a workspace option for the active workspace.
 
 **params**: a workspace option
 
