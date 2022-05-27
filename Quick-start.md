@@ -1,6 +1,6 @@
 # Quick start
 
-After you've installed Hyprland, you can either launch it from a TTY with `hyprland` or from a login manager. Although login managers aren't officially supported, I recommend `SDDM`, as it's been working flawlessly with wayland compositors.
+After you've installed Hyprland, you can either launch it from a TTY with `Hyprland` or from a login manager. Although login managers aren't officially supported, I recommend `SDDM`, as it's been working flawlessly with wayland compositors.
 
 ## Immediate
 
