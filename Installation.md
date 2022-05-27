@@ -65,7 +65,18 @@ in {
   programs.hyprland.enable = true;
 }
 ```
-## Manual
+## Manual (Releases)
+Download the most recent release.
+
+copy the binary (Hyprland) to `/usr/bin/`.
+
+copy the desktop entry (`examples/Hyprland.desktop`) to `/usr/share/wayland-sessions/`
+
+the example config is in `examples/Hyprland.conf`.
+
+For updating later on, you can overwrite the binary, you don't need to update anything else.
+
+## Manual (Manual Build)
 
 ### wlroots
 Because we had recently some shenaningans with the AUR package, and so on, here are the instructions for installing wlroots-git manually:
