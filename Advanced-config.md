@@ -231,6 +231,11 @@ windowrule=animation slide left,kitty
 windowrule=animation popin,dolphin
 ```
 
+### rounding [x]
+forces the application to have X pixels of rounding, ignoring the set default (in `decoration:rounding`)
+
+`x` has to be an int.
+
 ## More examples
 ```
 windowrule=float,kitty
