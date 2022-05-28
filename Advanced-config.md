@@ -156,6 +156,11 @@ allfloat -> makes all new windows floating (also floats/unfloats windows on togg
 allpseudo -> makes all new windows pseudo (also pseudos/unpseudos on toggle)
 ```
 
+### exit
+exits the compositor. No questions asked.
+
+**params**: none.
+
 ## Workspaces
 workspace args are unified. You have three choices:
 
