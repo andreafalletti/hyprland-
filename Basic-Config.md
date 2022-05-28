@@ -92,3 +92,8 @@ _Subcategory input:touchpad:_
 
 ## More 
 There are more config options described in other pages, which are layout- or circumstance-specific. See the sidebar navpanel for more pages.
+
+## Debug
+
+`overlay=int` - (0/1) print the debug performance overlay.
+
