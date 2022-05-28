@@ -67,6 +67,8 @@ If you want heavy blur, you need to up the blur_passes.
 
 The more passes, the more you can up the blur_size without noticing artifacts.
 
+`blur_ignore_opacity=int` - (0/1) make the blur layer ignore the opacity of the window.
+
 ## Animations
 
 `enabled=int` - (0/1) enable animations
