@@ -37,6 +37,22 @@ workspace=DP-1,1
 ```
 will tell Hyprland to make the default workspace on DP-1 a number 1.
 
+If you want to rotate a monitor, use
+```
+monitor=NAME,transform,TRANSFORM
+```
+where `NAME` is the name, and `TRANSFORM` is an integer, from 0 to 7, corresponding to your transform of choice.
+```
+WL_OUTPUT_TRANSFORM_NORMAL = 0
+WL_OUTPUT_TRANSFORM_90 = 1
+WL_OUTPUT_TRANSFORM_180 = 2
+WL_OUTPUT_TRANSFORM_270 = 3
+WL_OUTPUT_TRANSFORM_FLIPPED = 4
+WL_OUTPUT_TRANSFORM_FLIPPED_90 = 5
+WL_OUTPUT_TRANSFORM_FLIPPED_180 = 6
+WL_OUTPUT_TRANSFORM_FLIPPED_270 = 7
+```
+
 # Binds
 ```
 bind=MOD,key,dispatcher,params
