@@ -113,7 +113,7 @@ toggles the focused window floating
 ### fullscreen
 toggles the focused window's fullscreen state
 
-**params**: none
+**params**: 0 - real fullscreen (takes your entire screen), 1 - "maximize" fullscreen (keeps the gaps and bar(s))
 
 ### pseudo
 toggles the focused window to be pseudotiled
