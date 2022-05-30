@@ -177,7 +177,23 @@ allpseudo -> makes all new windows pseudo (also pseudos/unpseudos on toggle)
 ### exit
 exits the compositor. No questions asked.
 
-**params**: none.
+**params**: none
+
+### movecurrentworkspacetomonitor
+Moves the active workspace to a monitor
+
+**params**: monitor ID OR direction (l/r/u/d)
+
+### moveworkspacetomonitor
+Moves a workspace to a monitor
+
+**params**: workspace and monitor ID or direction
+
+e.g.:
+```
+bind=MOD,KEY,moveworkspacetomonitor,4 0
+```
+will move workspace 4 to monitor 0.
 
 ## Workspaces
 workspace args are unified. You have three choices:
