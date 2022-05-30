@@ -71,6 +71,15 @@ Use a wayland-compatible locking utility using WLR protocols, e.g. `swaylock`.
 ### GTK apps' borders are weird? and mouse is off!
 Go to your GTK theme's folder, then to `gtk-4.0`. In it, you'll find at least one CSS file. For all the CSS files, search for `window {` and in the window class, replace all `border` and `box-shadow` properties to `none`.
 
+You can also try adding this to the end of the css file(s):
+```
+decoration, decoration:backdrop, window {
+  box-shadow: none;
+  border: none;
+  margin: 0;
+}
+```
+
 ### How do I change me mouse cursor?
 Use a tool like for example `lxappearance`. Change your cursor and _restart_ Hyprland. If that doesn't work, change the config files manually according to the [XDG specification (Arch wiki link)](https://wiki.archlinux.org/title/Cursor_themes#Configuration).
 
@@ -97,3 +106,7 @@ Please do not blame me for this, it's the Waybar dev that doesn't include experi
 
 ### Waybar doesn't show the active workspace!
 Use the style for `#workspaces button.active`
+
+### The waybar tray context menus do not show
+
+gtk-layer-shell is not supported by hyprland thus far. In the meantime, you have got to define `#define HAVE_DBUSMENU` in `include/factory.hpp` (see above the FAW about waybar workspaces), and `include "gtk-layer-shell": false` in your waybar config.
