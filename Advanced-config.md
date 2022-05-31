@@ -353,3 +353,6 @@ source=~/.config/hypr/myColors.conf
 And Hyprland will enter that file and parse it like a Hyprland config.
 
 Please note it's LINEAR. Meaning lines above the `source=` will be parsed first, then lines inside `~/.config/hypr/myColors.conf`, then lines below.
+
+# Gestures
+Use something like [libinput-gestures](https://github.com/bulletmark/libinput-gestures), with `hyprctl`.
