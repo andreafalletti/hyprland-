@@ -151,7 +151,13 @@ moves the active window in a specified direction OR monitor
 ### focusmonitor
 focuses a monitor
 
-**params**: ONE OF: l/r/u/d OR name OR id
+**params**: direction OR name OR id
+
+Directions: l/r/u/d (left right up down)
+Name: e.g. `DP-1`
+ID: e.g. `0`
+
+(You can get names and IDs with `hyprctl monitors`)
 
 ### splitratio
 changes the split ratio
