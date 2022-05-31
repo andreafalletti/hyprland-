@@ -72,6 +72,8 @@ Download the most recent release.
 
 copy the binary (Hyprland) to `/usr/bin/`.
 
+copy hyprctl to `/usr/bin/`.
+
 copy the wlroots .so (`wlroots.so.XX032`) to `/usr/lib/`.
 
 copy the desktop entry (`examples/Hyprland.desktop`) to `/usr/share/wayland-sessions/`
