@@ -99,7 +99,9 @@ sudo make install
 **Note**: Please be advised, that `sudo make install` will overwrite wlroots headers in the `/usr/include` directory. This won't do anything to you if you are using compiled versions of other Wayland compositors (e.g. sway) but will make you unable to compile (/produce broken binaries) if you are planning on compiling e.g. `sway-git`.
 
 To avoid this, you can either:
+
 use Releases, which don't have that issue
+
 OR
 ```
 sudo mv /usr/include/wlr /usr/include/wlrOld
