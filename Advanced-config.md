@@ -195,8 +195,13 @@ bind=MOD,KEY,moveworkspacetomonitor,4 0
 ```
 will move workspace 4 to monitor 0.
 
+### togglespecialworkspace
+toggles the special workspace on/off.
+
+**params**: none
+
 ## Workspaces
-workspace args are unified. You have four choices:
+workspace args are unified. You have five choices:
 
 ID: e.g. `1`, `2`, or `3`
 
@@ -205,6 +210,11 @@ Relative ID: e.g. `+1`, `-3` or `+100`
 Relative workspace on monitor: e.g. `m+1`, `m-1` or `m+3`
 
 Name: e.g. `name:Web`, `name:Anime` or `name:Better anime`
+
+Special: `special` (special workspace)
+
+### Special Workspace
+Special workspace is what is called a "scratchpad" in some other places. A workspace that you can toggle on/off on any monitor.
 
 # Executing
 you can execute a shell script on startup of the WM or on each time it's reloaded
