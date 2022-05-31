@@ -41,11 +41,11 @@ Warning: a fullscreen event is not guaranteed to fire on/off once in succession.
 Data: 0/1 (exit fullscreen / enter fullscreen)
 
 ### monitorremoved
-emitted when a monitor is removed
+emitted when a monitor is removed (disconnected)
 
 Data: MONITORNAME
 
 ### monitoradded
-emitted when a monitor is added
+emitted when a monitor is added (connected)
 
 Data: MONITORNAME
