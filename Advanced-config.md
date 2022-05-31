@@ -211,7 +211,7 @@ Relative workspace on monitor: e.g. `m+1`, `m-1` or `m+3`
 
 Name: e.g. `name:Web`, `name:Anime` or `name:Better anime`
 
-Special Workspace: `special` **Warning**: `workspace` dispatcher with `special` is not allowed and will result in undocumented behavior.
+Special Workspace: `special` **Warning**: `special` is supported ONLY on `movetoworkspace`. Any other dispatcher will result in undocumented behavior.
 
 ### Special Workspace
 Special workspace is what is called a "scratchpad" in some other places. A workspace that you can toggle on/off on any monitor.
