@@ -196,11 +196,13 @@ bind=MOD,KEY,moveworkspacetomonitor,4 0
 will move workspace 4 to monitor 0.
 
 ## Workspaces
-workspace args are unified. You have three choices:
+workspace args are unified. You have four choices:
 
 ID: e.g. `1`, `2`, or `3`
 
 Relative ID: e.g. `+1`, `-3` or `+100`
+
+Relative workspace on monitor: e.g. `m+1`, `m-1` or `m+3`
 
 Name: e.g. `name:Web`, `name:Anime` or `name:Better anime`
 
