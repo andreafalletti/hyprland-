@@ -18,9 +18,11 @@ Installing Hyprland is very easy. Either you install it from your local package 
 ## Packages
 **WARNING:** I do not maintain any packages. If they are broken, try building from source first.
 
-_Arch (AUR)_
+_Arch (AUR): 3 options:_
 ```
-yay -S hyprland-git
+hyprland-git - compiles from latest source
+hyprland - compiles from latest release source
+hyprland-bin - compiled latest release
 ```
 
 ## Nix
