@@ -70,6 +70,8 @@ Download the most recent release.
 
 copy the binary (Hyprland) to `/usr/bin/`.
 
+copy the wlroots .so (`wlroots.so.XX032`) to `/usr/lib/`.
+
 copy the desktop entry (`examples/Hyprland.desktop`) to `/usr/share/wayland-sessions/`
 
 the example config is in `examples/Hyprland.conf`.
@@ -78,30 +80,18 @@ For updating later on, you can overwrite the binary, you don't need to update an
 
 ## Manual (Manual Build)
 
-### wlroots
-Because we had recently some shenaningans with the AUR package, and so on, here are the instructions for installing wlroots-git manually:
-```sh
-git clone https://gitlab.freedesktop.org/wlroots/wlroots
-cd wlroots
-meson build/ --prefix=/usr
-ninja -C build/
-sudo ninja -C build/ install
-```
-
-### Hyprland
-
 *Arch dependencies*:
 
 `yay -S gdb ninja gcc cmake libxcb xcb-proto xcb-util xcb-util-keysyms libxfixes libx11 libxcomposite xorg-xinput libxrender pixman wayland-protocols wlroots-git cairo pango`
 
 (If any are missing hmu)
 
-Please note Hyprland requires `wlroots-git`. Not `wlroots-0.15.1`, not `wlroots-0.16`, `wlroots-git`.
+Please note Hyprland builds `wlroots`. Make sure you have the dependencies of wlroots installed, you can make sure you have them by installing wlroots separately (Hyprland doesn't mind)
 
 then...
 
 ```
-git clone https://github.com/vaxerski/Hyprland
+git clone --recursive https://github.com/vaxerski/Hyprland
 cd Hyprland
 sudo make install
 ```
