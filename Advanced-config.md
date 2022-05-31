@@ -146,7 +146,7 @@ moves the focus in a specified direction
 ### movewindow
 moves the active window in a specified direction OR monitor
 
-**params**: l/r/u/d (left right up down) OR mon: and ONE OF: l/r/u/d OR name OR id (e.g.: mon:DP-1 or mon:l)
+**params**: l/r/u/d (left right up down) OR mon: and ONE OF: l/r/u/d OR name OR id (e.g.: `mon:DP-1` or `mon:l`)
 
 ### focusmonitor
 focuses a monitor
