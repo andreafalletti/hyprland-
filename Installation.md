@@ -80,7 +80,7 @@ copy the desktop entry (`examples/Hyprland.desktop`) to `/usr/share/wayland-sess
 
 the example config is in `examples/Hyprland.conf`.
 
-For updating later on, you can overwrite the binary, you don't need to update anything else.
+For updating later on, you can overwrite the binaries (hyprctl, hyprland and libwlroots), you don't need to update anything else.
 
 ## Manual (Manual Build)
 
