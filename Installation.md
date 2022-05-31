@@ -96,6 +96,19 @@ cd Hyprland
 sudo make install
 ```
 
+**Note**: Please be advised, that `sudo make install` will overwrite wlroots headers in the `/usr/include` directory. This won't do anything to you if you are using compiled versions of other Wayland compositors (e.g. sway) but will make you unable to compile (/produce broken binaries) if you are planning on compiling e.g. `sway-git`.
+
+To avoid this, you can either:
+use Releases, which don't have that issue
+OR
+```
+sudo mv /usr/include/wlr /usr/include/wlrOld
+sudo make install
+sudo rm -rf /usr/include/wlr
+sudo mv /usr/include/wlrOld /usr/include/wlr
+```
+_(basically, move your headers to wlrOld, build hyprland, remove the hyprland headers and replace them with the old ones)_
+
 Refer to Debugging to see how to build & debug.
 
 ## Crashes at launch
