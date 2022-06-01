@@ -49,3 +49,18 @@ Data: MONITORNAME
 emitted when a monitor is added (connected)
 
 Data: MONITORNAME
+
+## How to use socket2 with bash
+
+example script using socket2 events with bash and `socat`:
+```
+#!/bin/sh
+
+function handle {
+  if [[ ${1:0:12} == "monitoradded" ]]; then
+    # do_something
+  fi
+}
+
+socat - UNIX-CONNECT:/tmp/hypr/.socket2.sock | while read line; do handle $line; done
+```
