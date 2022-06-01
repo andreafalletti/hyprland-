@@ -140,3 +140,31 @@ hyprctl keyword windowrule "workspace unset,firefox"
 ```
 
 in `sleep 10`, the 10 is of course only a suggestion.
+
+### Howdy I move my favorite workspaces to a new monitor when I plug it in?
+
+if you want workspaces to automatically go to a monitor upon connection, use the following:
+
+In hyprland.conf:
+```
+exec-once=handle_monitor_connect.sh
+```
+
+where `handle_monitor_connect.sh` is: (example)
+```
+#!/bin/sh
+
+function handle {
+  if [[ ${1:0:12} == "monitoradded" ]]; then
+    hyprctl dispatch moveworkspacetomonitor "1 1"
+    hyprctl dispatch moveworkspacetomonitor "2 1"
+    hyprctl dispatch moveworkspacetomonitor "4 1"
+    hyprctl dispatch moveworkspacetomonitor "5 1"
+  fi
+}
+
+socat - UNIX-CONNECT:/tmp/hypr/.socket2.sock | while read line; do handle $line; done
+```
+if you want workspaces 1 2 4 5 to go to monitor 1 when connecting it. 
+
+Please note this requires `socat` to be installed.
