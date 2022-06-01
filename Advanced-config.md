@@ -276,6 +276,17 @@ sets the monitor on which a window should open
 ### workspace [w]
 sets the workspace on which a window should open (for workspace syntax, see binds->workspaces)
 
+you can also make [w] to `unset`, will unset all previous workspace rules applied to this window.
+
+you can also add `silent` after the workspace to make the window open silently.
+
+e.g.:
+```
+windowrule=workspace unset,Dolphin
+windowrule=workspace name:amongus silent,kitty
+windowrule=workspace 12,Firefox
+```
+
 ### opacity [a]
 additional opacity multiplier
 
