@@ -139,4 +139,4 @@ hyprctl keyword windowrule "workspace unset,Mailspring"
 hyprctl keyword windowrule "workspace unset,firefox"
 ```
 
-`sleep 10`, the 10 is of course only a suggestion.
+in `sleep 10`, the 10 is of course only a suggestion.
