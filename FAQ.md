@@ -110,3 +110,33 @@ Use the style for `#workspaces button.active`
 ### The waybar tray context menus do not show
 
 gtk-layer-shell is not supported by hyprland thus far. In the meantime, you have got to define `#define HAVE_DBUSMENU` in `include/factory.hpp` (see above the FAW about waybar workspaces), and `include "gtk-layer-shell": false` in your waybar config.
+
+### How do I autostart my favorite apps?
+
+Using the window rules to assign apps to workspace you can setup a session start script to open a bunch of applications on various workspaces. The following method will start these apps silently (i.e. without the flickering from workspace to workspace) and deassign the rule so that subsequent start of this app will not start it on the initially assigned workspace (which could be a drag if e.g. you want kitty to be started on ws 1 while you need kitty to open on any workspace subsequently).
+
+Put the following in your hyprdland.conf: (example)
+```
+windowrule=workspace 1 silent,kitty
+windowrule=workspace 1 silent,Subl
+windowrule=workspace 3 silent,Mailspring
+windowrule=workspace 4 silent,firefox
+[...]
+exec-once=kitty
+exec-once=subl
+exec-once=mailspring
+exec-once=firefox
+[...]
+exec-once=cleanup_after_start.sh
+```
+
+where `cleanup_after_start.sh` script contains:
+```
+sleep 10
+hyprctl keyword windowrule "workspace unset,kitty"
+hyprctl keyword windowrule "workspace unset,Subl"
+hyprctl keyword windowrule "workspace unset,Mailspring"
+hyprctl keyword windowrule "workspace unset,firefox"
+```
+
+`sleep 10`, the 10 is of course only a suggestion.
