@@ -85,6 +85,8 @@ _More about animations is on the Advanced Configuring page._
 
 `natural_scroll=int` - (0/1) enable natural scroll
 
+`numlock_by_default=int` - (0/1) lock numlock by default
+
 ### Touchpad
 _Subcategory input:touchpad:_
 
