@@ -2,18 +2,18 @@
 
 Hyprland exposes 2 UNIX Sockets, for controlling / getting info about Hyprland via code / bash utilities.
 
-## Hyprland Instance Signature
+## Hyprland Instance Signature (HIS)
 ```
 echo $HYPRLAND_INSTANCE_SIGNATURE
 ```
 
-# /tmp/hypr/[HYPRLAND INSTANCE SIGNATURE]/.socket.sock
+# /tmp/hypr/[HIS]/.socket.sock
 
 Used for hyprctl-like requests. See the [Hyprctl page](https://github.com/vaxerski/Hyprland/wiki/Using-hyprctl) for commands.
 
 basically, write `command args`.
 
-# /tmp/hypr/[HYPRLAND INSTANCE SIGNATURE]/.socket2.sock
+# /tmp/hypr/[HIS]/.socket2.sock
 
 Used for events. Hyprland will write to each connected client live events like this:
 
