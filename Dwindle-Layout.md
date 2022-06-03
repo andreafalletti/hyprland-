@@ -46,6 +46,8 @@ category name: `dwindle`
 
 `preserve_split=int` - (0/1) if enabled, the split (side/top) will not change regardless of what happens to the container.
 
+`special_scale_factor=float` - 0 - 1 -> specifies the scale factor of windows on the special workspace
+
 ## Bind Dispatchers
 `togglegroup` - toggles the current window and its siblings (recursively) into a group - params: none
 
