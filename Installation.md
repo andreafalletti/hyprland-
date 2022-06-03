@@ -119,7 +119,9 @@ Refer to Debugging to see how to build & debug.
 
 ## Crashes at launch
 
-See the log, `cat /tmp/hypr/$(echo $HYPRLAND_INSTANCE_SIGNATURE)/hyprland.log`
+See the log, `cat /tmp/hypr/[INSTANCE_SIGNATURE]/hyprland.log`
+
+*If you are unsure of the signature, grab the one thats the most recently modified.*
 
 Diagnose the issue by what is in the log:
 * `sWLRBackend was NULL!` -> launch in the TTY and refer to the wlr logs in RED.
