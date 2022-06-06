@@ -148,6 +148,18 @@ moves the active window in a specified direction OR monitor
 
 **params**: l/r/u/d (left right up down) OR mon: and ONE OF: l/r/u/d OR name OR id (e.g.: `mon:DP-1` or `mon:l`)
 
+### resizeactive
+resizes the active window.
+
+**params**: pixel delta to resize by, integer X and Y, separated by a space.
+
+negative X -> left, negative Y -> top, positive X -> right, positive Y -> bottom
+
+e.g.:
+```
+bind=MOD,KEY,resizeactive,-20 0
+```
+
 ### focusmonitor
 focuses a monitor
 
