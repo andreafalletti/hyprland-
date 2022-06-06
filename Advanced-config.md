@@ -187,6 +187,11 @@ exits the compositor. No questions asked.
 
 **params**: none
 
+### forcerendererreload
+forces the renderer to reload all resources and outputs.
+
+**params**: none
+
 ### movecurrentworkspacetomonitor
 Moves the active workspace to a monitor
 
