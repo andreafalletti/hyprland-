@@ -69,7 +69,7 @@ Please note that `SHIFT` modifies the key names, so for example
 ```
 bind=SHIFT,1,anything,
 ```
-will not work, because when you press SHIFT+1, on your screen you won't get a 1, you'll get a !.
+will not work, because when you press SHIFT+1, on your screen you won't get a 1, you'll get a !
 
 Common overwrites:
 ```
