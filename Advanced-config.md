@@ -69,7 +69,7 @@ Please note that `SHIFT` modifies the key names, so for example
 ```
 bind=SHIFT,1,anything,
 ```
-will not work, as 1 is overwritten by !
+will not work, because when you press SHIFT+1, on your screen you won't get a 1, you'll get a !.
 
 Common overwrites:
 ```
@@ -86,6 +86,7 @@ Common overwrites:
 - -> underscore
 = -> plus
 ```
+*(Overwrites may vary on different keymaps)*
 
 See the [xkbcommon-keysyms.h header](https://github.com/xkbcommon/libxkbcommon/blob/master/include/xkbcommon/xkbcommon-keysyms.h) for all the keysyms. The name you should use is the one after XKB_KEY_, written in all lowercase.
 
