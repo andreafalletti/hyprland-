@@ -168,3 +168,6 @@ socat - UNIX-CONNECT:/tmp/hypr/.socket2.sock | while read line; do handle $line;
 if you want workspaces 1 2 4 5 to go to monitor 1 when connecting it. 
 
 Please note this requires `socat` to be installed.
+
+### My tablet no worky??
+Use [Open Tablet Driver](https://github.com/OpenTabletDriver/OpenTabletDriver) to configure your tablet. In the future it will be supported in the config. Until then, no.
