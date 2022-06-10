@@ -161,7 +161,7 @@ e.g.:
 bind=MOD,KEY,resizeactive,-20 0
 ```
 
-### circlenext
+### cyclenext
 focuses the next window on a workspace
 
 **params**: none
