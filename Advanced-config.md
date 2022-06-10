@@ -161,6 +161,11 @@ e.g.:
 bind=MOD,KEY,resizeactive,-20 0
 ```
 
+### circlenext
+focuses the next window on a workspace
+
+**params**: none
+
 ### focusmonitor
 focuses a monitor
 
