@@ -96,6 +96,8 @@ _Subcategory input:touchpad:_
 
 `disable_while_typing=int` - (0/1) disable touchpad while typing
 
+`natural_scroll=int` - (0/1) enable natural scroll on touchpads
+
 ## Debug
 
 `overlay=int` - (0/1) print the debug performance overlay.
