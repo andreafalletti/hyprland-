@@ -90,6 +90,8 @@ Common overwrites:
 
 See the [xkbcommon-keysyms.h header](https://github.com/xkbcommon/libxkbcommon/blob/master/include/xkbcommon/xkbcommon-keysyms.h) for all the keysyms. The name you should use is the one after XKB_KEY_, written in all lowercase.
 
+If you are unsure of what your key's name is, or what it shifts into, you can use `xev` or `wev` to find that information.
+
 You can also unbind with `unbind`, e.g.:
 ```
 unbind=SUPER,O
