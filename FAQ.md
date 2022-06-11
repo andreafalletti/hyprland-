@@ -102,6 +102,8 @@ All `#ifdef HAVE_<thing>` can be enabled by adding `#define HAVE_<thing>` on top
 
 Then compile according to the instructions on the Waybar github repo.
 
+Use the `wlr/workspaces` module.
+
 Please do not blame me for this, it's the Waybar dev that doesn't include experimental in the base binary for whatever reason.
 
 ### Waybar doesn't show the active workspace!
