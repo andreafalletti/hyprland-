@@ -7,7 +7,7 @@ For PRs, make sure that you:
 - are contributing something useful
 - explain your PR as best as you can
 
-For issues, please see[the guidelines](https://github.com/vaxerski/Hyprland/blob/main/docs/ISSUE_GUIDELINES.md)
+For issues, please see [the guidelines](https://github.com/vaxerski/Hyprland/blob/main/docs/ISSUE_GUIDELINES.md)
 
 # Build in debug
 
