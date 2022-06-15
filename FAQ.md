@@ -50,7 +50,7 @@ Install `xdg-desktop-portal` and `xdg-desktop-portal-wlr`
 add to config:
 ```
 exec-once=systemctl --user import-environment DISPLAY WAYLAND_DISPLAY
-exec-once=hash dbus-update-activation-environment 2>/dev/null && dbus-update-activation-environment --systemd DISPLAY WAYLAND_ DISPLAY
+exec-once=hash dbus-update-activation-environment 2>/dev/null && dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY
 ```
 
 reboot
