@@ -87,7 +87,7 @@ _More about animations is on the Advanced Configuring page._
 
 `natural_scroll=int` - (0/1) enable natural scroll
 
-`numlock_by_default=int` - (0/1) lock numlock by default (broken)
+`numlock_by_default=int` - (0/1) lock numlock by default
 
 `force_no_accel=int` - (0/1) force no mouse acceleration, bypasses most of your pointer settings to get as raw of a signal as possible.
 
