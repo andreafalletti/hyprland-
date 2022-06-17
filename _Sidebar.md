@@ -19,7 +19,7 @@
       <br/>
       <li><a href="https://github.com/vaxerski/Hyprland/wiki/IPC">IPC</a></li>
       <br/>
-      <li><a href="https://github.com/vaxerski/Hyprland/wiki/FAQ">FAQ</a></li>
+      <li><a href="https://github.com/vaxerski/Hyprland/wiki/FAQ">FAQ (Common issues & fixes)</a></li>
       <br/>
       <li><a href="https://github.com/vaxerski/Hyprland/wiki/Contributing-&-Debugging">Contributing & Debugging</a></li>
       <br/>
