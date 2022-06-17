@@ -41,32 +41,7 @@ open a terminal where you cloned the repo.
 ### Screenshare / OBS no worky!
 Yes, hello, this is Wayland.
 
-Switch to Pipewire if you haven't done so yet.
-
-Install `wireplumber`
-
-Install `xdg-desktop-portal` and `xdg-desktop-portal-wlr`
-
-add to config:
-```
-exec-once=hash dbus-update-activation-environment 2>/dev/null && dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY
-```
-
-reboot
-
-Should be working now.
-
-If it doesn't, disable the services provided by both xdg portals (`systemctl --user disable name`), make a .sh file somewhere with:
-```
-#!/bin/bash
-sleep 4
-killall xdg-desktop-portal-wlr
-killall xdg-desktop-portal
-/usr/lib/xdg-desktop-portal-wlr &
-sleep 4
-/usr/lib/xdg-desktop-portal &
-```
-do a `chmod +x thefile`, and then, in your Hyprland config use `exec-once` to exec it on start.
+Amazing gist just about that: https://gist.github.com/PowerBall253/2dea6ddf6974ba4e5d26c3139ffb7580
 
 Please remember in OBS you need to select "Pipewire screen capture" as the source.
 
