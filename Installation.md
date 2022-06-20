@@ -92,6 +92,8 @@ For updating later on, you can overwrite the binaries (hyprctl, hyprland and lib
 
 Please note Hyprland builds `wlroots`. Make sure you have the dependencies of wlroots installed, you can make sure you have them by installing wlroots separately (Hyprland doesn't mind)
 
+### CMake (recommended)
+
 then...
 
 ```
@@ -114,6 +116,16 @@ sudo rm -rf /usr/include/wlr
 sudo mv /usr/include/wlrOld /usr/include/wlr
 ```
 _(basically, move your headers to wlrOld, build hyprland, remove the hyprland headers and replace them with the old ones)_
+
+### Meson
+
+then...
+
+```
+meson _build
+ninja -C _build
+ninja -C _build install
+```
 
 Refer to Debugging to see how to build & debug.
 
