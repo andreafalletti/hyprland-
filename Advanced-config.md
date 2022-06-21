@@ -99,6 +99,9 @@ unbind=SUPER,O
 
 May be useful for dynamic keybindings with `hyprctl`.
 
+## Locked binds
+To lock a bind (make it work even with an active inhibitor, e.g. screen locked), use `bindl=` instead of `bind=`
+
 ## General dispatcher list:
 
 ### exec
