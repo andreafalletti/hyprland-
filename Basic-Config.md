@@ -33,6 +33,8 @@ SHIFT CAPS CTRL/CONTROL ALT MOD2 MOD3 SUPER/WIN/LOGO/MOD4 MOD5
 
 `border_size=int` - border thickness
 
+`no_border_on_floating=int` - (0/1) disable borders for floating windows
+
 `gaps_in=int` - gaps between windows
 
 `gaps_out=int` - gaps between window-monitor edge
