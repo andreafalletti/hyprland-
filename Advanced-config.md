@@ -414,3 +414,27 @@ Please note it's LINEAR. Meaning lines above the `source=` will be parsed first,
 
 # Gestures
 Use something like [libinput-gestures](https://github.com/bulletmark/libinput-gestures), with `hyprctl`.
+
+# Submaps
+If you want keybind submaps, for example if you press ALT+R, you can enter a "resize" mode, resize with arrow keys, and leave with escape, do it like this:
+
+```
+bind=ALT,R,submap,resize # will switch to a submap called resize
+
+submap=resize # will start a submap called "resize"
+
+bind=,right,resizeactive,10 0
+bind=,left,resizeactive,-10 0
+bind=,up,resizeactive,0 -10
+bind=,down,resizeactive,0 10
+
+bind=,escape,submap,reset # use reset to go back to the global submap
+
+submap=reset # will reset the submap, meaning end the current one and return to the global one.
+
+# keybinds further down will be global again...
+```
+
+**IMPORTANT:** do not forget a keybind to reset the keymap while inside it! (In this case, `escape`)
+
+If you get stuck inside a keymap, you can use `hyprctl dispatch submap reset` to go back. If you do not have a terminal open, tough luck buddy. I warned you.
