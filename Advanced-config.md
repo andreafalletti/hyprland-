@@ -157,13 +157,33 @@ moves the active window in a specified direction OR monitor
 ### resizeactive
 resizes the active window.
 
-**params**: pixel delta to resize by, integer X and Y, separated by a space.
+**params**:
+ - pixel delta to resize by, integer X and Y, separated by a space.
+OR
+ - "exact" followed by a space and exact pixel size
 
 negative X -> left, negative Y -> top, positive X -> right, positive Y -> bottom
 
 e.g.:
 ```
 bind=MOD,KEY,resizeactive,-20 0
+bind=MOD,KEY,resizeactive,exact 1280 720
+```
+
+### moveactive
+moves the active window.
+
+**params**:
+ - pixel delta to move by, integer X and Y, separated by a space.
+OR
+ - "exact" followed by a space and exact coordinates
+
+negative X -> left, negative Y -> top, positive X -> right, positive Y -> bottom
+
+e.g.:
+```
+bind=MOD,KEY,moveactive,20 -20
+bind=MOD,KEY,moveactive,exact 720 0
 ```
 
 ### cyclenext
