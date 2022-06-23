@@ -159,6 +159,7 @@ resizes the active window.
 
 **params**:
  - pixel delta to resize by, integer X and Y, separated by a space.
+
 OR
  - "exact" followed by a space and exact pixel size
 
@@ -175,6 +176,7 @@ moves the active window.
 
 **params**:
  - pixel delta to move by, integer X and Y, separated by a space.
+
 OR
  - "exact" followed by a space and exact coordinates
 
