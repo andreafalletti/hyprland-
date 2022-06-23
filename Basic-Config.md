@@ -28,11 +28,11 @@ SHIFT CAPS CTRL/CONTROL ALT MOD2 MOD3 SUPER/WIN/LOGO/MOD4 MOD5
 
 `apply_sens_to_raw=int` - (0/1) if on, will also apply the sensitivity to raw mouse output (e.g. sensitivity in games)
 
-`main_mod=MOD` - the mod used to move/resize windows (hold main_mod and LMB/RMB)
+`main_mod=MOD` - the mod used to move/resize windows (hold main_mod and LMB/RMB, try it and you'll know what I mean.)
 
 `border_size=int` - border thickness
 
-`no_border_on_floating=int` - (0/1) disable borders for floating windows
+`no_border_on_floating=int` - (0/1) disable borders for floating windows. 
 
 `gaps_in=int` - gaps between windows
 
