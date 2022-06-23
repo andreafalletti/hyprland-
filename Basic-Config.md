@@ -23,13 +23,12 @@ SHIFT CAPS CTRL/CONTROL ALT MOD2 MOD3 SUPER/WIN/LOGO/MOD4 MOD5
 # Sections
 
 ## General
-`max_fps=int` - Maximum refreshes per second. (of config, animations, hyprctl)
 
 `sensitivity=float` - mouse sensitivity
 
 `apply_sens_to_raw=int` - (0/1) if on, will also apply the sensitivity to raw mouse output (e.g. sensitivity in games)
 
-`main_mod=MOD` - the mod used to move/resize floating windows (hold main_mod and mouse1/mouse2)
+`main_mod=MOD` - the mod used to move/resize windows (hold main_mod and LMB/RMB)
 
 `border_size=int` - border thickness
 
