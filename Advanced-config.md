@@ -316,8 +316,8 @@ you can get both by inspecting `hyprctl clients`
 
 Examples:
 ```
-windowrule=float,kitty
-windowrule=move 0 0,title:Among Us
+windowrule=float,^(kitty)$
+windowrule=move 0 0,title:^(Firefox)(.*)$
 ```
 
 ## Rules
