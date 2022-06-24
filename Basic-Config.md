@@ -42,6 +42,8 @@ SHIFT CAPS CTRL/CONTROL ALT MOD2 MOD3 SUPER/WIN/LOGO/MOD4 MOD5
 
 `col.inactive_border=col` - self-explanatory
 
+`cursor_inactive_timeout=int` - in seconds, after how many seconds of cursor's inactivity to hide it. (default / never is `0`)
+
 `damage_tracking=str` - Makes the compositor redraw only the needed bits of the display. Saves on resources by not redrawing when not needed. Available modes: `none, monitor, full`. Heavily recommended to use `full` for maximum optimization.
 
 ## Decoration
