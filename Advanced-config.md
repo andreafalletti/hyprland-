@@ -306,7 +306,19 @@ You can set window rules for various actions. These are applied on window open!
 windowrule=RULE,WINDOW
 ```
 
-`RULE` is a rule (and a param if applicable) and `WINDOW` is a RegEx to match against
+`RULE` is a rule (and a param if applicable)
+
+`WINDOW` is a RegEx, either:
+- plain regex (for matching a window class)
+- `title:` followed by a regex (for matching a window's title)
+
+you can get both by inspecting `hyprctl clients`
+
+Examples:
+```
+windowrule=float,kitty
+windowrule=move 0 0,title:Among Us
+```
 
 ## Rules
 
@@ -339,7 +351,7 @@ e.g.:
 ```
 windowrule=workspace unset,Dolphin
 windowrule=workspace name:amongus silent,kitty
-windowrule=workspace 12,Firefox
+windowrule=workspace 12,firefox
 ```
 
 ### opacity [a]
