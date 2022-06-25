@@ -1,5 +1,5 @@
 
-# Getting the log
+## Getting the log
 
 If you are in a TTY, and the hyprland session that crashed was the last one you launched, the log will be printed with
 ```
@@ -26,7 +26,7 @@ Diagnose the issue by what is in the log:
 
 Report an issue on Github or on the Discord server.
 
-# Bugs
+## Bugs
 
 First of all, ***READ THE [FAQ PAGE](https://github.com/hyprwm/Hyprland/wiki/FAQ)***
 
