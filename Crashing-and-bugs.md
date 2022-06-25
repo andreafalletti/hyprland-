@@ -1,4 +1,3 @@
-# Crashes, bugs, etc.
 
 # Getting the log
 
