@@ -74,6 +74,16 @@ The more passes, the more you can up the blur_size without noticing artifacts.
 
 `blur_ignore_opacity=int` - (0/1) make the blur layer ignore the opacity of the window.
 
+`drop_shadow=int` - (0/1) enable drop shadows on windows
+
+`shadow_range=int` - Shadow range (in pixels), more = larger shadow
+
+`shadow_render_power=int` - (1 - 4), in what power to render the falloff (more power, the faster the falloff)
+
+`shadow_ignore_window=int` - (0/1) if true, the shadow will not be rendered behind the window itself, only around it.
+
+`col.shadow=col` - shadow's color. Alpha dictates shadow's opacity.
+
 ## Animations
 
 `enabled=int` - (0/1) enable animations
