@@ -328,6 +328,9 @@ floats a window
 ### tile
 tiles a window
 
+### fullscreen
+fullscreens a window
+
 ### move [x] [y]
 moves a floating window (x,y -> int or %, e.g. 20% or 100)
 
