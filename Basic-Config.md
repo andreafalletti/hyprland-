@@ -13,6 +13,8 @@ Variable types are:
 
 `col` - color (e.g. 0x22334455 - alpha 0x22, red 0x33, green 0x44, blue 0x55)
 
+`vec2` - vector with 2 values (float), separated by a space (e.g. `0 0` or `-10 100`)
+
 `MOD` - a string modmask (e.g. SUPER or SUPERSHIFT or SUPERSHIFTALTCTLRCAPSMOD2MOD3MOD5 or empty for none)
 
 Mod list:
@@ -83,6 +85,8 @@ The more passes, the more you can up the blur_size without noticing artifacts.
 `shadow_ignore_window=int` - (0/1) if true, the shadow will not be rendered behind the window itself, only around it.
 
 `col.shadow=col` - shadow's color. Alpha dictates shadow's opacity.
+
+`shadow_offset=vec2` - shadow's rendering offset.
 
 ## Animations
 
