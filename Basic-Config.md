@@ -50,7 +50,7 @@ SHIFT CAPS CTRL/CONTROL ALT MOD2 MOD3 SUPER/WIN/LOGO/MOD4 MOD5
 
 `rounding=int` - rounded corners radius (in pixels)
 
-`multisample_edges=int` - (0/1) enable antialiasing (no-jaggies) for the outsides of rounded corners.
+`multisample_edges=int` - (0/1) enable antialiasing (no-jaggies) for rounded corners.
 
 `no_blur_on_oversized=int` - (0/1) disable blur on oversized windows (recommended to leave at default 1, may cause graphical issues)
 
