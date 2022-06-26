@@ -25,6 +25,8 @@ hyprland - compiles from latest release source
 hyprland-bin - compiled latest release
 ```
 
+*If you're on Arch Linux, I* ***heavily*** *recommend you use the AUR.*
+
 ## Nix
 
 ### With flakes
