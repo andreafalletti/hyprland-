@@ -6,6 +6,8 @@ Use something like `qt5ct` (QT) and `lxappearance` (GTK) (*for GTK you can also 
 #### Your PC is very, very old.
 In that case, see the [Installation Page](https://github.com/hyprwm/Hyprland/wiki/Installation) and try compiling with LEGACY_RENDERER
 
+*For more info about bugs and crashes, see the* *[wiki page](https://github.com/hyprwm/Hyprland/wiki/Crashing-and-bugs)*
+
 ### How do I screenshot?
 Install `grim-git` and `slurp`
 
@@ -21,15 +23,6 @@ Not that much heavier than Xorg. If you want maximum performance, consider turni
 ### My monitor no worky!
 Try changing the mode in your config. If your preferred one doesn't work, try a lower one.
 A good way to list all modes is to get `wlr-randr` and do a `wlr-randr --dryrun`
-
-### I crash on start!
-Launch from a TTY.
-If you still crash, then:
-  -> if you get red logs, google them, they are wlr errors. If that doesn't help, make an issue or post on the discord server.
-  -> if you don't, make an issue (/post on the discord server) and ***attach*** (don't use pastebin/paste it) the log, `/tmp/hypr/hyprland.log` AND a coredump.
-
-### I crash not on start!
- make an issue / post on the discord server, explain what you were doing, and ***attach*** (don't use pastebin/paste it) the log, `/tmp/hypr/hyprland.log` AND a coredump.
 
 ### How do I get a coredump?
 *These instructions are ONLY for systemd. If you use anything else, you should know what you're doing.*
