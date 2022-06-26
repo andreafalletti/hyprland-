@@ -3,11 +3,7 @@ NVIDIA GPUs in ANY capacity are NOT supported. (even if you're using `nouveau`)
 
 Any and all NVIDIA issues will be marked as NVIDIA issues and I will NOT solve them, as I don't own an NVIDIA card.
 
-If, in the future, anyone will want to contribute to get NVIDIA to work well, I'll update this message.
-
-If you want to try nevertheless, try to use the workarounds that work for Sway to run on proprietary NVIDIA. It might work.
-
-Yes, an invisible cursor is an NVIDIA issue that can be fixed with the mentioned above workarounds.
+Hyprland has been reported to work on modern NVIDIA cards pretty well, so if you want to try it out, use a tutorial for `Sway` on NVIDIA (apply the same fixes / envvars to Hyprland), or ask around on the Discord server.
 
 # Installation
 
