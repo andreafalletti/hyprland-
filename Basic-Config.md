@@ -13,7 +13,7 @@ Variable types are:
 
 `col` - color (e.g. 0x22334455 - alpha 0x22, red 0x33, green 0x44, blue 0x55)
 
-`vec2` - vector with 2 values (float), separated by a space (e.g. `0 0` or `-10 100`)
+`vec2` - vector with 2 values (float), separated by a space (e.g. `0 0` or `-10.9 99.1`)
 
 `MOD` - a string modmask (e.g. SUPER or SUPERSHIFT or SUPERSHIFTALTCTLRCAPSMOD2MOD3MOD5 or empty for none)
 
