@@ -6,7 +6,7 @@ Use something like `qt5ct` (QT) and `lxappearance` (GTK) (*for GTK you can also 
 #### Your PC is very, very old.
 In that case, see the [Installation Page](https://github.com/hyprwm/Hyprland/wiki/Installation) and try compiling with LEGACY_RENDERER
 
-*For more info about bugs and crashes, see the* *[wiki page](https://github.com/hyprwm/Hyprland/wiki/Crashing-and-bugs)*
+*For more info about bugs and crashes, see this* *[wiki page](https://github.com/hyprwm/Hyprland/wiki/Crashing-and-bugs)*
 
 ### How do I screenshot?
 Install `grim-git` and `slurp`
