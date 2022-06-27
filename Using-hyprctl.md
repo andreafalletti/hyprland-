@@ -41,6 +41,12 @@ Returns: `ok` on success, an error message on fail.
 
 issue a `reload` to force reload the config.
 
+### kill
+
+issue a `kill` to get into a kill mode, where you can kill an app by clicking on it. You can exit it with ESCAPE.
+
+Kind of like xkill.
+
 ## Info
 
 ```
