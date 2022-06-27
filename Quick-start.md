@@ -39,3 +39,7 @@ hyprctl keyword monitor DP-3,1920x1080@240,1920x0,1
 # Proper configuring
 
 Head onto the [Master Configuring Wiki Page](https://github.com/vaxerski/Hyprland/wiki/Configuring-Hyprland) to learn all about configuring Hyprland to your likings.
+
+# Apps / X11 replacements
+
+See the [Sway wiki page](https://github.com/swaywm/sway/wiki/Useful-add-ons-for-sway) just about that.
