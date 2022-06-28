@@ -55,6 +55,11 @@ emitted when a monitor is added (connected)
 
 Data: MONITORNAME
 
+### createworkspace and destroyworkspace
+emitted when a workspace is created or removed
+
+Data: WORKSPANCENAME
+
 ## How to use socket2 with bash
 
 example script using socket2 events with bash and `socat`:
