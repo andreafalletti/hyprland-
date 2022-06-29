@@ -49,18 +49,6 @@ Please remember in OBS you need to select "Pipewire screen capture" as the sourc
 ### Howdy I screen lock???
 Use a wayland-compatible locking utility using WLR protocols, e.g. `swaylock`.
 
-### GTK apps' borders are weird? and mouse is off!
-Go to your GTK theme's folder, then to `gtk-4.0`. In it, you'll find at least one CSS file. For all the CSS files, search for `window {` and in the window class, replace all `border` and `box-shadow` properties to `none`.
-
-You can also try adding this to the end of the css file(s):
-```
-decoration, decoration:backdrop, window {
-  box-shadow: none;
-  border: none;
-  margin: 0;
-}
-```
-
 ### How do I change me mouse cursor?
 Use a tool like for example `lxappearance`. Change your cursor and _restart_ Hyprland. If that doesn't work, change the config files manually according to the [XDG specification (Arch wiki link)](https://wiki.archlinux.org/title/Cursor_themes#Configuration).
 
