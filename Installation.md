@@ -34,7 +34,7 @@ hyprland-bin - compiled latest release
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     hyprland = {
-      url = "github:vaxerski/Hyprland";
+      url = "github:hyprwm/Hyprland";
       # build with your own instance of nixpkgs
       inputs.nixpkgs.follows = "nixpkgs";
     };
@@ -57,7 +57,7 @@ hyprland-bin - compiled latest release
 {config, pkgs, ...}: let
   flake-compat = builtins.fetchTarball "https://github.com/edolstra/flake-compat/archive/master.tar.gz";
   hyprland = (import flake-compat {
-    src = builtins.fetchTarball "https://github.com/vaxerski/Hyprland/archive/master.tar.gz";
+    src = builtins.fetchTarball "https://github.com/hyprwm/Hyprland/archive/master.tar.gz";
   }).defaultNix;
 in {
   imports = [
@@ -67,6 +67,8 @@ in {
   programs.hyprland.enable = true;
 }
 ```
+Make sure to check out the options of the [Nix module](https://github.com/hyprwm/Hyprland/blob/main/nix/module.nix).
+
 ## Manual (Releases)
 Download the most recent release.
 
