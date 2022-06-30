@@ -389,6 +389,12 @@ windowrule=monitor 0,Firefox
 windowrule=move 200 200,Discord
 ```
 
+### noblur
+forces the window not to have blur
+
+### nofocus
+forces the window to never recieve focus
+
 # Animations
 animations are declared with the `animation` keyword. They can also be declared using a legacy way, but we will not cover that here.
 
