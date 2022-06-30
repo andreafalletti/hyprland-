@@ -393,7 +393,7 @@ windowrule=move 200 200,Discord
 forces the window not to have blur
 
 ### nofocus
-forces the window to never recieve focus
+forces the window to never receive focus
 
 # Animations
 animations are declared with the `animation` keyword. They can also be declared using a legacy way, but we will not cover that here.
