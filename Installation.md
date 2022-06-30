@@ -1,9 +1,8 @@
 # Foreword
-NVIDIA GPUs in ANY capacity are NOT supported. (even if you're using `nouveau`)
+NVIDIA GPUs in ANY capacity are NOT supported, but you may ask for some help around on the Discord server, people have been running Hyprland on NVIDIA with success.
 
-Any and all NVIDIA issues will be marked as NVIDIA issues and I will NOT solve them, as I don't own an NVIDIA card.
-
-Hyprland has been reported to work on modern NVIDIA cards pretty well, so if you want to try it out, use a tutorial for `Sway` on NVIDIA (apply the same fixes / envvars to Hyprland), or ask around on the Discord server.
+### Distros
+Arch and NixOS are very supported. For any other distro (not based on Arch/Nix) you might have varying amounts of success. However, since Hyprland is extremely bleeding-edge, distros like Fedora, Pop!_OS, Ubuntu, etc. etc. might have **major** issues running Hyprland.
 
 # Installation
 
