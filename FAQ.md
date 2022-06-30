@@ -8,6 +8,9 @@ In that case, see the [Installation Page](https://github.com/hyprwm/Hyprland/wik
 
 *For more info about bugs and crashes, see this* *[wiki page](https://github.com/hyprwm/Hyprland/wiki/Crashing-and-bugs)*
 
+### Me cursor no render?
+Are you on NVIDIA? If so, then you have been a naughty boy and haven't listened to my tips on other pages. Use the `WLR_NO_HARDWARE_CURSORS=1` envvar.
+
 ### How do I screenshot?
 Install `grim-git` and `slurp`
 
