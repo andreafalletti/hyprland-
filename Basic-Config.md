@@ -117,6 +117,8 @@ _Subcategory input:touchpad:_
 
 `natural_scroll=int` - (0/1) enable natural scroll on touchpads
 
+***Per-device input config is described [here](https://github.com/hyprwm/Hyprland/wiki/Advanced-config#per-device-input-configs)***
+
 ## Debug
 
 `overlay=int` - (0/1) print the debug performance overlay.
