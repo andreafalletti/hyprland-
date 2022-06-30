@@ -27,6 +27,8 @@ hyprland-bin - compiled latest release
 
 ## Nix
 
+Make sure to check out the options of the [Nix module](https://github.com/hyprwm/Hyprland/blob/main/nix/module.nix).
+
 ### With flakes
 ```nix
 # flake.nix
@@ -64,10 +66,11 @@ in {
     hyprland.nixosModules.default
   ];
 
+  nixpkgs.overlays = [ hyprland.overlays.default ];
+
   programs.hyprland.enable = true;
 }
 ```
-Make sure to check out the options of the [Nix module](https://github.com/hyprwm/Hyprland/blob/main/nix/module.nix).
 
 ## Manual (Releases)
 Download the most recent release.
