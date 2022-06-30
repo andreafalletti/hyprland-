@@ -481,3 +481,29 @@ submap=reset # will reset the submap, meaning end the current one and return to 
 **IMPORTANT:** do not forget a keybind to reset the keymap while inside it! (In this case, `escape`)
 
 If you get stuck inside a keymap, you can use `hyprctl dispatch submap reset` to go back. If you do not have a terminal open, tough luck buddy. I warned you.
+
+# Per-device input configs
+*Warning:* Some configs, notably touchpad ones, require a Hyprland restart.
+
+In order to apply per-device config options, make a new category like this:
+```
+device:name {
+
+}
+```
+
+the `name` can be easily obtained by doing `hyprctl devices`.
+
+Inside of it, put your config options. All options from the `input` category (and all subcategories, e.g. `input:touchpad`) can be put inside, **EXCEPT**:
+
+force_no_accel, follow_mouse
+
+For example:
+```
+device:ROYUAN Akko Multi-modes Keyboard-B {
+    repeat_rate=50
+    repeat_delay=500
+    middle_button_emulation=0
+}
+```
+*remember about the space after the end of the device's name (before the `{`)!*
