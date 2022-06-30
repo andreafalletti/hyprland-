@@ -485,6 +485,8 @@ If you get stuck inside a keymap, you can use `hyprctl dispatch submap reset` to
 # Per-device input configs
 *Warning:* Some configs, notably touchpad ones, require a Hyprland restart.
 
+Per-device config options will overwrite your options set in the `input` section. It's worth noting that ONLY values explicitly changed will be overwritten.
+
 In order to apply per-device config options, make a new category like this:
 ```
 device:name {
