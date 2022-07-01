@@ -193,10 +193,16 @@ focuses the next window on a workspace
 
 **params**: none
 
-### focuswindowbyclass
+### focuswindow
 focuses the first found window matching a specified class regex
 
-**params**: class regex
+**params**:
+
+class regex
+
+OR
+
+`title:` and a title regex
 
 ### focusmonitor
 focuses a monitor
