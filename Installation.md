@@ -71,6 +71,9 @@ in {
 }
 ```
 
+## Fedora
+[https://github.com/hyprwm/Hyprland/discussions/284](https://github.com/hyprwm/Hyprland/discussions/284)
+
 ## Manual (Releases)
 Download the most recent release.
 
