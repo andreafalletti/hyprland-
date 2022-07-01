@@ -2,7 +2,7 @@
 NVIDIA GPUs in ANY capacity are NOT supported, but you may ask for some help around on the Discord server, people have been running Hyprland on NVIDIA with success.
 
 ### Distros
-Arch and NixOS are very supported. For any other distro (not based on Arch/Nix) you might have varying amounts of success. However, since Hyprland is extremely bleeding-edge, distros like Fedora, Pop!_OS, Ubuntu, etc. etc. might have **major** issues running Hyprland.
+Arch and NixOS are very supported. For any other distro (not based on Arch/Nix) you might have varying amounts of success. However, since Hyprland is extremely bleeding-edge, distros like Pop!_OS, Ubuntu, etc. etc. might have **major** issues running Hyprland.
 
 # Installation
 
