@@ -194,7 +194,7 @@ focuses the next window on a workspace
 **params**: none
 
 ### focuswindow
-focuses the first found window matching a specified class regex
+focuses the first found window matching a specified regex
 
 **params**:
 
