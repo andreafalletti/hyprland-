@@ -53,6 +53,9 @@ Make sure to check out the options of the [Nix module](https://github.com/hyprwm
   };
 ```
 ### Without flakes
+
+**NOTE:** If you're using Hyprland through an overlay, set `programs.hyprland.package = pkgs.hyprland;`.
+
 ```nix
 # configuration.nix
 {config, pkgs, ...}: let
@@ -67,7 +70,10 @@ in {
 
   nixpkgs.overlays = [ hyprland.overlays.default ];
 
-  programs.hyprland.enable = true;
+  programs.hyprland = {
+    enable = true;
+    package = pkgs.hyprland;
+  };
 }
 ```
 
