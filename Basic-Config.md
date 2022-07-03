@@ -120,8 +120,11 @@ _Subcategory input:touchpad:_
 ### Per-device input config is described [here](https://github.com/hyprwm/Hyprland/wiki/Advanced-config#per-device-input-configs)
 
 ## Debug
+### only for developers
 
 `overlay=int` - (0/1) print the debug performance overlay.
+
+`damage_blink=int` - (0/1) (epilepsy warning!) flash areas updated with damage tracking
 
 ## More 
 There are more config options described in other pages, which are layout- or circumstance-specific. See the sidebar navpanel for more pages.
