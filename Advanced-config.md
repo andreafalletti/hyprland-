@@ -515,3 +515,8 @@ device:ROYUAN Akko Multi-modes Keyboard-B {
 }
 ```
 *remember about the space after the end of the device's name (before the `{`)!*
+
+# Wallpapers
+The hyprland background you see when you first start Hyprland is **NOT A WALLPAPER**, it's the default image rendered at the bottom of the render stack.
+
+To set a wallpaper, use a wallpaper utility like [hyprpaper](https://github.com/hyprwm/hyprpaper) or [swaybg](https://github.com/swaywm/swaybg).
