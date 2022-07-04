@@ -251,12 +251,12 @@ forces the renderer to reload all resources and outputs.
 ### movecurrentworkspacetomonitor
 Moves the active workspace to a monitor
 
-**params**: monitor ID OR direction (l/r/u/d)
+**params**: monitor ID, name or direction (l/r/u/d)
 
 ### moveworkspacetomonitor
 Moves a workspace to a monitor
 
-**params**: workspace and monitor ID or direction
+**params**: workspace and monitor ID, name or direction
 
 e.g.:
 ```
