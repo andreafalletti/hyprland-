@@ -4,7 +4,7 @@ After you've installed Hyprland, you can either launch it from a TTY with `Hyprl
 
 ## Immediate
 
-***OMG MY SCREEN IS BROKEN!!!!!*** -> see the bottom of this page
+**OMG MY SCREEN IS BROKEN, FLASHY TEARY!** -> see the bottom of this page
 
 Once you log in, you'll be greeted with a yellow warning that will give you some basic keybind info of your pregenerated config.
 
