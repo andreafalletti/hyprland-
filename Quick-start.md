@@ -4,6 +4,8 @@ After you've installed Hyprland, you can either launch it from a TTY with `Hyprl
 
 ## Immediate
 
+***OMG MY SCREEN IS BROKEN!!!!!*** -> see the bottom of this page
+
 Once you log in, you'll be greeted with a yellow warning that will give you some basic keybind info of your pregenerated config.
 
 I recommend you use the config provided in `examples/hyprland.conf` though.
@@ -43,3 +45,16 @@ Head onto the [Master Configuring Wiki Page](https://github.com/vaxerski/Hyprlan
 # Apps / X11 replacements
 
 See the [Sway wiki page](https://github.com/swaywm/sway/wiki/Useful-add-ons-for-sway) just about that.
+
+# Screen broken on launch
+
+This usually happens due to your monitor not being very happy about the default settings.
+
+You can get your monitor's name(s) from the TTY.
+
+Exit hyprland, and then:
+ - `cat /tmp/hypr/$(ls -t /tmp/hypr | head -n 1)/hyprland.log | grep monitor` will give you a bunch of logs about the connected monitors. Names like `DP-x` or `HDMI-x` etc are your monitor names.
+ - edit (with your favorite text editor) `~/.config/hypr/hyprland.conf`
+ - replace the `monitor=` line with `monitor=NAME,RES@Hz,OFFSET,SCALE`, for example `monitor=DP-1,1920x1080@60,0x0,1` (See the above section titled Monitors for more info about the values) You can also add multiple of those for multi-mon setups.
+
+After this, upon launching Hyprland again, provided you set an appropriate mode for your monitors, everything should be fine.
