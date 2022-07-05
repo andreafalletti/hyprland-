@@ -50,6 +50,6 @@ When Hyprland crashes, use `coredumpctl` and then `coredumpctl info PID` to see 
 
 I also recommend the amazing command
 
-`watch -n 0.1 "cat /tmp/hypr/hyprland.log | grep -v \"arranged\" | tail -n 40"`
+`watch -n 0.1 "cat /tmp/hypr/$(echo HYPRLAND_INSTANCE_SIGNATURE)/hyprland.log | grep -v \"arranged\" | tail -n 40"`
 
-for live logs.
+for live logs. (replace `hyprland` with `hyprlandd` for debug builds)
