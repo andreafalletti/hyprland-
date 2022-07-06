@@ -145,3 +145,10 @@ Please note this requires `socat` to be installed.
 
 ### My tablet no worky??
 Use [Open Tablet Driver](https://github.com/OpenTabletDriver/OpenTabletDriver) to configure your tablet. In the future it will be supported in the config. Until then, OTD.
+
+### Some of my apps take a really long time to open...?
+
+*~/.config/hypr/hyprland.conf*
+```
+exec-once=systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+```
