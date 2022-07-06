@@ -520,3 +520,13 @@ device:ROYUAN Akko Multi-modes Keyboard-B {
 The hyprland background you see when you first start Hyprland is **NOT A WALLPAPER**, it's the default image rendered at the bottom of the render stack.
 
 To set a wallpaper, use a wallpaper utility like [hyprpaper](https://github.com/hyprwm/hyprpaper) or [swaybg](https://github.com/swaywm/swaybg).
+
+# Blurring layerSurfaces
+LayerSurfaces are not windows. These are for example: Your wallpapers, notification overlays, bars, etc.
+
+If you really want to blur them, use `blurls=`
+
+```
+blurls=NAMESPACE
+```
+where `NAMESPACE` is the namespace of the layerSurface. (You can get it from `hyprctl layers`)
