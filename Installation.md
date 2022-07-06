@@ -99,11 +99,13 @@ For updating later on, you can overwrite the binaries (hyprctl, hyprland and lib
 
 *Arch dependencies*:
 
-`yay -S gdb ninja gcc cmake libxcb xcb-proto xcb-util xcb-util-keysyms libxfixes libx11 libxcomposite xorg-xinput libxrender pixman wayland-protocols wlroots-git cairo pango`
+`yay -S gdb ninja gcc cmake libxcb xcb-proto xcb-util xcb-util-keysyms libxfixes libx11 libxcomposite xorg-xinput libxrender pixman wayland-protocols cairo pango`
 
 (If any are missing hmu)
 
 Please note Hyprland builds `wlroots`. Make sure you have the dependencies of wlroots installed, you can make sure you have them by installing wlroots separately (Hyprland doesn't mind)
+
+Also note that Hyprland uses the C++23 standard, so your compiler has to support that (`gcc>=12.1.0` or `clang>=15`)
 
 ### CMake (recommended)
 
