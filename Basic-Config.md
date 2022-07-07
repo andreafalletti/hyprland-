@@ -119,6 +119,18 @@ _Subcategory input:touchpad:_
 
 ### Per-device input config is described [here](https://github.com/hyprwm/Hyprland/wiki/Advanced-config#per-device-input-configs)
 
+## Gestures
+
+`workspace_swipe=int` - (0/1) enable workspace swipe gesture
+
+`workspace_swipe_distance=int` - in px, the distance of the gesture
+
+`workspace_swipe_invert=int` - (0/1) invert the direction
+
+`workspace_swipe_min_speed_to_force=int` - minimum speed in px per timepoint to force the change ignoring `cancel_ratio` (default `30`) Setting to `0` will disable this mechanic.
+
+`workspace_swipe_cancel_ratio=float` - (0.0 - 1.0) how much the swipe has to proceed in order to commence it. (0.7 -> if > 0.7 * distance, switch, if less, revert)
+
 ## Debug
 ### only for developers
 
