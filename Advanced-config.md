@@ -462,7 +462,7 @@ And Hyprland will enter that file and parse it like a Hyprland config.
 Please note it's LINEAR. Meaning lines above the `source=` will be parsed first, then lines inside `~/.config/hypr/myColors.conf`, then lines below.
 
 # Gestures
-Use something like [libinput-gestures](https://github.com/bulletmark/libinput-gestures), with `hyprctl`.
+Use something like [libinput-gestures](https://github.com/bulletmark/libinput-gestures), with `hyprctl` if you want to expand Hyprland's gestures beyond what's offered in Basic Configuring.
 
 # Submaps
 If you want keybind submaps, for example if you press ALT+R, you can enter a "resize" mode, resize with arrow keys, and leave with escape, do it like this:
