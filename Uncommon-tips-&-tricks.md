@@ -30,5 +30,5 @@ will switch on SUPER+SPACE from polish to japanese (anthy)
 
 additionally, to fix the panel closing, use
 ```
-windowrule=nofocus,ibus-ui
+windowrule=nofocus,^(Ibus-ui-gtk3)$
 ```
