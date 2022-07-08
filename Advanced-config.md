@@ -92,6 +92,12 @@ See the [xkbcommon-keysyms.h header](https://github.com/xkbcommon/libxkbcommon/b
 
 If you are unsure of what your key's name is, or what it shifts into, you can use `xev` or `wev` to find that information.
 
+If you want to bind by a keycode, you can just input it in the KEY position, e.g.:
+```
+bind=SUPER,28,exec,amongus
+```
+Will bind SUPER+T. (T is keycode 28.)
+
 You can also unbind with `unbind`, e.g.:
 ```
 unbind=SUPER,O
