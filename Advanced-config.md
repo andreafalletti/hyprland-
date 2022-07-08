@@ -292,7 +292,7 @@ Special Workspace: `special` **Warning**: `special` is supported ONLY on `moveto
 Special workspace is what is called a "scratchpad" in some other places. A workspace that you can toggle on/off on any monitor.
 
 # Executing
-you can execute a shell script on startup of the WM or on each time it's reloaded
+you can execute a shell script on startup of the compositor or on each time it's reloaded
 
 `exec-once=command` will execute only on launch
 
