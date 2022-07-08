@@ -96,7 +96,7 @@ If you want to bind by a keycode, you can just input it in the KEY position, e.g
 ```
 bind=SUPER,28,exec,amongus
 ```
-Will bind SUPER+T. (T is keycode 28.)
+Will bind SUPER+T. (T is keycode 28.) - You can also use `xev` or `wev` to find keycodes.
 
 You can also unbind with `unbind`, e.g.:
 ```
