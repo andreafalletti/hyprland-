@@ -155,3 +155,13 @@ exec-once=systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTO
 
 ### My cursor in QT apps is too big!
 The QT cursor size can be fixed by setting the envvar `XCURSOR_SIZE=24`. You should probably add it to your exported envvars.
+
+### How do I export envvars for Hyprland?
+As with any Display Server, Xorg included, you should probably make a script to launch it, for example:
+
+```
+export AMONG_US=1
+exec Hyprland
+```
+
+and launch that. (For Login Manager users, you can replace the "exec" entry in the .desktop file to point to your script)
