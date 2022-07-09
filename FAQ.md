@@ -18,7 +18,7 @@ Use a keybind (or execute) `grim -g $(slurp)`, select a region. A screenshot wil
 (You can configure grim and slurp, see their github pages)
 
 ### How do I change my wallpaper?
-Install `swaybg`. See its usage with `swaybg --help`
+Install hyprpaper, swaybg or any other wlroots-compatible wallpaper utility.
 
 ### How heavy is this?
 Not that much heavier than Xorg. If you want maximum performance, consider turning off the blur and animations.
