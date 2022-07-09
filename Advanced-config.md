@@ -197,7 +197,7 @@ bind=MOD,KEY,moveactive,exact 720 0
 ### cyclenext
 focuses the next window on a workspace
 
-**params**: none
+**params**: empty for next, `prev` for previous
 
 ### focuswindow
 focuses the first found window matching a specified regex
