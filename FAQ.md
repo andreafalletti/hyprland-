@@ -59,6 +59,9 @@ Make sure to also edit `~/.config/gtk-4.0/settings.ini` and `~/.gtkrc-2.0` if _n
 
 Then, do a `gsettings set $gnome-schema cursor-theme 'theme-name'` and you're all good!
 
+### GTK Settings no work / whatever!
+[https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland](https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland)
+
 ### My [program name] is freezing!
 Make sure you have a notification daemon running, for example `dunst`. Autostart it with the `exec-once` keyword.
 
