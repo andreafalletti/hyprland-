@@ -154,4 +154,4 @@ exec-once=systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTO
 ```
 
 ### My cursor in QT apps is too big!
-The QT cursor size can be fixed by setting the envvar `XCURSOR_SIZE=24`. You should probably add it to your launching params.
+The QT cursor size can be fixed by setting the envvar `XCURSOR_SIZE=24`. You should probably add it to your exported envvars.
