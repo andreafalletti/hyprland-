@@ -135,7 +135,7 @@ _Subcategory input:touchpad:_
 
 `disable_hyprland_logo=int` - (0/1) disables the hyprland logo background.
 
-`disable_splash_rendering=int` - (0/1) disables the hyprland splash rendering.
+`disable_splash_rendering=int` - (0/1) disables the hyprland splash rendering. (requires a monitor reload to take effect)
 
 ## Debug
 ### only for developers
