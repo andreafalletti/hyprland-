@@ -48,8 +48,6 @@ SHIFT CAPS CTRL/CONTROL ALT MOD2 MOD3 SUPER/WIN/LOGO/MOD4 MOD5
 
 `damage_tracking=str` - Makes the compositor redraw only the needed bits of the display. Saves on resources by not redrawing when not needed. Available modes: `none, monitor, full`. Heavily recommended to use `full` for maximum optimization.
 
-`disable_hyprland_logo=int` - (0/1) disables the hyprland logo background.
-
 ## Decoration
 
 `rounding=int` - rounded corners radius (in pixels)
@@ -132,6 +130,12 @@ _Subcategory input:touchpad:_
 `workspace_swipe_min_speed_to_force=int` - minimum speed in px per timepoint to force the change ignoring `cancel_ratio` (default `30`) Setting to `0` will disable this mechanic.
 
 `workspace_swipe_cancel_ratio=float` - (0.0 - 1.0) how much the swipe has to proceed in order to commence it. (0.7 -> if > 0.7 * distance, switch, if less, revert)
+
+## Misc
+
+`disable_hyprland_logo=int` - (0/1) disables the hyprland logo background.
+
+`disable_splash_rendering=int` - (0/1) disables the hyprland splash rendering.
 
 ## Debug
 ### only for developers
