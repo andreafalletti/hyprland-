@@ -56,7 +56,8 @@ workspaces - lists all workspaces with their properties
 clients - lists all windows with their properties
 devices - lists all connected keyboards and mice
 activewindow - gets the active window name
-layers - WARNING: Crashes Hyprland often! lists all the layers
+layers - lists all the layers
+splash - prints the current random splash
 ```
 
 # Batch
