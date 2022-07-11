@@ -117,6 +117,12 @@ _Subcategory input:touchpad:_
 
 `natural_scroll=int` - (0/1) enable natural scroll on touchpads
 
+`clickfinger_behavior=int` - (0/1) self-explanatory
+
+`middle_button_emulation=int` - (0/1) self-explanatory
+
+`tap-to-click=int` - (0/1) self-explanatory
+
 ### Per-device input config is described [here](https://github.com/hyprwm/Hyprland/wiki/Advanced-config#per-device-input-configs)
 
 ## Gestures
