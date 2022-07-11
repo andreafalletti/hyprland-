@@ -150,10 +150,5 @@ _Subcategory input:touchpad:_
 
 `damage_blink=int` - (0/1) (epilepsy warning!) flash areas updated with damage tracking
 
-## Experimental
-### use at your own peril!
-
-`vfr=int` - (0/1) enable VFR (Variable Frame Rate)
-
 ## More 
 There are more config options described in other pages, which are layout- or circumstance-specific. See the sidebar navpanel for more pages.
