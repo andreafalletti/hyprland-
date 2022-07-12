@@ -9,6 +9,8 @@ Variable types are:
 
 `int` - integer
 
+`bool` - boolean, `true` or `false` (`yes` or `no`, `0` or `1`)
+
 `float` - floating point number
 
 `col` - color (e.g. 0x22334455 - alpha 0x22, red 0x33, green 0x44, blue 0x55)
@@ -28,13 +30,13 @@ SHIFT CAPS CTRL/CONTROL ALT MOD2 MOD3 SUPER/WIN/LOGO/MOD4 MOD5
 
 `sensitivity=float` - mouse sensitivity
 
-`apply_sens_to_raw=int` - (0/1) if on, will also apply the sensitivity to raw mouse output (e.g. sensitivity in games)
+`apply_sens_to_raw=bool` - if on, will also apply the sensitivity to raw mouse output (e.g. sensitivity in games)
 
 `main_mod=MOD` - the mod used to move/resize windows (hold main_mod and LMB/RMB, try it and you'll know what I mean.)
 
 `border_size=int` - border thickness
 
-`no_border_on_floating=int` - (0/1) disable borders for floating windows. 
+`no_border_on_floating=bool` - disable borders for floating windows. 
 
 `gaps_in=int` - gaps between windows
 
@@ -52,9 +54,9 @@ SHIFT CAPS CTRL/CONTROL ALT MOD2 MOD3 SUPER/WIN/LOGO/MOD4 MOD5
 
 `rounding=int` - rounded corners radius (in pixels)
 
-`multisample_edges=int` - (0/1) enable antialiasing (no-jaggies) for rounded corners.
+`multisample_edges=bool` - enable antialiasing (no-jaggies) for rounded corners.
 
-`no_blur_on_oversized=int` - (0/1) disable blur on oversized windows (recommended to leave at default 1, may cause graphical issues)
+`no_blur_on_oversized=bool` - disable blur on oversized windows (recommended to leave at default 1, may cause graphical issues)
 
 `active_opacity=float` - self-explanatory, 0 - 1
 
@@ -62,7 +64,7 @@ SHIFT CAPS CTRL/CONTROL ALT MOD2 MOD3 SUPER/WIN/LOGO/MOD4 MOD5
 
 `fullscreen_opacity=float` - self-explanatory, 0 - 1
 
-`blur=int` - (0/1) enable dual kawase window background blur
+`blur=bool` - enable dual kawase window background blur
 
 `blur_size=int` - Minimum 1, blur size (intensity)
 
@@ -74,15 +76,15 @@ If you want heavy blur, you need to up the blur_passes.
 
 The more passes, the more you can up the blur_size without noticing artifacts.
 
-`blur_ignore_opacity=int` - (0/1) make the blur layer ignore the opacity of the window.
+`blur_ignore_opacity=bool` - make the blur layer ignore the opacity of the window.
 
-`drop_shadow=int` - (0/1) enable drop shadows on windows
+`drop_shadow=bool` - enable drop shadows on windows
 
 `shadow_range=int` - Shadow range (in pixels), more = larger shadow
 
 `shadow_render_power=int` - (1 - 4), in what power to render the falloff (more power, the faster the falloff)
 
-`shadow_ignore_window=int` - (0/1) if true, the shadow will not be rendered behind the window itself, only around it.
+`shadow_ignore_window=bool` - if true, the shadow will not be rendered behind the window itself, only around it.
 
 `col.shadow=col` - shadow's color. Alpha dictates shadow's opacity.
 
@@ -90,7 +92,7 @@ The more passes, the more you can up the blur_size without noticing artifacts.
 
 ## Animations
 
-`enabled=int` - (0/1) enable animations
+`enabled=bool` - enable animations
 
 _More about animations is on the Advanced Configuring page._
 
@@ -104,34 +106,34 @@ _More about animations is on the Advanced Configuring page._
 
 `repeat_delay=int` - in ms, the repeat delay (grace period) before the spam
 
-`natural_scroll=int` - (0/1) enable natural scroll
+`natural_scroll=bool` - enable natural scroll
 
-`numlock_by_default=int` - (0/1) lock numlock by default
+`numlock_by_default=bool` - lock numlock by default
 
-`force_no_accel=int` - (0/1) force no mouse acceleration, bypasses most of your pointer settings to get as raw of a signal as possible.
+`force_no_accel=bool` - force no mouse acceleration, bypasses most of your pointer settings to get as raw of a signal as possible.
 
 ### Touchpad
 _Subcategory input:touchpad:_
 
-`disable_while_typing=int` - (0/1) disable touchpad while typing
+`disable_while_typing=bool` - self-explanatory
 
-`natural_scroll=int` - (0/1) enable natural scroll on touchpads
+`natural_scroll=bool` - self-explanatory
 
-`clickfinger_behavior=int` - (0/1) self-explanatory
+`clickfinger_behavior=bool` - self-explanatory
 
-`middle_button_emulation=int` - (0/1) self-explanatory
+`middle_button_emulation=bool` - self-explanatory
 
-`tap-to-click=int` - (0/1) self-explanatory
+`tap-to-click=bool` - self-explanatory
 
 ### Per-device input config is described [here](https://github.com/hyprwm/Hyprland/wiki/Advanced-config#per-device-input-configs)
 
 ## Gestures
 
-`workspace_swipe=int` - (0/1) enable workspace swipe gesture
+`workspace_swipe=bool` - enable workspace swipe gesture
 
 `workspace_swipe_distance=int` - in px, the distance of the gesture
 
-`workspace_swipe_invert=int` - (0/1) invert the direction
+`workspace_swipe_invert=bool` - invert the direction
 
 `workspace_swipe_min_speed_to_force=int` - minimum speed in px per timepoint to force the change ignoring `cancel_ratio` (default `30`) Setting to `0` will disable this mechanic.
 
@@ -139,18 +141,18 @@ _Subcategory input:touchpad:_
 
 ## Misc
 
-`disable_hyprland_logo=int` - (0/1) disables the hyprland logo background.
+`disable_hyprland_logo=bool` - disables the hyprland logo background.
 
-`disable_splash_rendering=int` - (0/1) disables the hyprland splash rendering. (requires a monitor reload to take effect)
+`disable_splash_rendering=bool` - disables the hyprland splash rendering. (requires a monitor reload to take effect)
 
-`no_vfr=int` - (0/1) disables VFR (variable frame rate) - VFR increases battery life at the expense of possible issues on a few monitors.
+`no_vfr=bool` - disables VFR (variable frame rate) - VFR increases battery life at the expense of possible issues on a few monitors.
 
 ## Debug
 ### only for developers
 
-`overlay=int` - (0/1) print the debug performance overlay.
+`overlay=bool` - print the debug performance overlay.
 
-`damage_blink=int` - (0/1) (epilepsy warning!) flash areas updated with damage tracking
+`damage_blink=bool` - (epilepsy warning!) flash areas updated with damage tracking
 
 ## More 
 There are more config options described in other pages, which are layout- or circumstance-specific. See the sidebar navpanel for more pages.
