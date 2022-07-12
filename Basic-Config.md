@@ -145,7 +145,7 @@ _Subcategory input:touchpad:_
 
 `disable_splash_rendering=bool` - disables the hyprland splash rendering. (requires a monitor reload to take effect)
 
-`no_vfr=bool` - disables VFR (variable frame rate) - VFR increases battery life at the expense of possible issues on a few monitors.
+`no_vfr=bool` - disables VFR (variable frame rate) - VFR increases battery life at the expense of possible issues on a few monitors. (VFR is off by default)
 
 ## Debug
 ### only for developers
