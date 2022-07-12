@@ -143,6 +143,8 @@ _Subcategory input:touchpad:_
 
 `disable_splash_rendering=int` - (0/1) disables the hyprland splash rendering. (requires a monitor reload to take effect)
 
+`no_vfr=int` - (0/1) disables VFR (variable frame rate) - VFR increases battery life at the expense of possible issues on a few monitors.
+
 ## Debug
 ### only for developers
 
