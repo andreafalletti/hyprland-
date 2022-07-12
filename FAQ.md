@@ -168,3 +168,6 @@ exec Hyprland
 ```
 
 and launch that. (For Login Manager users, you can replace the "exec" entry in the .desktop file to point to your script)
+
+### I get random white flashes!
+Try disabling VFR with `misc:no_vfr=1`
