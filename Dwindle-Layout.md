@@ -48,6 +48,8 @@ category name: `dwindle`
 
 `special_scale_factor=float` - 0 - 1 -> specifies the scale factor of windows on the special workspace
 
+`split_width_multiplier=float` - specifies the auto-split width multiplier
+
 ## Bind Dispatchers
 `togglegroup` - toggles the current window and its siblings (recursively) into a group - params: none
 
