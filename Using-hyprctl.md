@@ -73,12 +73,10 @@ hyprctl --batch "keyword general:border_size 2 ; keyword general:gaps_out 20"
 
 You can specify flags for the request like this:
 ```
-hyprctl j/monitors
+hyprctl -j monitors
 ```
 
-will return the `monitors` request in JSON.
-
-Flag list:
+flag list:
 ```
-j -> JSON
+j -> output in JSON
 ```
