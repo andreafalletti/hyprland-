@@ -536,3 +536,8 @@ If you really want to blur them, use `blurls=`
 blurls=NAMESPACE
 ```
 where `NAMESPACE` is the namespace of the layerSurface. (You can get it from `hyprctl layers`)
+
+to remove a namespace from being blurred (useful in dynamic situations) use:
+```
+blurls=remove,NAMESPACE
+```
