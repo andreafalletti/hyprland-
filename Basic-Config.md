@@ -56,7 +56,7 @@ SHIFT CAPS CTRL/CONTROL ALT MOD2 MOD3 SUPER/WIN/LOGO/MOD4 MOD5
 
 `multisample_edges=bool` - enable antialiasing (no-jaggies) for rounded corners.
 
-`no_blur_on_oversized=bool` - disable blur on oversized windows (recommended to leave at default 1, may cause graphical issues)
+`no_blur_on_oversized=bool` - disable blur on oversized windows (deprecated, leave at `0`)
 
 `active_opacity=float` - self-explanatory, 0 - 1
 
