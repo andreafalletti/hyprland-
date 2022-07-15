@@ -125,6 +125,8 @@ _Subcategory input:touchpad:_
 
 `tap-to-click=bool` - self-explanatory
 
+*Note:* Touchpad config changes may require a Hyprland restart.
+
 ### Per-device input config is described [here](https://github.com/hyprwm/Hyprland/wiki/Advanced-config#per-device-input-configs)
 
 ## Gestures
