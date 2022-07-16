@@ -88,6 +88,8 @@ The more passes, the more you can up the blur_size without noticing artifacts.
 
 `col.shadow=col` - shadow's color. Alpha dictates shadow's opacity.
 
+`col.shadow_inactive=col` - inactive shadow color. (if not set, will fall back to col.shadow)
+
 `shadow_offset=vec2` - shadow's rendering offset.
 
 ## Animations
