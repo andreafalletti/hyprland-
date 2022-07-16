@@ -14,6 +14,7 @@
       <a>　</a><a href="https://github.com/vaxerski/Hyprland/wiki/Basic-Config">Basic Configuring</a><br/>
       <a>　</a><a href="https://github.com/vaxerski/Hyprland/wiki/Advanced-config">Advanced Configuring</a><br/>
       <a>　</a><a href="https://github.com/vaxerski/Hyprland/wiki/Dwindle-Layout">Dwindle Layout</a><br/>
+      <a>　</a><a href="https://github.com/hyprwm/Hyprland/wiki/Master-Layout">Master Layout</a><br/>
       <a>　</a><a href="https://github.com/vaxerski/Hyprland/wiki/Using-hyprctl">Using Hyprctl</a><br/>
       <a>　</a><a href="https://github.com/vaxerski/Hyprland/wiki/Uncommon-tips-&-tricks">Uncommon Tips & Tricks</a><br/>
       <br/>
