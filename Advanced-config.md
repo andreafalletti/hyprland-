@@ -349,6 +349,9 @@ moves a floating window (x,y -> int or %, e.g. 20% or 100)
 ### size [x] [y]
 resizes a floating window (x,y -> int or %, e.g. 20% or 100)
 
+### center
+if the window is floating, will center it on the monitor.
+
 ### pseudo
 pseudotiles a window
 
