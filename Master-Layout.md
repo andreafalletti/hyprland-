@@ -17,3 +17,5 @@ You can, however, resize the master window.
 `special_scale_factor=float` - (0.0 - 1.0) the scale of the special workspace windows
 
 `new_is_master=bool` - whether a newly open window should replace the master or join the slaves.
+
+`new_on_top=bool` - whether a newly open window should be on the top of the stack
