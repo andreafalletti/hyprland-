@@ -210,6 +210,14 @@ OR
 
 `title:` and a title regex
 
+OR
+
+`pid:` and the pid
+
+OR
+
+`address:` and an address
+
 ### focusmonitor
 focuses a monitor
 
