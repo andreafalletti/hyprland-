@@ -160,5 +160,9 @@ _Subcategory input:touchpad:_
 
 `damage_blink=bool` - (epilepsy warning!) flash areas updated with damage tracking
 
+`disable_logs=bool` - disables the logs
+
+`disable_time=bool` - disables time logging, by default it's `true`
+
 ## More 
 There are more config options described in other pages, which are layout- or circumstance-specific. See the sidebar navpanel for more pages.
