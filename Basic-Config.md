@@ -28,7 +28,7 @@ SHIFT CAPS CTRL/CONTROL ALT MOD2 MOD3 SUPER/WIN/LOGO/MOD4 MOD5
 
 ## General
 
-`sensitivity=float` - mouse sensitivity
+`sensitivity=float` - mouse sensitivity (*this is Hyprland sensitivity, added on top of the data. To modify the data per-device, or more accurately (sensitivities > 1 might cause mouse to jump pixels), see `input:sensitivity`)
 
 `apply_sens_to_raw=bool` - if on, will also apply the sensitivity to raw mouse output (e.g. sensitivity in games)
 
@@ -115,6 +115,8 @@ _More about animations is on the Advanced Configuring page._
 `numlock_by_default=bool` - lock numlock by default
 
 `force_no_accel=bool` - force no mouse acceleration, bypasses most of your pointer settings to get as raw of a signal as possible.
+
+`sensitivity=float` - set the libinput sensitivity. This **HAS** to be from -1 to 1, or else it will be clamped.
 
 ### Touchpad
 _Subcategory input:touchpad:_
