@@ -137,6 +137,8 @@ _Subcategory input:touchpad:_
 
 `workspace_swipe=bool` - enable workspace swipe gesture
 
+`workspace_swipe_fingers=int` - how many fingers for the gesture
+
 `workspace_swipe_distance=int` - in px, the distance of the gesture
 
 `workspace_swipe_invert=bool` - invert the direction
