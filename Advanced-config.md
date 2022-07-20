@@ -105,8 +105,22 @@ unbind=SUPER,O
 
 May be useful for dynamic keybindings with `hyprctl`.
 
-## Locked binds
-To lock a bind (make it work even with an active inhibitor, e.g. screen locked), use `bindl=` instead of `bind=`
+## Bind flags
+bind supports flags in this format:
+```
+bind[flags]=...
+```
+
+e.g.:
+```
+bindrl=MOD,KEY,exec,amongus
+```
+
+flags:
+```
+l -> locked, aka. works also when an input inhibitor is active
+r -> release, will trigger on release of a key
+```
 
 ## General dispatcher list:
 
