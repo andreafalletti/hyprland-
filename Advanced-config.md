@@ -122,6 +122,12 @@ l -> locked, aka. works also when an input inhibitor is active
 r -> release, will trigger on release of a key
 ```
 
+## Binding mods
+You can bind a mod alone like this:
+```
+bindr=ALT,Alt_L,exec,amongus
+```
+
 ## General dispatcher list:
 
 ### exec
