@@ -304,13 +304,15 @@ toggles the special workspace on/off.
 **params**: none
 
 ## Workspaces
-workspace args are unified. You have five choices:
+workspace args are unified. You have six choices:
 
 ID: e.g. `1`, `2`, or `3`
 
 Relative ID: e.g. `+1`, `-3` or `+100`
 
 Relative workspace on monitor: e.g. `m+1`, `m-1` or `m+3`
+
+Relative open workspace: e.g. `e+1` or `e-10`
 
 Name: e.g. `name:Web`, `name:Anime` or `name:Better anime`
 
