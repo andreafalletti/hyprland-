@@ -120,6 +120,7 @@ flags:
 ```
 l -> locked, aka. works also when an input inhibitor is active
 r -> release, will trigger on release of a key
+e -> repeat, will repeat when held.
 ```
 
 ## Binding mods
