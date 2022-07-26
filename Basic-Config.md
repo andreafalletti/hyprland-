@@ -161,6 +161,8 @@ _Subcategory input:touchpad:_
 
 `pass_mouse_when_bound=bool` - if disabled, will not pass the mouse events to apps / dragging windows around if a keybind has been triggered. (Enabled by default)
 
+`scroll_event_delay=int` - in ms, how many ms to wait after a scroll event to allow to pass another one for the binds.
+
 ## Debug
 ### only for developers
 
