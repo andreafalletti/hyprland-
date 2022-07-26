@@ -105,6 +105,12 @@ unbind=SUPER,O
 
 May be useful for dynamic keybindings with `hyprctl`.
 
+You can also bind mouse buttons, by prefacing the mouse keycode with `mouse:`, for example:
+```
+bind=SUPER,mouse:272,exec,amongus
+```
+will bind it to SUPER+LMB.
+
 ## Bind flags
 bind supports flags in this format:
 ```
