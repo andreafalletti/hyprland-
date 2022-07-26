@@ -20,6 +20,9 @@ Use a keybind (or execute) `grim -g $(slurp)`, select a region. A screenshot wil
 ### How do I change my wallpaper?
 Install hyprpaper, swaybg or any other wlroots-compatible wallpaper utility.
 
+### My workspace (2, 3, or any other) is like... bugged?
+You did the below, unknowingly.
+
 ### How do I mirror a screen?
 Mirroring isn't *officially* supported, it's technically a bug, but it works. Make sure the screen you want mirrored is the same resolution as the source.
 
