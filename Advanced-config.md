@@ -142,6 +142,25 @@ executes a shell command
 
 **params**: command
 
+### pass
+passes the key (with mods) to a specified window. Can be used as a workaround to global keybinds not working on Wayland.
+
+**params**: a window, so:
+
+class regex
+
+OR
+
+`title:` and a title regex
+
+OR
+
+`pid:` and the pid
+
+OR
+
+`address:` and an address
+
 ### killactive
 kills the focused window
 
