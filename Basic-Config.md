@@ -157,6 +157,10 @@ _Subcategory input:touchpad:_
 
 `no_vfr=bool` - disables VFR (variable frame rate) - VFR increases battery life at the expense of possible issues on a few monitors. (VFR is off by default)
 
+## Binds
+
+`pass_mouse_when_bound=bool` - if disabled, will not pass the mouse events to apps / dragging windows around if a keybind has been triggered. (Enabled by default)
+
 ## Debug
 ### only for developers
 
