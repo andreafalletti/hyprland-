@@ -8,8 +8,6 @@
       <br/>
       <li><a href="https://github.com/hyprwm/Hyprland/wiki/Installation">Installation</a></li>
       <br/>
-      <li><a href="https://github.com/hyprwm/Hyprland/wiki/Nix">Nix</a></li>
-      <br/>
       <li><a href="https://github.com/hyprwm/Hyprland/wiki/Quick-start">Quick Start</a></li>
       <br/>
       <li><a href="https://github.com/hyprwm/Hyprland/wiki/Configuring-Hyprland">Master Configuring</a></li>
@@ -19,6 +17,8 @@
       <a>　</a><a href="https://github.com/hyprwm/Hyprland/wiki/Master-Layout">Master Layout</a><br/>
       <a>　</a><a href="https://github.com/hyprwm/Hyprland/wiki/Using-hyprctl">Using Hyprctl</a><br/>
       <a>　</a><a href="https://github.com/hyprwm/Hyprland/wiki/Uncommon-tips-&-tricks">Uncommon Tips & Tricks</a><br/>
+      <br/>
+      <li><a href="https://github.com/hyprwm/Hyprland/wiki/Nix">Nix</a></li>
       <br/>
       <li><a href="https://github.com/hyprwm/Hyprland/wiki/IPC">IPC</a></li>
       <br/>
