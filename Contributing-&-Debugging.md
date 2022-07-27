@@ -9,7 +9,7 @@ For PRs, make sure that you:
 - explain your PR as best as you can
 
 For issues, please see
-[the guidelines](https://github.com/vaxerski/Hyprland/blob/main/docs/ISSUE_GUIDELINES.md)
+[the guidelines](https://github.com/hyprwm/Hyprland/blob/main/docs/ISSUE_GUIDELINES.md)
 
 # Build in debug
 

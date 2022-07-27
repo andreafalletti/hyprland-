@@ -40,7 +40,7 @@ is valid.
 # Basic configuring
 
 To configure the "options" of Hyprland, animations, styling, etc. see
-[Basic Configuring](https://github.com/vaxerski/Hyprland/wiki/Basic-Config).
+[Basic Configuring](https://github.com/hyprwm/Hyprland/wiki/Basic-Config).
 
 # Advanced configuring
 
@@ -48,4 +48,4 @@ Some keywords (binds, curves, execs, monitors, etc.) arent variables but define
 special behaviour.
 
 See all of them in
-[Advanced Configuring](https://github.com/vaxerski/Hyprland/wiki/Advanced-config)
+[Advanced Configuring](https://github.com/hyprwm/Hyprland/wiki/Advanced-config)

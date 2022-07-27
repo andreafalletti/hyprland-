@@ -49,7 +49,7 @@ changes persist, configure your outputs in the config!
 # Proper configuring
 
 Head onto the
-[Master Configuring Wiki Page](https://github.com/vaxerski/Hyprland/wiki/Configuring-Hyprland)
+[Master Configuring Wiki Page](https://github.com/hyprwm/Hyprland/wiki/Configuring-Hyprland)
 to learn all about configuring Hyprland to your likings.
 
 # Apps / X11 replacements

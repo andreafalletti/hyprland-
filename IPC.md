@@ -12,7 +12,7 @@ echo $HYPRLAND_INSTANCE_SIGNATURE
 # /tmp/hypr/\[HIS\]/.socket.sock
 
 Used for hyprctl-like requests. See the
-[Hyprctl page](https://github.com/vaxerski/Hyprland/wiki/Using-hyprctl) for
+[Hyprctl page](https://github.com/hyprwm/Hyprland/wiki/Using-hyprctl) for
 commands.
 
 basically, write `command args`.

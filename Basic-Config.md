@@ -1,11 +1,11 @@
 # Basic Configuring
 
 For basic syntax info, see
-[Master Configuring](https://github.com/vaxerski/Hyprland/wiki/Configuring-Hyprland).
+[Master Configuring](https://github.com/hyprwm/Hyprland/wiki/Configuring-Hyprland).
 
 This page documents all the "options" of Hyprland. For binds, monitors, execs,
 curves, etc. see
-[Advanced Configuring](https://github.com/vaxerski/Hyprland/wiki/Advanced-config).
+[Advanced Configuring](https://github.com/hyprwm/Hyprland/wiki/Advanced-config).
 
 # Variable types
 
