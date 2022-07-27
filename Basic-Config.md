@@ -1,10 +1,14 @@
 # Basic Configuring
 
-For basic syntax info, see [Master Configuring](https://github.com/vaxerski/Hyprland/wiki/Configuring-Hyprland).
+For basic syntax info, see
+[Master Configuring](https://github.com/vaxerski/Hyprland/wiki/Configuring-Hyprland).
 
-This page documents all the "options" of Hyprland. For binds, monitors, execs, curves, etc. see [Advanced Configuring](https://github.com/vaxerski/Hyprland/wiki/Advanced-config).
+This page documents all the "options" of Hyprland. For binds, monitors, execs,
+curves, etc. see
+[Advanced Configuring](https://github.com/vaxerski/Hyprland/wiki/Advanced-config).
 
 # Variable types
+
 Variable types are:
 
 `int` - integer
@@ -15,11 +19,14 @@ Variable types are:
 
 `col` - color (e.g. 0x22334455 - alpha 0x22, red 0x33, green 0x44, blue 0x55)
 
-`vec2` - vector with 2 values (float), separated by a space (e.g. `0 0` or `-10.9 99.1`)
+`vec2` - vector with 2 values (float), separated by a space (e.g. `0 0` or
+`-10.9 99.1`)
 
-`MOD` - a string modmask (e.g. SUPER or SUPERSHIFT or SUPERSHIFTALTCTLRCAPSMOD2MOD3MOD5 or empty for none)
+`MOD` - a string modmask (e.g. SUPER or SUPERSHIFT or
+SUPERSHIFTALTCTLRCAPSMOD2MOD3MOD5 or empty for none)
 
 Mod list:
+
 ```
 SHIFT CAPS CTRL/CONTROL ALT MOD2 MOD3 SUPER/WIN/LOGO/MOD4 MOD5
 ```
@@ -28,15 +35,19 @@ SHIFT CAPS CTRL/CONTROL ALT MOD2 MOD3 SUPER/WIN/LOGO/MOD4 MOD5
 
 ## General
 
-`sensitivity=float` - mouse sensitivity (*this is Hyprland sensitivity, added on top of the data. To modify the data per-device, or more accurately (sensitivities > 1 might cause mouse to jump pixels), see `input:sensitivity`)
+`sensitivity=float` - mouse sensitivity (\*this is Hyprland sensitivity, added
+on top of the data. To modify the data per-device, or more accurately
+(sensitivities > 1 might cause mouse to jump pixels), see `input:sensitivity`)
 
-`apply_sens_to_raw=bool` - if on, will also apply the sensitivity to raw mouse output (e.g. sensitivity in games)
+`apply_sens_to_raw=bool` - if on, will also apply the sensitivity to raw mouse
+output (e.g. sensitivity in games)
 
-`main_mod=MOD` - the mod used to move/resize windows (hold main_mod and LMB/RMB, try it and you'll know what I mean.)
+`main_mod=MOD` - the mod used to move/resize windows (hold main_mod and LMB/RMB,
+try it and you'll know what I mean.)
 
 `border_size=int` - border thickness
 
-`no_border_on_floating=bool` - disable borders for floating windows. 
+`no_border_on_floating=bool` - disable borders for floating windows.
 
 `gaps_in=int` - gaps between windows
 
@@ -46,11 +57,16 @@ SHIFT CAPS CTRL/CONTROL ALT MOD2 MOD3 SUPER/WIN/LOGO/MOD4 MOD5
 
 `col.inactive_border=col` - self-explanatory
 
-`cursor_inactive_timeout=int` - in seconds, after how many seconds of cursor's inactivity to hide it. (default / never is `0`)
+`cursor_inactive_timeout=int` - in seconds, after how many seconds of cursor's
+inactivity to hide it. (default / never is `0`)
 
-`damage_tracking=str` - Makes the compositor redraw only the needed bits of the display. Saves on resources by not redrawing when not needed. Available modes: `none, monitor, full`. Heavily recommended to use `full` for maximum optimization.
+`damage_tracking=str` - Makes the compositor redraw only the needed bits of the
+display. Saves on resources by not redrawing when not needed. Available modes:
+`none, monitor, full`. Heavily recommended to use `full` for maximum
+optimization.
 
-`layout=str` - which layout to use. (Available: `dwindle`, `master`, default is `dwindle`)
+`layout=str` - which layout to use. (Available: `dwindle`, `master`, default is
+`dwindle`)
 
 ## Decoration
 
@@ -58,7 +74,8 @@ SHIFT CAPS CTRL/CONTROL ALT MOD2 MOD3 SUPER/WIN/LOGO/MOD4 MOD5
 
 `multisample_edges=bool` - enable antialiasing (no-jaggies) for rounded corners.
 
-`no_blur_on_oversized=bool` - disable blur on oversized windows (deprecated, leave at `0`)
+`no_blur_on_oversized=bool` - disable blur on oversized windows (deprecated,
+leave at `0`)
 
 `active_opacity=float` - self-explanatory, 0 - 1
 
@@ -71,26 +88,31 @@ SHIFT CAPS CTRL/CONTROL ALT MOD2 MOD3 SUPER/WIN/LOGO/MOD4 MOD5
 `blur_size=int` - Minimum 1, blur size (intensity)
 
 `blur_passes=int` - Minimim 1, more passes = more resource intensive.
-    
-Your blur "amount" is blur_size * blur_passes, but high blur_size (over around 5-ish) will produce artifacts.
-    
+
+Your blur "amount" is blur_size * blur_passes, but high blur_size (over around
+5-ish) will produce artifacts.
+
 If you want heavy blur, you need to up the blur_passes.
 
 The more passes, the more you can up the blur_size without noticing artifacts.
 
-`blur_ignore_opacity=bool` - make the blur layer ignore the opacity of the window.
+`blur_ignore_opacity=bool` - make the blur layer ignore the opacity of the
+window.
 
 `drop_shadow=bool` - enable drop shadows on windows
 
 `shadow_range=int` - Shadow range (in pixels), more = larger shadow
 
-`shadow_render_power=int` - (1 - 4), in what power to render the falloff (more power, the faster the falloff)
+`shadow_render_power=int` - (1 - 4), in what power to render the falloff (more
+power, the faster the falloff)
 
-`shadow_ignore_window=bool` - if true, the shadow will not be rendered behind the window itself, only around it.
+`shadow_ignore_window=bool` - if true, the shadow will not be rendered behind
+the window itself, only around it.
 
 `col.shadow=col` - shadow's color. Alpha dictates shadow's opacity.
 
-`col.shadow_inactive=col` - inactive shadow color. (if not set, will fall back to col.shadow)
+`col.shadow_inactive=col` - inactive shadow color. (if not set, will fall back
+to col.shadow)
 
 `shadow_offset=vec2` - shadow's rendering offset.
 
@@ -102,9 +124,13 @@ _More about animations is on the Advanced Configuring page._
 
 ## Input
 
-`kb_layout=str` `kb_variant=str` `kb_model=str` `kb_options=str` `kb_rules=str` - adequate keyboard settings
+`kb_layout=str` `kb_variant=str` `kb_model=str` `kb_options=str` `kb_rules=str`
+\- adequate keyboard settings
 
-`follow_mouse=int` - (0/1/2) enable mouse following (focus on enter new window) - Quirk: will always focus on mouse enter if you're entering a floating window from a tiled one, or vice versa. 0 - disabled, 1 - full, 2 - loose. Loose will focus mouse on other windows on focus but not the keyboard.
+`follow_mouse=int` - (0/1/2) enable mouse following (focus on enter new window)
+\- Quirk: will always focus on mouse enter if you're entering a floating window
+from a tiled one, or vice versa. 0 - disabled, 1 - full, 2 - loose. Loose will
+focus mouse on other windows on focus but not the keyboard.
 
 `repeat_rate=int` - in ms, the repeat rate for held keys
 
@@ -114,11 +140,14 @@ _More about animations is on the Advanced Configuring page._
 
 `numlock_by_default=bool` - lock numlock by default
 
-`force_no_accel=bool` - force no mouse acceleration, bypasses most of your pointer settings to get as raw of a signal as possible.
+`force_no_accel=bool` - force no mouse acceleration, bypasses most of your
+pointer settings to get as raw of a signal as possible.
 
-`sensitivity=float` - set the libinput sensitivity. This **HAS** to be from -1 to 1, or else it will be clamped.
+`sensitivity=float` - set the libinput sensitivity. This **HAS** to be from -1
+to 1, or else it will be clamped.
 
 ### Touchpad
+
 _Subcategory input:touchpad:_
 
 `disable_while_typing=bool` - self-explanatory
@@ -145,34 +174,47 @@ _Subcategory input:touchpad:_
 
 `workspace_swipe_invert=bool` - invert the direction
 
-`workspace_swipe_min_speed_to_force=int` - minimum speed in px per timepoint to force the change ignoring `cancel_ratio` (default `30`) Setting to `0` will disable this mechanic.
+`workspace_swipe_min_speed_to_force=int` - minimum speed in px per timepoint to
+force the change ignoring `cancel_ratio` (default `30`) Setting to `0` will
+disable this mechanic.
 
-`workspace_swipe_cancel_ratio=float` - (0.0 - 1.0) how much the swipe has to proceed in order to commence it. (0.7 -> if > 0.7 * distance, switch, if less, revert)
+`workspace_swipe_cancel_ratio=float` - (0.0 - 1.0) how much the swipe has to
+proceed in order to commence it. (0.7 -> if > 0.7 * distance, switch, if less,
+revert)
 
 ## Misc
 
 `disable_hyprland_logo=bool` - disables the hyprland logo background.
 
-`disable_splash_rendering=bool` - disables the hyprland splash rendering. (requires a monitor reload to take effect)
+`disable_splash_rendering=bool` - disables the hyprland splash rendering.
+(requires a monitor reload to take effect)
 
-`no_vfr=bool` - disables VFR (variable frame rate) - VFR increases battery life at the expense of possible issues on a few monitors. (VFR is off by default)
+`no_vfr=bool` - disables VFR (variable frame rate) - VFR increases battery life
+at the expense of possible issues on a few monitors. (VFR is off by default)
 
 ## Binds
 
-`pass_mouse_when_bound=bool` - if disabled, will not pass the mouse events to apps / dragging windows around if a keybind has been triggered. (Enabled by default)
+`pass_mouse_when_bound=bool` - if disabled, will not pass the mouse events to
+apps / dragging windows around if a keybind has been triggered. (Enabled by
+default)
 
-`scroll_event_delay=int` - in ms, how many ms to wait after a scroll event to allow to pass another one for the binds.
+`scroll_event_delay=int` - in ms, how many ms to wait after a scroll event to
+allow to pass another one for the binds.
 
 ## Debug
+
 ### only for developers
 
 `overlay=bool` - print the debug performance overlay.
 
-`damage_blink=bool` - (epilepsy warning!) flash areas updated with damage tracking
+`damage_blink=bool` - (epilepsy warning!) flash areas updated with damage
+tracking
 
 `disable_logs=bool` - disables the logs
 
 `disable_time=bool` - disables time logging, by default it's `true`
 
-## More 
-There are more config options described in other pages, which are layout- or circumstance-specific. See the sidebar navpanel for more pages.
+## More
+
+There are more config options described in other pages, which are layout- or
+circumstance-specific. See the sidebar navpanel for more pages.

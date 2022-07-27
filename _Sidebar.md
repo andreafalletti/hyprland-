@@ -3,7 +3,7 @@
    <br/>
    <h2 align="center"> Hyprland Wiki </h2>
 
-   <ul type="disc">
+<ul type="disc">
       <li><a href="https://github.com/vaxerski/Hyprland/wiki">Home</a></li>
       <br/>
       <li><a href="https://github.com/vaxerski/Hyprland/wiki/Installation">Installation</a></li>
@@ -27,6 +27,5 @@
       <li><a href="https://github.com/vaxerski/Hyprland/wiki/Contributing-&-Debugging">Contributing & Debugging</a></li>
       <br/>
 
-   </ul>
+</ul>
 </p>
-

@@ -1,14 +1,19 @@
 # Using Hyprctl
 
-`hyprctl` is a utility for controlling some parts of the compositor from a CLI or a script. If you install with `make install`, or any package, it should automatically be installed. 
+`hyprctl` is a utility for controlling some parts of the compositor from a CLI
+or a script. If you install with `make install`, or any package, it should
+automatically be installed.
 
-To check if `hyprctl` is installed, simply execute it by issuing `hyprctl` in the terminal.
+To check if `hyprctl` is installed, simply execute it by issuing `hyprctl` in
+the terminal.
 
-If it's not, go to the repo root and `/hyprctl`. Issue a `make all` and then `sudo cp ./hyprctl /usr/bin`.
+If it's not, go to the repo root and `/hyprctl`. Issue a `make all` and then
+`sudo cp ./hyprctl /usr/bin`.
 
 # Commands
 
 ## Control
+
 ### Dispatch
 
 issue a `dispatch` to call a keybind dispatcher with an arg.
@@ -16,6 +21,7 @@ issue a `dispatch` to call a keybind dispatcher with an arg.
 An arg has to be present, for dispatchers without parameters it can be anything.
 
 Examples:
+
 ```
 hyprctl dispatch exec kitty
 
@@ -29,6 +35,7 @@ Returns: `ok` on success, an error message on fail.
 issue a `keyword` to call a config keyword dynamically.
 
 Examples:
+
 ```
 hyprctl keyword bind SUPER,O,pseudo
 
@@ -43,7 +50,8 @@ issue a `reload` to force reload the config.
 
 ### kill
 
-issue a `kill` to get into a kill mode, where you can kill an app by clicking on it. You can exit it with ESCAPE.
+issue a `kill` to get into a kill mode, where you can kill an app by clicking on
+it. You can exit it with ESCAPE.
 
 Kind of like xkill.
 
@@ -61,22 +69,27 @@ splash - prints the current random splash
 ```
 
 # Batch
+
 You can also use `--batch` to specify a batch of commands to execute
 
 e.g.
+
 ```
 hyprctl --batch "keyword general:border_size 2 ; keyword general:gaps_out 20"
 ```
+
 `;` separates the commands
 
 # Flags
 
 You can specify flags for the request like this:
+
 ```
 hyprctl -j monitors
 ```
 
 flag list:
+
 ```
 j -> output in JSON
 ```
