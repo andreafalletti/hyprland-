@@ -31,7 +31,7 @@ Then, you can configure your outputs with
 hyprctl keyword monitor NAME,RES@HZ,OFFSET,SCALE
 ```
 
-`NAME` is the name of the display, e.g. `DP-1`
+`NAME` is the name of the display, e.g. `DP-1`, can be empty for a global rule.
 
 `RES@HZ` is the resolution and refresh rate, e.g. `1920x1080@144`
 
