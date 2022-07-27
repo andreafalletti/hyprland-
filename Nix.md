@@ -31,6 +31,8 @@ Make sure to check out the options of the
   };
 ```
 
+Don't forget to replace `HOSTNAME` with your hostname!
+
 ### Without flakes
 
 **NOTE:** If you're using Hyprland through an overlay, set
@@ -56,3 +58,32 @@ in {
   };
 }
 ```
+
+## Home Manager module
+
+You can use the Home Manager module by adding it to your configuration:
+
+```nix
+{ config, pkgs, inputs, ... }: {
+  imports = [
+    inputs.hyprland.homeManagerModules.default
+  ];
+
+  wayland.windowManager.hyprland.enable = true;
+  # ...
+}
+```
+
+For a list of available options, check the
+[module file](https://github.com/hyprwm/Hyprland/blob/main/nix/hm-module.nix).
+
+## Modules mix'n'match
+
+If you plan on using the HM module alongside the NixOS module, set the NixOS
+`programs.hyprland.package = null;`.
+
+If you don't plan on using the NixOS module, but want to use the HM module, you
+will have to enable all the options the NixOS module enables.
+
+If you don't plan on using any module, manually enable whatever options the
+modules set.
