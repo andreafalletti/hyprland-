@@ -3,7 +3,7 @@
 this page documents all of the more advanced config options. Binds, curves,
 execs, etc.
 
-Please remember, that for ALL arguments separated by a comma, if you want to leave one of them empty, you cannot reduce the number of commas:
+Please remember, that for ALL arguments separated by a comma, if you want to leave one of them empty, you cannot reduce the number of commas, *unless told otherwise in a specific section*:
 
 ```
 three_param_keyword=A,B,C # OK
