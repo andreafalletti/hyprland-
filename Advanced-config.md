@@ -609,8 +609,7 @@ forces the window to never receive focus
 
 # Animations
 
-animations are declared with the `animation` keyword. They can also be declared
-using a legacy way, but we will not cover that here.
+animations are declared with the `animation` keyword.
 
 ```
 animation=NAME,ONOFF,SPEED,CURVE,STYLE
@@ -631,13 +630,23 @@ animation=windows,1,10,myepiccurve,slide
 
 `STYLE` (optional) is the animation style
 
-_Animation names:_
+The animations are a tree. If an animation is unset, it will inherit its' parent's values.
+
+_Animation tree:_
 
 ```
-windows - window movement/resizing - Styles: slide,popin (fallback is popin)
-borders - border color
-fadein - fadein/fadeout on window open/close
-workspaces - workspace change - Styles: slide,slidevert,fadein
+global
+  ↳ windows
+    ↳ windowsIn - window open
+    ↳ windowsOut - window close
+    ↳ windowsMove - everything in between, moving, dragging, resizing.
+  ↳ fade
+    ↳ fadeIn - fade in (open) -> layers and windows
+    ↳ fadeOut - fade out (close) -> layers and windows
+    ↳ fadeSwitch - fade on changing activewindow and its' opacity
+    ↳ fadeShadow - fade on changing activewindow for shadows
+  ↳ border
+  ↳ workspaces
 ```
 
 # Defining variables
