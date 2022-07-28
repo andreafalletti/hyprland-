@@ -26,3 +26,19 @@ join the slaves.
 
 `new_on_top=bool` - whether a newly open window should be on the top of the
 stack
+
+## Dispatchers
+
+`layoutmsg` params:
+
+`swapwithmaster` -> swaps the current window with master
+
+`cyclenext` -> focuses the next window respecting the layout
+
+`cycleprev` -> focuses the previous window respecting the layout
+
+example usage:
+
+```
+bind=MOD,KEY,layoutmsg,cyclenext
+```
