@@ -368,6 +368,12 @@ changes the split ratio
 **params**: relative split change, +n/-n, e.g. +0.1 or -0.02, clamps to 0.1 -
 1.9
 
+### toggleopaque
+
+toggles the current window to always be opaque
+
+**params**: none
+
 ### movecursortocorner
 
 moves the cursor to the corner of the active window
