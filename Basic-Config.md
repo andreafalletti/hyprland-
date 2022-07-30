@@ -192,6 +192,8 @@ revert)
 `no_vfr=bool` - disables VFR (variable frame rate) - VFR increases battery life
 at the expense of possible issues on a few monitors. (VFR is off by default)
 
+`damage_entire_on_snapshot=bool` - Damage the entire monitor when rendering snapshots. Recommended with transformed displays. Do not use without transformed displays.
+
 ## Binds
 
 `pass_mouse_when_bound=bool` - if disabled, will not pass the mouse events to
