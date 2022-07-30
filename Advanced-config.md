@@ -260,6 +260,12 @@ toggles the focused window's fullscreen state
 **params**: 0 - real fullscreen (takes your entire screen), 1 - "maximize"
 fullscreen (keeps the gaps and bar(s))
 
+### dpms
+
+sets the monitor's dpms status
+
+**params**: `on` for on, `off` for  off.
+
 ### pseudo
 
 toggles the focused window to be pseudotiled
