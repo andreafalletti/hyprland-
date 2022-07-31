@@ -197,4 +197,4 @@ list:
 
 - SDDM → Works flawlessly
 - GDM → Works with the caveat of crashing Hyprland on the first launch
-- ly → Works with minor issues and/or caveats
+- ly → Works with minor to major issues and/or caveats
