@@ -194,6 +194,8 @@ at the expense of possible issues on a few monitors. (VFR is off by default)
 
 `damage_entire_on_snapshot=bool` - Damage the entire monitor when rendering snapshots. Recommended with transformed displays. Do not use without transformed displays.
 
+`mouse_move_enables_dpms=bool` - If DPMS is set to off, wake up the monitors if the mouse moves.
+
 ## Binds
 
 `pass_mouse_when_bound=bool` - if disabled, will not pass the mouse events to
