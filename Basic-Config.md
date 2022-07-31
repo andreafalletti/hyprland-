@@ -13,7 +13,7 @@ Variable types are:
 
 `int` - integer
 
-`bool` - boolean, `true` or `false` (`yes` or `no`, `0` or `1`)
+`bool` - boolean, `true` or `false` (`yes` or `no`, `0` or `1`) - any numerical value that is not `0` or `1` will cause undefined behaviour.
 
 `float` - floating point number
 
