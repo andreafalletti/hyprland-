@@ -87,3 +87,21 @@ will have to enable all the options the NixOS module enables.
 
 If you don't plan on using any module, manually enable whatever options the
 modules set.
+
+## Cachix
+
+A [Hyprland Cachix](https://app.cachix.org/cache/nix-gaming) exists to cache
+the `wlroots` package and speed up builds.
+
+In case you don't plan on changing the Nixpkgs Hyprland builds with, you can
+use this cache to speed up your builds.
+
+```nix
+# configuration.nix
+{
+  nix.settings = {
+    substituters = ["https://hyprland.cachix.org"];
+    trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
+  };
+}
+```
