@@ -621,6 +621,8 @@ animations are declared with the `animation` keyword.
 
 ```
 animation=NAME,ONOFF,SPEED,CURVE,STYLE
+or
+animation=NAME,ONOFF,SPEED,CURVE
 ```
 
 for example:
