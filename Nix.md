@@ -1,6 +1,9 @@
 # Nix
 
-Install and configure Hyprland on Nix & NixOS
+**NOTE:** Hyprland is NOT supported on NixOS stable. It may (not) compile or
+work as intended. Please use the flake.
+
+## Install and configure Hyprland on Nix & NixOS
 
 Make sure to check out the options of the
 [Nix module](https://github.com/hyprwm/Hyprland/blob/main/nix/module.nix).
