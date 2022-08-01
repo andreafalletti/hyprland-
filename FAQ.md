@@ -216,11 +216,6 @@ if you want workspaces 1 2 4 5 to go to monitor 1 when connecting it.
 
 Please note this requires `socat` to be installed.
 
-### My browser / chromium / electron app is completely broken!
-In short, I don't know why. The issue is tracked over [here](https://github.com/hyprwm/Hyprland/issues/216)
-
-For now, you can just run those apps under XWayland and they will work flawlessly. (remove the `--enableOzonePlatform` flags wherever you've set them.)
-
 ### My tablet no worky??
 
 Use [Open Tablet Driver](https://github.com/OpenTabletDriver/OpenTabletDriver)
