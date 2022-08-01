@@ -129,10 +129,11 @@ _More about animations is on the Advanced Configuring page._
 `kb_layout=str` `kb_variant=str` `kb_model=str` `kb_options=str` `kb_rules=str`
 \- adequate keyboard settings
 
-`follow_mouse=int` - (0/1/2) enable mouse following (focus on enter new window)
+`follow_mouse=int` - (0/1/2/3) enable mouse following (focus on enter new window)
 \- Quirk: will always focus on mouse enter if you're entering a floating window
 from a tiled one, or vice versa. 0 - disabled, 1 - full, 2 - loose. Loose will
 focus mouse on other windows on focus but not the keyboard.
+3 - full loose, will not refocus on click, but allow mouse focus to be detached from the keyboard like in 2.
 
 `repeat_rate=int` - in ms, the repeat rate for held keys
 
