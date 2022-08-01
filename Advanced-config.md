@@ -581,6 +581,10 @@ allowed to set opacities over 1, but any opacity product over 1 will cause
 graphical glitches. E.g. 0.5 * 2 = 1, and it will be fine, 0.5 * 4 will cause
 graphical glitches.
 
+### opaque
+
+forces the window to be opaque (can be toggled with the toggleopaque dispatcher)
+
 ### animation \[style\] \[opt\]
 
 forces an animation onto a window, with a selected opt.
