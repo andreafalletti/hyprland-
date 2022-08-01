@@ -27,6 +27,8 @@ join the slaves.
 `new_on_top=bool` - whether a newly open window should be on the top of the
 stack
 
+`no_gaps_when_only=bool` - whether to apply gaps when there is only one window on a workspace.
+
 ## Dispatchers
 
 `layoutmsg` params:
