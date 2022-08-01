@@ -62,6 +62,8 @@ the special workspace
 
 `split_width_multiplier=float` - specifies the auto-split width multiplier
 
+`no_gaps_when_only=bool` - whether to apply gaps when there is only one window on a workspace.
+
 ## Bind Dispatchers
 
 `togglegroup` - toggles the current window and its siblings (recursively) into a
