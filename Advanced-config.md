@@ -463,7 +463,9 @@ workspace that you can toggle on/off on any monitor.
 # Executing
 
 you can execute a shell script on startup of the compositor or on each time it's
-reloaded
+reloaded.
+
+**Note**: There currently is a bug with the exec that makes the executed app unable to die if killed, use `SIGKILL` (e.g. `killall name -9`) or launch from a script (`exec-once=~/myscript.sh` and do `myapp &` in the script)
 
 `exec-once=command` will execute only on launch
 
