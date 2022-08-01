@@ -11,7 +11,7 @@ The Hyprland config is very similiar in syntax to the Hypr config. The only
 difference is that all the variables that didn't have a section are now in the
 section `general`.
 
-There is no "reload" keybind. The config is reloaded the moment yoi save it.
+There is no "reload" keybind. The config is reloaded the moment you save it.
 
 Refer to the example config in `/examples/hyprland.conf` to see, well... an
 example.
