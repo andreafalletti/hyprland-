@@ -646,7 +646,7 @@ _Animation tree:_
 
 ```
 global
-  ↳ windows
+  ↳ windows - styles: slide, popin
     ↳ windowsIn - window open
     ↳ windowsOut - window close
     ↳ windowsMove - everything in between, moving, dragging, resizing.
@@ -656,7 +656,7 @@ global
     ↳ fadeSwitch - fade on changing activewindow and its' opacity
     ↳ fadeShadow - fade on changing activewindow for shadows
   ↳ border
-  ↳ workspaces
+  ↳ workspaces - styles: slide, slidevert, fade
 ```
 
 # Defining variables
