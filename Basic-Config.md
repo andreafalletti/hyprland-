@@ -68,6 +68,8 @@ optimization.
 `layout=str` - which layout to use. (Available: `dwindle`, `master`, default is
 `dwindle`)
 
+`no_cursor_warps=bool` - if true, will not warp the cursor in many cases (focusing, keybinds, etc)
+
 ## Decoration
 
 `rounding=int` - rounded corners radius (in pixels)
