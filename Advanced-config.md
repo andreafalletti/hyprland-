@@ -262,7 +262,12 @@ fullscreen (keeps the gaps and bar(s))
 
 ### dpms
 
-sets the monitor's dpms status
+sets the monitor's dpms status.
+
+**Warning**: it is NOT recommended to set DPMS with a keybind directly, as it might cause undefined behavior. Instead, consider something like
+```
+bind = MOD,KEY,exec,sleep 1 && hyprctl dispatch dpms off
+```
 
 **params**: `on` for on, `off` for  off.
 
