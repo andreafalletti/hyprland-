@@ -35,6 +35,10 @@ Please remember the offset is calculated with the scaled resolution, meaning if
 you want your 4K monitor with scale 2 to the left of your 1080p one, you'd use
 the offset `1920x0` for the second screen. (3840 / 2)
 
+Leaving the name empty will define a fallback rule to use when no other rules match.
+
+You can use `preferred` as a resolution to use the display's preferred size, and `auto` as an offset to let Hyprland decide on an offset for you.
+
 To disable a monitor, use
 
 ```
