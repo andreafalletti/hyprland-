@@ -39,6 +39,12 @@ Leaving the name empty will define a fallback rule to use when no other rules ma
 
 You can use `preferred` as a resolution to use the display's preferred size, and `auto` as an offset to let Hyprland decide on an offset for you.
 
+Recommended rule for easy and quick plugging in of random monitors:
+```
+monitor=,preferred,auto,1
+```
+Will make any monitor that was not specified with an explicit rule automatically placed in a sensible location with its preferred resolution.
+
 To disable a monitor, use
 
 ```
