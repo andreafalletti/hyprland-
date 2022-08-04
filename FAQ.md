@@ -139,13 +139,6 @@ experimental in the base binary for whatever reason.
 
 Use the style for `#workspaces button.active`
 
-### The waybar tray context menus do not show
-
-gtk-layer-shell is not supported by hyprland thus far. In the meantime, you have
-got to define `#define HAVE_DBUSMENU` in `include/factory.hpp` (see above the
-FAW about waybar workspaces), and `include "gtk-layer-shell": false` in your
-waybar config.
-
 ### How do I autostart my favorite apps?
 
 Using the window rules to assign apps to workspace you can setup a session start
