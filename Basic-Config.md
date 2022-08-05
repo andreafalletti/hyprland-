@@ -62,8 +62,7 @@ inactivity to hide it. (default / never is `0`)
 
 `damage_tracking=str` - Makes the compositor redraw only the needed bits of the
 display. Saves on resources by not redrawing when not needed. Available modes:
-`none, monitor, full`. Heavily recommended to use `full` for maximum
-optimization.
+`none, monitor, full`. You don't need to know what different modes do, just always use `full`.
 
 `layout=str` - which layout to use. (Available: `dwindle`, `master`, default is
 `dwindle`)
