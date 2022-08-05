@@ -244,3 +244,17 @@ the .desktop file to point to your script)
 ### I get random white flashes!
 
 Try disabling VFR with `misc:no_vfr=1`
+
+### How do I make Hyprland draw as little power as possible on my laptop?
+
+I assume you already have `damage_tracking` on full. If you don't, do it. It's heavily advised to use `full` regardless of anything.
+
+Optimization options:
+
+*feel free to ignore any that you find causing issues*
+
+`decoration:blur_new_optimizations = true`
+`decoration:blur = false`
+`decoration:drop_shadow  = false`
+`misc:no_vfr = false`
+
