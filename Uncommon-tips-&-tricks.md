@@ -20,27 +20,3 @@ have a `D`.)
 If you are unsure about the key names of your chosen alphabet, refer to the
 [xkbcommon keysym header](https://github.com/xkbcommon/libxkbcommon/blob/master/include/xkbcommon/xkbcommon-keysyms.h).
 The keysym name in Hyprland is the XKB define name without the `XKB_KEY_`.
-
-## Input Method Editors
-
-Currently, the support for IME protocols in wayland is ongoing, but the
-protocols are dodgy, not that widely supported, and so on, so it's low priority.
-
-To use IMEs, you can use `ibus` and it will work with all GTK and QT
-applications.
-
-Configure ibus just like you would for Xorg.
-
-Then, in your config, make keybind(s) for switching, for example:
-
-```
-bind=SUPER,SPACE,exec,bash -c 'if [ "$(ibus engine)" = "anthy" ]; then ibus engine xkb:pl::pol; else ibus engine anthy; fi'
-```
-
-will switch on SUPER+SPACE from polish to japanese (anthy)
-
-additionally, to fix the panel closing, use
-
-```
-windowrule=nofocus,^(Ibus-ui-gtk3)$
-```
