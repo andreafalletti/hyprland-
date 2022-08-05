@@ -254,7 +254,10 @@ Optimization options:
 *feel free to ignore any that you find causing issues*
 
 `decoration:blur_new_optimizations = true`
+
 `decoration:blur = false`
+
 `decoration:drop_shadow  = false`
+
 `misc:no_vfr = false`
 
