@@ -200,6 +200,8 @@ at the expense of possible issues on a few monitors. (VFR is off by default)
 
 `mouse_move_enables_dpms=bool` - If DPMS is set to off, wake up the monitors if the mouse moves.
 
+`always_follow_on_dnd=bool` - By default enabled, will make mouse focus follow the mouse when drag and dropping. Recommended to leave it enabled, especially for people using focus follows mouse at 0.
+
 ## Binds
 
 `pass_mouse_when_bound=bool` - if disabled, will not pass the mouse events to
