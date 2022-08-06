@@ -678,6 +678,14 @@ global
   ↳ workspaces - styles: slide, slidevert, fade
 ```
 
+### Extras
+
+For animation style `popin` in `windows`, you can specify a minimum percentage to start from. For example:
+```
+animation=windows,1,8,default,popin 80%
+```
+will make the animation 80% -> 100% of the size.
+
 # Defining variables
 
 You can define your own custom variables like this:
