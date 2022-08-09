@@ -26,8 +26,8 @@ The keysym name in Hyprland is the XKB define name without the `XKB_KEY_`.
 If you want to disable all keybinds with another keybind (make a kaybind toggle of sorts) you can just use a submap with only a keybind to exit it.
 
 ```
-bindr=MOD,KEY,submap,clean
+bind=MOD,KEY,submap,clean
 submap=clean
-bindr=MOD,KEY,submap,reset
+bind=MOD,KEY,submap,reset
 submap=reset
 ```
