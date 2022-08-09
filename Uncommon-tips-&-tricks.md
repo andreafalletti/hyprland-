@@ -20,3 +20,14 @@ have a `D`.)
 If you are unsure about the key names of your chosen alphabet, refer to the
 [xkbcommon keysym header](https://github.com/xkbcommon/libxkbcommon/blob/master/include/xkbcommon/xkbcommon-keysyms.h).
 The keysym name in Hyprland is the XKB define name without the `XKB_KEY_`.
+
+## Disabling keybinds with one master keybind
+
+If you want to disable all keybinds with another keybind (make a kaybind toggle of sorts) you can just use a submap with only a keybind to exit it.
+
+```
+bind=MOD,KEY,submap,clean
+submap=clean
+bind=MOD,KEY,submap,reset
+submap=reset
+```
