@@ -173,6 +173,11 @@ bind=SUPER,mouse:272,exec,amongus
 
 will bind it to SUPER+LMB.
 
+For binding only modkeys, you need to use the TARGET modmask (with the activating mod) and the `r` flag, e.g.:
+```
+bindr=SUPERALT,Alt_L,exec,amongus
+```
+
 ## Bind flags
 
 bind supports flags in this format:
