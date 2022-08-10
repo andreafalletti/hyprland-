@@ -10,26 +10,24 @@ To use it, it's recommended to either use the AUR package `waybar-hyprland-git`,
 
 To compile manually:
 
-Clone the source, then edit `include/factory.hpp` and add
+Clone the source, then do:
+```sh
+sed -i 's/zext_workspace_handle_v1_activate(workspace_handle_);/const std::string command = "hyprctl dispatch workspace " + name_;\n\tsystem(command.c_str());/g' src/modules/wlr/workspace_manager.cpp
 
+meson --prefix=/usr --buildtype=plain --auto-features=enabled --wrap-mode=nodownload build
+meson configure -Dexperimental=true build
 ```
-#define HAVE_WLR
-#define USE_EXPERIMENTAL
+
+and finally:
+```sh
+sudo ninja -C build install
 ```
-
-on top. If you want to also have sway modules (or any other defined in the file)
-add the appropriate defines.
-
-All `#ifdef HAVE_<thing>` can be enabled by adding `#define HAVE_<thing>` on
-top.
-
-Then compile according to the instructions on the Waybar github repo.
 
 If you want to use the workspaces module, it's called `wlr/workspaces`.
 
 For more info regarding configuration, see [The Waybar Wiki](https://github.com/Alexays/Waybar/wiki)
 
-## EWW
+## eww
 
 In order to use [eww](https://github.com/elkowar/eww), you first have to
 install it, either using your distro's package manager, by searching
