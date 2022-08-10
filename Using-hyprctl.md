@@ -55,6 +55,17 @@ it. You can exit it with ESCAPE.
 
 Kind of like xkill.
 
+### setcursor
+
+Sets the cursor theme and reloads the cursor manager. Will set the theme for everything except GTK, because GTK.
+
+params: theme and size
+
+e.g.:
+```
+hyprctl setcursor Bibata-Modern-Classic 24
+```
+
 ## Info
 
 ```
