@@ -20,6 +20,8 @@
       <br/>
       <li><a href="https://github.com/hyprwm/Hyprland/wiki/Nix">Nix</a></li>
       <br/>
+      <li><a href="https://github.com/hyprwm/Hyprland/wiki/Nvidia">Nvidia</a></li>
+      <br/>
       <li><a href="https://github.com/hyprwm/Hyprland/wiki/IPC">IPC</a></li>
       <br/>
       <li><a href="https://github.com/hyprwm/Hyprland/wiki/Crashing-and-bugs">Crashes and bugs</a></li>
