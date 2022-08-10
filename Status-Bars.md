@@ -32,7 +32,7 @@ For more info regarding configuration, see [The Waybar Wiki](https://github.com/
 In order to use [eww](https://github.com/elkowar/eww), you first have to
 install it, either using your distro's package manager, by searching
 `eww-wayland`, or by manually compiling. In the latter case, you need to
-have `cargo` and `rustc` installed, then clone the repo and run `cargo build`.
+have `cargo` and `rustc` installed, then follow the [instructions](https://elkowar.github.io/eww).
 
 ### Configuration
 
