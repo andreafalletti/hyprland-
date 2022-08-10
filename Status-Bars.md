@@ -1,5 +1,7 @@
 # Status Bars
 
+Launch your bar with `exec-once=`.
+
 ## Waybar
 
 Waybar is a GTK status bar made specifically for wlroots compositors.
