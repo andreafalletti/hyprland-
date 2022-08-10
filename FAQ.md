@@ -93,8 +93,11 @@ Use a wayland-compatible locking utility using WLR protocols, e.g. `swaylock`.
 
 ### How do I change me mouse cursor?
 
-Use a tool like for example `lxappearance`. Change your cursor and _restart_
-Hyprland. If that doesn't work, change the config files manually according to
+Use a tool like for example `lxappearance` to change the GTK cursor.
+
+After that, add `exec-once=hyprctl setcursor [THEME] [SIZE]` to your config and restart Hyprland.
+
+If that doesn't work, change the config files manually according to
 the
 [XDG specification (Arch wiki link)](https://wiki.archlinux.org/title/Cursor_themes#Configuration).
 
@@ -103,6 +106,8 @@ _not_ using a tool (like `lxappearance`).
 
 Then, do a `gsettings set $gnome-schema cursor-theme 'theme-name'` and you're
 all good!
+
+If it still doesn't work
 
 ### GTK Settings no work / whatever!
 
