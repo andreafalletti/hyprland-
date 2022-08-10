@@ -202,6 +202,8 @@ at the expense of possible issues on a few monitors. (VFR is off by default)
 
 `always_follow_on_dnd=bool` - By default enabled, will make mouse focus follow the mouse when drag and dropping. Recommended to leave it enabled, especially for people using focus follows mouse at 0.
 
+`layers_hog_keyboard_focus=bool` - If true, will make keyboard interactive layers keep their focus on mouse move (e.g. wofi, bemenu)
+
 ## Binds
 
 `pass_mouse_when_bound=bool` - if disabled, will not pass the mouse events to
