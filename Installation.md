@@ -1,8 +1,6 @@
 # Foreword
 
-NVIDIA GPUs in ANY capacity are NOT supported, but you may ask for some help
-around on the [Discord server](https://discord.gg/hQ9XvMUjjr), people have been
-running Hyprland on NVIDIA with success.
+Nvidia GPUs are widely known as... yeah. If you want to try Hyprland on Nvidia regardless (many people have reported successes), follow the [Nvidia page](https://github.com/hyprwm/Hyprland/wiki/Nvidia) after installing Hyprland.
 
 ### Distros
 
