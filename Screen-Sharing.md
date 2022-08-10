@@ -4,7 +4,7 @@ Screensharing is done through PipeWire WebRTC on Wayland.
 
 ## Prereqs
 
-Make sure you have `pipewire` installed if you don't have it yet.
+Make sure you have `pipewire` and `wireplumber` installed, enabled and running if you don't have them yet.
 
 Also install `slurp` for monitor selection.
 
