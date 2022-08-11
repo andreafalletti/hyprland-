@@ -16,6 +16,7 @@
       <a>　</a><a href="https://github.com/hyprwm/Hyprland/wiki/Dwindle-Layout">Dwindle Layout</a><br/>
       <a>　</a><a href="https://github.com/hyprwm/Hyprland/wiki/Master-Layout">Master Layout</a><br/>
       <a>　</a><a href="https://github.com/hyprwm/Hyprland/wiki/Using-hyprctl">Using Hyprctl</a><br/>
+      <a>　</a><a href="https://github.com/hyprwm/Hyprland/wiki/Expanding-functionality">Expanding Functionality</a><br/>
       <a>　</a><a href="https://github.com/hyprwm/Hyprland/wiki/Uncommon-tips-&-tricks">Uncommon Tips & Tricks</a><br/>
       <br/>
       <li><a href="https://github.com/hyprwm/Hyprland/wiki/Useful-utilities">Useful Utilities</a></li>
