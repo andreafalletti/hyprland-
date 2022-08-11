@@ -14,8 +14,8 @@ This bash script will change the outer gaps to 20 if the currently focused monit
 #!/bin/sh
 
 function handle {
-  if [[ ${1:0:12} == "monitoradded" ]]; then
-    if [[ ${1:11:4} == "DP-1" ]]; then
+  if [[ ${1:0:10} == "focusedmon" ]]; then
+    if [[ ${1:12:4} == "DP-1" ]]; then
       hyprctl keyword general:gaps_out 20
     else
       hyprctl keyword general:gaps_out 30
