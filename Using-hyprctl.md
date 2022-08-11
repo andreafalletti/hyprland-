@@ -77,6 +77,7 @@ devices - lists all connected keyboards and mice
 activewindow - gets the active window name
 layers - lists all the layers
 splash - prints the current random splash
+getoption [option] - gets the config option status (values)
 ```
 
 # Batch
