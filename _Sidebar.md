@@ -20,6 +20,7 @@
       <br/>
       <li><a href="https://github.com/hyprwm/Hyprland/wiki/Useful-utilities">Useful Utilities</a></li>
       <a>　</a><a href="https://github.com/hyprwm/Hyprland/wiki/Status-Bars">Status Bars</a><br/>
+      <a>　</a><a href="https://github.com/hyprwm/Hyprland/wiki/App-Launchers">App Launchers</a><br/>
       <a>　</a><a href="https://github.com/hyprwm/Hyprland/wiki/Wallpapers">Wallpapers</a><br/>
       <a>　</a><a href="https://github.com/hyprwm/Hyprland/wiki/Screen-Sharing">Screen Sharing</a><br/>
       <a>　</a><a href="https://github.com/hyprwm/Hyprland/wiki/App-Clients">App Clients</a><br/>
