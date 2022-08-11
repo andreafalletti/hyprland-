@@ -103,7 +103,7 @@ The more passes, the more you can up the blur_size without noticing artifacts.
 `blur_ignore_opacity=bool` - make the blur layer ignore the opacity of the
 window.
 
-`blur_new_optimizations=bool` - whether to enable further optimizations to the blur. Default is at 1, and recommended to leave it on 1.
+`blur_new_optimizations=bool` - whether to enable further optimizations to the blur. Recommended to turn on, as it will massively improve performance, but some people have experienced graphical issues.
 
 `drop_shadow=bool` - enable drop shadows on windows
 
