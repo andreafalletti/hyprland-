@@ -35,7 +35,7 @@ change, and is not emitted on mouse movements (see `activemon`)
 
 Data: WORKSPACENAME
 
-### activemon
+### focusedmon
 
 emitted on the active monitor being changed.
 
