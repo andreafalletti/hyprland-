@@ -79,7 +79,7 @@ to learn all about configuring Hyprland to your likings.
 
 # Apps / X11 replacements
 
-See the
+See the [Useful Utilities Page](https://github.com/hyprwm/Hyprland/wiki/Useful-utilities) and the
 [Sway wiki page](https://github.com/swaywm/sway/wiki/Useful-add-ons-for-sway)
 just about that.
 
