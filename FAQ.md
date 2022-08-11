@@ -55,6 +55,10 @@ them unreachable. An easy fix is to assign e.g.
 Not that much heavier than Xorg. If you want maximum performance, consider
 turning off the blur and animations.
 
+### Blur makes my GPU cry :(
+
+You probably forgot to turn on `decoration:blur_new_optimizations`. Thank me later.
+
 ### My monitor no worky!
 
 Try changing the mode in your config. If your preferred one doesn't work, try a
