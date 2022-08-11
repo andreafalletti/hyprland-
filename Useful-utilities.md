@@ -6,6 +6,8 @@ This category is dedicated to short tutorials on how to get useful utilities for
 
 - **[Status Bars](https://github.com/hyprwm/Hyprland/wiki/Status-Bars)**
 
+- **[App Launchers](https://github.com/hyprwm/Hyprland/wiki/App-Launchers)**
+
 - **[Wallpapers](https://github.com/hyprwm/Hyprland/wiki/Wallpapers)**
 
 - **[Screen Sharing](https://github.com/hyprwm/Hyprland/wiki/Screen-Sharing)**
