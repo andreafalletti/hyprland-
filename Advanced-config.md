@@ -668,7 +668,7 @@ animation=windows,1,10,myepiccurve,slide
 
 `STYLE` (optional) is the animation style
 
-The animations are a tree. If an animation is unset, it will inherit its' parent's values.
+The animations are a tree. If an animation is unset, it will inherit its parent's values.
 
 _Animation tree:_
 
@@ -681,7 +681,7 @@ global
   ↳ fade
     ↳ fadeIn - fade in (open) -> layers and windows
     ↳ fadeOut - fade out (close) -> layers and windows
-    ↳ fadeSwitch - fade on changing activewindow and its' opacity
+    ↳ fadeSwitch - fade on changing activewindow and its opacity
     ↳ fadeShadow - fade on changing activewindow for shadows
   ↳ border
   ↳ workspaces - styles: slide, slidevert, fade
