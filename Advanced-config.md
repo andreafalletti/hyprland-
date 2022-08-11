@@ -212,6 +212,8 @@ bindr=ALT,Alt_L,exec,amongus
 
 ## General dispatcher list:
 
+Please keep in mind some layout-specific dispatchers will be listed in the layout pages (See the sidebar)
+
 ### exec
 
 executes a shell command
