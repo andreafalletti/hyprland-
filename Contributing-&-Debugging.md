@@ -80,3 +80,5 @@ Hyprland can run nested in a window. For that, make sure you did the following:
  - made sure no keybinds overlap (I recommend using a different mod for your keybinds altogether)
 
 Once you launch, the display will probably be completely garbled. To fix that, in the parent, do a `hyprctl clients` and note the size of the window. Make sure while opening the terminal to not resize the nested window. Note that resolution and use it down to the pixel in your `hyprlandd.conf`.
+
+If you segfault in `shadowKeybinds`, you probably either are using the same mod as your parent or resized the window.
